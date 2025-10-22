@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crédito Consignado - Lotérica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#top" class="logo-link">
+                    <h1>Loté<span class="gold">rica</span></h1>
+                </a>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="apostas.html">Apostas</a></li>
+                <li><a href="seguros.html">Seguros</a></li>
+                <li><a href="credito.html" class="active">Crédito</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Crédito <span class="gold">Consignado</span></h2>
+                <p class="hero-subtitle">As melhores taxas do mercado para realizar seus sonhos</p>
+            </div>
+        </section>
+
+        <section class="services">
+            <h2 class="section-title">Crédito Rápido e <span class="gold">Fácil</span></h2>
+            
+            <div class="intro-text">
+                <p>Empréstimo com as <strong>menores taxas de juros</strong> do mercado. Dinheiro rápido na sua conta com desconto direto na folha de pagamento ou benefício. Clique para ver as condições de cada modalidade!</p>
+            </div>
+
+            <div class="accordion-container">
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-icon-title">
+                            <span class="accordion-icon">💳</span>
+                            <h3>Consignado INSS - Aposentados e Pensionistas</h3>
+                        </div>
+                        <span class="accordion-arrow">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <p class="lead-text">Crédito especial para aposentados e pensionistas do INSS com as melhores taxas e condições do mercado.</p>
+                            
+                            <div class="highlight-box">
+                                <div class="highlight-item">
+                                    <span class="big-number">1,49%</span>
+                                    <span class="small-text">Taxa mensal a partir de</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="big-number">84x</span>
+                                    <span class="small-text">Até 84 meses para pagar</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="big-number">45%</span>
+                                    <span class="small-text">Até 45% do benefício</span>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span>Desconto automático direto no benefício</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span>Não consulta SPC/Serasa</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span>Dinheiro na conta em até 24 horas</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span>Parcelas que cabem no seu bolso</span>
+                                </div>
+                            </div>
+                            
+                            <div class="game-details">
+                                <h4>Documentos Necessários</h4>
+                                <p>RG, CPF, comprovante de residência e extrato do benefício INSS.</p>
+                            </div>
+                            
+                            <a href="contato.html" class="btn btn-primary btn-large">Simular Empréstimo INSS</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-icon-title">
+                            <span class="accordion-icon">🏛️</span>
+                            <h3>Consignado Público - Servidores</h3>
+                        </div>
+                        <span class="accordion-arrow">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <p class="lead-text">Para servidores públicos federais, estaduais e municipais. As menores taxas e maiores prazos!</p>
+                            
+                            <div class="highlight-box">
+                                <div class="highlight-item">
+                                    <span class="big-number">1,35%</span>
+                                    <span class="small-text">Taxa mensal a partir de</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="big-number">96x</span>
+                                    <span class="small-text">Até 96 meses para pagar</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="big-number">40%</span>
+                                    <span class="small-text">Até 40% do salário</span>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span>Desconto direto na folha de pagamento</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span>Taxas especiais para servidores</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span>Aprovação facilitada</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span>Liberação rápida</span>
+                                </div>
+                            </div>
+                            
+                            <div class="game-details">
+                                <h4>Quem Pode Contratar?</h4>
+                                <p>Servidores públicos ativos, inativos e pensionistas da União, Estados e Municípios conveniados.</p>
+                            </div>
+                            
+                            <a href="contato.html" class="btn btn-primary btn-large">Simular Empréstimo Servidor</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-icon-title">
+                            <span class="accordion-icon">👔</span>
+                            <h3>Consignado Privado - Empresas Conveniadas</h3>
+                        </div>
+                        <span class="accordion-arrow">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <p class="lead-text">Para funcionários de empresas privadas conveniadas. Crédito facilitado com desconto em folha.</p>
+                            
+                            <div class="highlight-box">
+                                <div class="highlight-item">
+                                    <span class="big-number">1,89%</span>
+                                    <span class="small-text">Taxa mensal a partir de</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="big-number">60x</span>
+                                    <span class="small-text">Até 60 meses para pagar</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="big-number">35%</span>
+                                    <span class="small-text">Até 35% do salário</span>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span>Desconto direto na folha de pagamento</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span>Processo 100% digital</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span>Consulta se sua empresa é conveniada</span>
+                                </div>
+                            </div>
+                            
+                            <a href="contato.html" class="btn btn-primary btn-large">Consultar Minha Empresa</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-icon-title">
+                            <span class="accordion-icon">💰</span>
+                            <h3>Refinanciamento - Reduza Suas Parcelas</h3>
+                        </div>
+                        <span class="accordion-arrow">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <p class="lead-text">Já tem um consignado? Refinancie com taxas menores e libere dinheiro extra!</p>
+                            
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Reduza suas parcelas</strong> - Pague menos por mês</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Libere até 70% do saldo</strong> - Dinheiro extra na conta</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Taxas menores</strong> - Economize nos juros</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Sem consulta ao SPC/Serasa</strong> - Aprovação facilitada</span>
+                                </div>
+                            </div>
+                            
+                            <div class="game-details">
+                                <h4>Como Funciona?</h4>
+                                <p>Analisamos seu contrato atual e oferecemos condições melhores. Você pode reduzir a parcela, aumentar o prazo ou liberar dinheiro extra pagando a mesma parcela.</p>
+                            </div>
+                            
+                            <a href="contato.html" class="btn btn-primary btn-large">Quero Refinanciar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-icon-title">
+                            <span class="accordion-icon">🎁</span>
+                            <h3>Saque Aniversário FGTS - Antecipe Seu Dinheiro</h3>
+                        </div>
+                        <span class="accordion-arrow">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <p class="lead-text">Antecipe o saque aniversário do seu FGTS e receba o dinheiro agora!</p>
+                            
+                            <div class="highlight-box">
+                                <div class="highlight-item">
+                                    <span class="big-number">10x</span>
+                                    <span class="small-text">Até 10 parcelas anuais</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="big-number">24h</span>
+                                    <span class="small-text">Dinheiro na conta</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="big-number">100%</span>
+                                    <span class="small-text">Online e rápido</span>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span>Aprovação em minutos</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span>Não compromete sua renda mensal</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span>Pagamento automático pelo FGTS</span>
+                                </div>
+                            </div>
+                            
+                            <a href="contato.html" class="btn btn-primary btn-large">Antecipar FGTS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lottery-results">
+            <h2 class="section-title">Vantagens do <span class="gold">Consignado</span></h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">📉</div>
+                    <h3>Menores Taxas</h3>
+                    <p>As menores taxas de juros do mercado, pois o desconto é automático em folha</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">✅</div>
+                    <h3>Aprovação Facilitada</h3>
+                    <p>Não consulta SPC/Serasa. Ideal para quem está com nome restrito</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">⚡</div>
+                    <h3>Liberação Rápida</h3>
+                    <p>Dinheiro na conta em até 24 horas após aprovação</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">📅</div>
+                    <h3>Prazo Estendido</h3>
+                    <p>Até 96 meses para pagar com parcelas que cabem no seu bolso</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <h2 class="section-title">Como <span class="gold">Contratar</span></h2>
+            <div class="how-to-bet">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Documentação</h3>
+                    <p>RG, CPF, comprovante de residência e holerite ou extrato do benefício</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Simulação</h3>
+                    <p>Fazemos a simulação e encontramos a melhor opção para você</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Aprovação</h3>
+                    <p>Análise rápida e aprovação em poucos minutos</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Dinheiro na Conta</h3>
+                    <p>Valor liberado em até 24 horas na sua conta</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Faça uma Simulação Gratuita</h2>
+                <p>Descubra quanto você pode contratar e qual será sua parcela</p>
+                <a href="contato.html" class="btn btn-primary">Simular Agora</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Lotérica</span></h3>
+                <p>Sua lotérica de confiança</p>
+            </div>
+            <div class="footer-section">
+                <h4>Serviços</h4>
+                <ul>
+                    <li><a href="apostas.html">Apostas</a></li>
+                    <li><a href="seguros.html">Seguros</a></li>
+                    <li><a href="credito.html">Crédito</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>📞 (69) 1234-5678</p>
+                <p>📧 contato@loterica.com.br</p>
+                <p>📍 Centro - São Miguel do Guaporé/RO</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Loterica. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleAccordion(button) {
+            const accordionItem = button.closest('.accordion-item');
+            const allItems = document.querySelectorAll('.accordion-item');
+            
+            allItems.forEach(item => {
+                if (item !== accordionItem) {
+                    item.classList.remove('active');
+                }
+            });
+            
+            accordionItem.classList.toggle('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const firstAccordion = document.querySelector('.accordion-item');
+            if (firstAccordion) {
+                firstAccordion.classList.add('active');
+            }
+        });
+    </script>
+    <script src="menu.js"></script>
+
+</body>
+</html>

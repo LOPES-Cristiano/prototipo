@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - loterica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#top" class="logo-link">
+                    <h1>Loté<span class="gold">rica</span></h1>
+                </a>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="apostas.html">Apostas</a></li>
+                <li><a href="seguros.html">Seguros</a></li>
+                <li><a href="credito.html">Crédito</a></li>
+                <li><a href="contato.html" class="active">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Entre em <span class="gold">Contato</span></h2>
+                <p class="hero-subtitle">Estamos prontos para atender você</p>
+            </div>
+        </section>
+
+        <section class="services">
+            <h2 class="section-title">Fale <span class="gold">Conosco</span></h2>
+            
+            <div class="intro-text">
+                <p>Estamos prontos para atender você! Entre em contato pelos nossos canais ou preencha o formulário abaixo.</p>
+            </div>
+
+            <div class="contact-grid-simple">
+                <div class="contact-card-large">
+                    <div class="contact-icon-large">📍</div>
+                    <h3>Visite Nossa Lotérica</h3>
+                    <p class="contact-detail">Centro - São Miguel do Guaporé</p>
+                    <p class="contact-detail">Rondônia - RO</p>
+                    <p class="contact-note">Estacionamento disponível</p>
+                </div>
+                
+                <div class="contact-card-large">
+                    <div class="contact-icon-large">📞</div>
+                    <h3>Telefones</h3>
+                    <p class="contact-detail"><strong>(69) 1234-5678</strong></p>
+                    <p class="contact-detail"><strong>(69) 98765-4321</strong> (WhatsApp)</p>
+                    <p class="contact-note">Atendimento rápido e personalizado</p>
+                </div>
+                
+                <div class="contact-card-large">
+                    <div class="contact-icon-large">📧</div>
+                    <h3>E-mails</h3>
+                    <p class="contact-detail">contato@loterica.com.br</p>
+                    <p class="contact-detail">atendimento@loterica.com.br</p>
+                    <p class="contact-note">Resposta em até 24 horas</p>
+                </div>
+                
+                <div class="contact-card-large">
+                    <div class="contact-icon-large">🕐</div>
+                    <h3>Horário de Funcionamento</h3>
+                    <p class="contact-detail"><strong>Segunda a Sexta:</strong> 8h às 18h</p>
+                    <p class="contact-detail"><strong>Sábado:</strong> 8h às 13h</p>
+                    <p class="contact-note">Domingo e Feriados: Fechado</p>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2 class="section-title">Envie uma <span class="gold">Mensagem</span></h2>
+                <div class="intro-text">
+                    <p>Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
+                </div>
+
+                <div class="contact-form-container-centered">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo *</label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="telefone">Telefone *</label>
+                                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="assunto">O que você procura? *</label>
+                            <select id="assunto" name="assunto" required>
+                                <option value="">Selecione um assunto...</option>
+                                <option value="apostas">Apostas Lotéricas</option>
+                                <option value="seguros">Seguros</option>
+                                <option value="credito">Crédito Consignado</option>
+                                <option value="outros">Outros Assuntos</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensagem">Sua Mensagem *</label>
+                            <textarea id="mensagem" name="mensagem" rows="6" placeholder="Digite sua mensagem aqui..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="lottery-results">
+            <h2 class="section-title">Localização</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <p>🗺️ Mapa do Google Maps aqui</p>
+                    <p class="map-note">Fácil acesso por transporte público e estacionamento disponível</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <h2 class="section-title">Perguntas <span class="gold">Frequentes</span></h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3>Qual o horário de funcionamento?</h3>
+                    <p>Funcionamos de segunda a sexta das 8h às 18h e aos sábados das 8h às 13h.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Quais jogos da loteria estão disponíveis?</h3>
+                    <p>Todos os jogos da Caixa Econômica Federal: Mega-Sena, Lotofácil, Quina, Lotomania, Dupla Sena, Timemania e outros.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Como funciona o crédito consignado?</h3>
+                    <p>O crédito consignado tem desconto automático em folha de pagamento, oferecendo as menores taxas do mercado.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Quais documentos preciso para fazer um seguro?</h3>
+                    <p>Geralmente RG, CPF e comprovante de residência. Documentos específicos variam conforme o tipo de seguro.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Visite Nossa Lotérica</h2>
+                <p>Atendimento personalizado e de qualidade</p>
+                <a href="tel:6912345678" class="btn btn-primary">Ligar Agora</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Loté<span class="gold">rica</span></h3>
+                <p>Sua lotérica de confiança desde 2020</p>
+            </div>
+            <div class="footer-section">
+                <h4>Serviços</h4>
+                <ul>
+                    <li><a href="apostas.html">Apostas</a></li>
+                    <li><a href="seguros.html">Seguros</a></li>
+                    <li><a href="credito.html">Crédito</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>📞 (69) 1234-5678</p>
+                <p>📧 contato@loterica.com.br</p>
+                <p>📍 Centro - São Miguel do Guaporé/RO</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Lotérica. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="menu.js"></script>
+
+</body>
+</html>

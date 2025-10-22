@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostas - Lotérica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#top" class="logo-link">
+                    <h1>Loté<span class="gold">rica</span></h1>
+                </a>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="apostas.html" class="active">Apostas</a></li>
+                <li><a href="seguros.html">Seguros</a></li>
+                <li><a href="credito.html">Crédito</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Apostas <span class="gold">Lotéricas</span></h2>
+                <p class="hero-subtitle">Faça suas apostas nos jogos da Caixa Econômica Federal</p>
+                <div class="hero-buttons">
+                    <a href="fazer-aposta.html" class="btn btn-primary">Apostar Agora</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <h2 class="section-title">Todos os Jogos da <span class="gold">Loteria</span></h2>
+            
+            <div class="intro-text">
+                <p>Faça suas apostas nos jogos oficiais da Caixa Econômica Federal. Clique em cada jogo para ver mais informações e fazer sua aposta!</p>
+            </div>
+
+            <div class="accordion-container">
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-icon-title">
+                            <span class="accordion-icon">🎯</span>
+                            <h3>Mega-Sena - O Maior Prêmio do Brasil</h3>
+                        </div>
+                        <span class="accordion-arrow">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <p class="lead-text">O maior prêmio da loteria brasileira! Escolha de 6 a 15 números entre os 60 disponíveis e concorra a milhões.</p>
+                            
+                            <div class="highlight-box">
+                                <div class="highlight-item">
+                                    <span class="big-number">R$ 5,00</span>
+                                    <span class="small-text">Aposta mínima</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="big-number">2x</span>
+                                    <span class="small-text">Por semana</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="big-number">60</span>
+                                    <span class="small-text">Números</span>
+                                </div>
+                            </div>
+                            
+                            <div class="game-details">
+                                <h4>Como Jogar</h4>
+                                <p>Escolha de 6 a 15 números dentre os 60 disponíveis. Quanto mais números você escolher, maiores são suas chances de ganhar, mas o valor da aposta também aumenta.</p>
+                                
+                                <h4>Quando São os Sorteios</h4>
+                                <p>Os sorteios acontecem às <strong>quartas-feiras e sábados</strong>, sempre às 20h (horário de Brasília).</p>
+                                
+                                <h4>Como Ganhar</h4>
+                                <p>Acerte 4 (quadra), 5 (quina) ou 6 (sena) números e ganhe prêmios em dinheiro!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-icon-title">
+                            <span class="accordion-icon">🍀</span>
+                            <h3>Lotofácil - Fácil de Ganhar</h3>
+                        </div>
+                        <span class="accordion-arrow">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <p class="lead-text">A loteria mais fácil de ganhar! Escolha de 15 a 20 números entre os 25 disponíveis.</p>
+                            
+                            <div class="highlight-box">
+                                <div class="highlight-item">
+                                    <span class="big-number">R$ 3,00</span>
+                                    <span class="small-text">Aposta mínima</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="big-number">6x</span>
+                                    <span class="small-text">Por semana</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="big-number">25</span>
+                                    <span class="small-text">Números</span>
+                                </div>
+                            </div>
+                            
+                            <div class="game-details">
+                                <h4>Como Jogar</h4>
+                                <p>Marque entre 15 e 20 números dentre os 25 disponíveis no volante. Você pode deixar o sistema escolher os números por você através da Surpresinha.</p>
+                                
+                                <h4>Quando São os Sorteios</h4>
+                                <p>De <strong>segunda a sábado</strong>, às 20h. São 6 chances por semana!</p>
+                                
+                                <h4>Como Ganhar</h4>
+                                <p>Acerte 11, 12, 13, 14 ou 15 números e leve prêmios em dinheiro!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-icon-title">
+                            <span class="accordion-icon">⭐</span>
+                            <h3>Quina - Sorteios Todos os Dias</h3>
+                        </div>
+                        <span class="accordion-arrow">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <p class="lead-text">Escolha de 5 a 15 números entre 80 disponíveis. Sorteios todos os dias!</p>
+                            
+                            <div class="highlight-box">
+                                <div class="highlight-item">
+                                    <span class="big-number">R$ 2,50</span>
+                                    <span class="small-text">Aposta mínima</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="big-number">7x</span>
+                                    <span class="small-text">Por semana</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="big-number">80</span>
+                                    <span class="small-text">Números</span>
+                                </div>
+                            </div>
+                            
+                            <div class="game-details">
+                                <h4>Como Jogar</h4>
+                                <p>Marque de 5 a 15 números entre os 80 disponíveis. Quanto mais números marcar, maior o valor da aposta e suas chances de ganhar.</p>
+                                
+                                <h4>Quando São os Sorteios</h4>
+                                <p><strong>Todos os dias</strong>, às 20h!</p>
+                                
+                                <h4>Como Ganhar</h4>
+                                <p>Acerte 2 (duque), 3 (terno), 4 (quadra) ou 5 (quina) números e ganhe!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-icon-title">
+                            <span class="accordion-icon">🎲</span>
+                            <h3>Lotomania - 50 Números</h3>
+                        </div>
+                        <span class="accordion-arrow">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <p class="lead-text">Escolha 50 números entre 100 disponíveis. Quanto mais acertos, maior o prêmio!</p>
+                            
+                            <div class="game-details">
+                                <p><strong>Valor da aposta:</strong> R$ 3,00</p>
+                                <p><strong>Sorteios:</strong> Terça e Sexta-feira às 20h</p>
+                                <p><strong>Prêmios:</strong> Acertando 0, 15, 16, 17, 18, 19 ou 20 números você ganha!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-icon-title">
+                            <span class="accordion-icon">💎</span>
+                            <h3>Dupla Sena - Duas Chances de Ganhar</h3>
+                        </div>
+                        <span class="accordion-arrow">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <p class="lead-text">Uma aposta, dois sorteios! Escolha de 6 a 15 números e concorra em dois sorteios no mesmo dia.</p>
+                            
+                            <div class="game-details">
+                                <p><strong>Valor da aposta:</strong> R$ 3,00</p>
+                                <p><strong>Sorteios:</strong> Terça, Quinta e Sábado às 20h</p>
+                                <p><strong>Prêmios:</strong> São realizados dois sorteios por concurso, você ganha acertando 3, 4, 5 ou 6 números em qualquer um dos sorteios!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lottery-results">
+            <h2 class="section-title">Como <span class="gold">Apostar</span></h2>
+            <div class="how-to-bet">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Visite Nossa Lotérica</h3>
+                    <p>Estamos localizados em local de fácil acesso com estacionamento disponível</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Escolha Seu Jogo</h3>
+                    <p>Nossa equipe está pronta para te ajudar a escolher o melhor jogo</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Marque Seus Números</h3>
+                    <p>Preencha o volante ou peça uma surpresinha</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Boa Sorte!</h3>
+                    <p>Guarde seu comprovante e acompanhe os resultados</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Venha fazer sua aposta!</h2>
+                <p>Atendimento de segunda a sábado, das 8h às 18h</p>
+                <a href="contato.html" class="btn btn-primary">Ver Localização</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Loté<span class="gold">rica</span></h3>
+                <p>Sua lotérica de confiança desde 2020</p>
+            </div>
+            <div class="footer-section">
+                <h4>Serviços</h4>
+                <ul>
+                    <li><a href="apostas.html">Apostas</a></li>
+                    <li><a href="seguros.html">Seguros</a></li>
+                    <li><a href="credito.html">Crédito</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>📞 (69) 1234-5678</p>
+                <p>📧 contato@loterica.com.br</p>
+                <p>📍 Centro - São Miguel do Guaporé/RO</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Lotérica. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleAccordion(button) {
+            const accordionItem = button.closest('.accordion-item');
+            const allItems = document.querySelectorAll('.accordion-item');
+            
+            allItems.forEach(item => {
+                if (item !== accordionItem) {
+                    item.classList.remove('active');
+                }
+            });
+            
+            accordionItem.classList.toggle('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const firstAccordion = document.querySelector('.accordion-item');
+            if (firstAccordion) {
+                firstAccordion.classList.add('active');
+            }
+        });
+    </script>
+    <script src="menu.js"></script>
+
+</body>
+</html>

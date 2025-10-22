@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguros - Lotérica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#top" class="logo-link">
+                    <h1>Loté<span class="gold">rica</span></h1>
+                </a>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="apostas.html">Apostas</a></li>
+                <li><a href="seguros.html" class="active">Seguros</a></li>
+                <li><a href="credito.html">Crédito</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Seguros e <span class="gold">Proteção</span></h2>
+                <p class="hero-subtitle">Proteja o que é mais importante para você e sua família</p>
+            </div>
+        </section>
+
+        <section class="services">
+            <h2 class="section-title">Proteja o Que é Importante <span class="gold">Para Você</span></h2>
+            
+            <div class="intro-text">
+                <p>Oferecemos seguros completos com as melhores seguradoras do mercado. Clique em cada tipo de seguro para ver todas as coberturas e fazer sua cotação gratuita!</p>
+            </div>
+
+            <div class="accordion-container">
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-icon-title">
+                            <span class="accordion-icon">🏥</span>
+                            <h3>Seguro de Vida - Proteja Sua Família</h3>
+                        </div>
+                        <span class="accordion-arrow">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <p class="lead-text">Garanta tranquilidade e proteção financeira para você e sua família em momentos difíceis.</p>
+                            
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Morte Natural ou Acidental</strong> - Indenização para sua família</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Invalidez Permanente</strong> - Cobertura total ou parcial</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Doenças Graves</strong> - Suporte financeiro em diagnóstico</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Assistência Funeral</strong> - Apoio completo em momentos difíceis</span>
+                                </div>
+                            </div>
+                            
+                            <div class="game-details">
+                                <h4>Por Que Contratar?</h4>
+                                <p>Um seguro de vida protege financeiramente quem você mais ama, garantindo que sua família tenha recursos para manter a qualidade de vida mesmo na sua ausência.</p>
+                                
+                                <h4>Como Funciona?</h4>
+                                <p>Você paga uma mensalidade (prêmio) e, em caso de sinistro coberto, sua família recebe a indenização contratada.</p>
+                            </div>
+                            
+                            <a href="contato.html" class="btn btn-primary btn-large">Fazer Cotação Gratuita</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-icon-title">
+                            <span class="accordion-icon">🚗</span>
+                            <h3>Seguro Auto - Proteção Total para Seu Veículo</h3>
+                        </div>
+                        <span class="accordion-arrow">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <p class="lead-text">Proteção completa para seu carro com cobertura nacional e assistência 24 horas.</p>
+                            
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Colisão, Roubo e Furto</strong> - Cobertura total</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Assistência 24 Horas</strong> - Guincho, chaveiro, troca de pneu</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Carro Reserva</strong> - Mobilidade garantida</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Cobertura de Terceiros</strong> - Danos materiais e corporais</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Vidros e Retrovisores</strong> - Troca sem custo adicional</span>
+                                </div>
+                            </div>
+                            
+                            <div class="game-details">
+                                <h4>Vantagens do Seguro Auto</h4>
+                                <p>Além da proteção contra roubo e acidentes, você tem assistência completa para pequenos problemas do dia a dia, como pane seca, bateria descarregada e muito mais.</p>
+                            </div>
+                            
+                            <a href="contato.html" class="btn btn-primary btn-large">Cotar Meu Seguro Auto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-icon-title">
+                            <span class="accordion-icon">🏠</span>
+                            <h3>Seguro Residencial - Proteja Seu Lar</h3>
+                        </div>
+                        <span class="accordion-arrow">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <p class="lead-text">Proteja seu lar contra imprevistos como incêndio, roubo, danos elétricos e muito mais.</p>
+                            
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Incêndio e Explosão</strong> - Cobertura total da estrutura</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Roubo e Furto</strong> - De bens e conteúdo</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Danos Elétricos</strong> - Aparelhos e eletrodomésticos</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Assistência Residencial</strong> - Encanador, eletricista, chaveiro 24h</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Responsabilidade Civil</strong> - Danos a terceiros</span>
+                                </div>
+                            </div>
+                            
+                            <a href="contato.html" class="btn btn-primary btn-large">Proteger Minha Casa</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-icon-title">
+                            <span class="accordion-icon">💼</span>
+                            <h3>Seguro Empresarial - Para Seu Negócio</h3>
+                        </div>
+                        <span class="accordion-arrow">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <p class="lead-text">Proteção completa para seu negócio, desde o patrimônio até a responsabilidade civil.</p>
+                            
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Cobertura Patrimonial</strong> - Imóvel, estoque e equipamentos</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Responsabilidade Civil</strong> - Danos a clientes e terceiros</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Lucros Cessantes</strong> - Perda de faturamento</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Equipamentos Eletrônicos</strong> - Computadores e sistemas</span>
+                                </div>
+                            </div>
+                            
+                            <a href="contato.html" class="btn btn-primary btn-large">Cotar Seguro Empresarial</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-icon-title">
+                            <span class="accordion-icon">✈️</span>
+                            <h3>Seguro Viagem - Viaje Tranquilo</h3>
+                        </div>
+                        <span class="accordion-arrow">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <p class="lead-text">Viaje com segurança para qualquer lugar do mundo com assistência completa 24 horas em português.</p>
+                            
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Assistência Médica</strong> - No Brasil e no exterior</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Extravio de Bagagem</strong> - Indenização e localização</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Cancelamento de Viagem</strong> - Reembolso de despesas</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Atendimento 24h</strong> - Em português</span>
+                                </div>
+                            </div>
+                            
+                            <a href="contato.html" class="btn btn-primary btn-large">Cotar Seguro Viagem</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lottery-results">
+            <h2 class="section-title">Por Que Escolher a <span class="gold">Lotérica</span>?</h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">🏆</div>
+                    <h3>Melhores Seguradoras</h3>
+                    <p>Trabalhamos apenas com seguradoras reconhecidas e confiáveis do mercado</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">💰</div>
+                    <h3>Melhores Preços</h3>
+                    <p>Comparamos diversas opções para encontrar a melhor cobertura pelo melhor preço</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">👥</div>
+                    <h3>Atendimento Personalizado</h3>
+                    <p>Nossa equipe especializada está pronta para atender suas necessidades</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">⚡</div>
+                    <h3>Cotação Rápida</h3>
+                    <p>Receba sua cotação em minutos e contrate na hora</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Solicite uma Cotação</h2>
+                <p>Entre em contato e proteja o que é importante para você</p>
+                <a href="contato.html" class="btn btn-primary">Fazer Cotação</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Loté<span class="gold">rica</span></h3>
+                <p>Sua lotérica de confiança desde 2020</p>
+            </div>
+            <div class="footer-section">
+                <h4>Serviços</h4>
+                <ul>
+                    <li><a href="apostas.html">Apostas</a></li>
+                    <li><a href="seguros.html">Seguros</a></li>
+                    <li><a href="credito.html">Crédito</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>📞 (69) 1234-5678</p>
+                <p>📧 contato@loterica.com.br</p>
+                <p>📍 Centro - São Miguel do Guaporé/RO</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Lotérica. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleAccordion(button) {
+            const accordionItem = button.closest('.accordion-item');
+            const allItems = document.querySelectorAll('.accordion-item');
+            
+            allItems.forEach(item => {
+                if (item !== accordionItem) {
+                    item.classList.remove('active');
+                }
+            });
+            
+            accordionItem.classList.toggle('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const firstAccordion = document.querySelector('.accordion-item');
+            if (firstAccordion) {
+                firstAccordion.classList.add('active');
+            }
+        });
+    </script>
+    <script src="menu.js"></script>
+
+</body>
+</html>

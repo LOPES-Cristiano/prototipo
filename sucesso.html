@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra Realizada - Lotérica</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .success-container {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .success-icon {
+            font-size: 6rem;
+            margin-bottom: 1.5rem;
+            animation: checkmark 0.6s ease-in-out;
+        }
+
+        @keyframes checkmark {
+            0% {
+                transform: scale(0) rotate(0deg);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.2) rotate(180deg);
+            }
+            100% {
+                transform: scale(1) rotate(360deg);
+                opacity: 1;
+            }
+        }
+
+        .success-card {
+            background: white;
+            border-radius: 24px;
+            padding: 3rem;
+            box-shadow: 0 8px 40px rgba(11, 29, 62, 0.12);
+            border: 2px solid rgba(197, 160, 71, 0.15);
+        }
+
+        .success-title {
+            font-size: 2.5rem;
+            color: var(--navy);
+            margin-bottom: 1rem;
+        }
+
+        .success-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .order-number-box {
+            background: linear-gradient(135deg, rgba(197, 160, 71, 0.1), rgba(232, 196, 104, 0.1));
+            border: 2px solid var(--gold);
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .order-label {
+            font-size: 0.9rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .order-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--gold);
+            letter-spacing: 2px;
+        }
+
+        .info-boxes {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .info-box {
+            background: var(--light-gray);
+            padding: 1.5rem;
+            border-radius: 16px;
+            border: 1px solid #E9ECEF;
+        }
+
+        .info-box-icon {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .info-box-title {
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-box-value {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--navy);
+        }
+
+        .next-steps {
+            text-align: left;
+            background: var(--light-gray);
+            padding: 2rem;
+            border-radius: 16px;
+            margin: 2rem 0;
+        }
+
+        .next-steps h3 {
+            font-size: 1.3rem;
+            color: var(--navy);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .next-steps ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .next-steps li {
+            padding: 0.75rem 0;
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.6;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .next-steps li::before {
+            content: '✓';
+            color: var(--gold);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--navy);
+            border: 2px solid var(--navy);
+        }
+
+        .btn-secondary:hover {
+            background: var(--navy);
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .success-container {
+                padding: 2rem 1rem;
+                margin: 2rem auto;
+            }
+
+            .success-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .success-title {
+                font-size: 1.8rem;
+            }
+
+            .info-boxes {
+                grid-template-columns: 1fr;
+            }
+
+            .action-buttons {
+                flex-direction: column;
+            }
+
+            .action-buttons .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body id="top">
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#top" class="logo-link">
+                    <h1>Loté<span class="gold">rica</span></h1>
+                </a>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="apostas.html">Apostas</a></li>
+                <li><a href="seguros.html">Seguros</a></li>
+                <li><a href="credito.html">Crédito</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="success-container">
+            <div class="success-card">
+                <div class="success-icon">✅</div>
+                <h1 class="success-title">Compra Realizada com <span class="gold">Sucesso!</span></h1>
+                <p class="success-subtitle">
+                    Seu pedido foi processado com sucesso. Em breve você receberá um e-mail com os detalhes da sua aposta.
+                </p>
+
+                <div class="order-number-box">
+                    <div class="order-label">Número do Pedido</div>
+                    <div class="order-number" id="orderNumber">-</div>
+                </div>
+
+                <div class="info-boxes">
+                    <div class="info-box">
+                        <div class="info-box-icon">🎲</div>
+                        <div class="info-box-title">Total de Apostas</div>
+                        <div class="info-box-value" id="totalBets">-</div>
+                    </div>
+                    <div class="info-box">
+                        <div class="info-box-icon">💰</div>
+                        <div class="info-box-title">Valor Total</div>
+                        <div class="info-box-value" id="totalValue">R$ 0,00</div>
+                    </div>
+                    <div class="info-box">
+                        <div class="info-box-icon">📅</div>
+                        <div class="info-box-title">Data</div>
+                        <div class="info-box-value" id="orderDate">-</div>
+                    </div>
+                </div>
+
+                <div class="next-steps">
+                    <h3>📋 Próximos Passos</h3>
+                    <ul>
+                        <li>Enviamos um e-mail de confirmação com todos os detalhes do seu pedido</li>
+                        <li>Você pode acompanhar o status das suas apostas através do e-mail cadastrado</li>
+                        <li>Os sorteios ocorrem nas datas oficiais de cada modalidade</li>
+                        <li>Em caso de premiação, você será notificado automaticamente</li>
+                        <li>Guarde o número do seu pedido para consultas futuras</li>
+                    </ul>
+                </div>
+
+                <div class="action-buttons">
+                    <a href="fazer-aposta.html" class="btn btn-primary">Fazer Nova Aposta</a>
+                    <a href="index.html" class="btn btn-secondary">Voltar ao Início</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Loté<span class="gold">rica</span></h3>
+                <p>Sua lotérica de confiança desde 2020</p>
+            </div>
+            <div class="footer-section">
+                <h4>Serviços</h4>
+                <ul>
+                    <li><a href="apostas.html">Apostas</a></li>
+                    <li><a href="seguros.html">Seguros</a></li>
+                    <li><a href="credito.html">Crédito</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>📞 (69) 1234-5678</p>
+                <p>📧 contato@loterica.com.br</p>
+                <p>📍 Centro - São Miguel do Guaporé/RO</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Lotérica. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Carregar informações do pedido
+        document.addEventListener('DOMContentLoaded', function() {
+            const orderNumber = localStorage.getItem('lastOrder');
+            
+            if (!orderNumber) {
+                window.location.href = 'index.html';
+                return;
+            }
+
+            // Buscar pedido
+            const orders = JSON.parse(localStorage.getItem('loteriOrders') || '[]');
+            const order = orders.find(o => o.orderNumber === orderNumber);
+
+            if (order) {
+                // Exibir número do pedido
+                document.getElementById('orderNumber').textContent = order.orderNumber;
+
+                // Exibir total de apostas
+                document.getElementById('totalBets').textContent = order.cart.length + (order.cart.length === 1 ? ' aposta' : ' apostas');
+
+                // Exibir valor total
+                document.getElementById('totalValue').textContent = 'R$ ' + order.total.toFixed(2).replace('.', ',');
+
+                // Exibir data
+                const date = new Date(order.date);
+                document.getElementById('orderDate').textContent = date.toLocaleDateString('pt-BR');
+
+                // Limpar lastOrder do localStorage
+                localStorage.removeItem('lastOrder');
+            } else {
+                window.location.href = 'index.html';
+            }
+        });
+    </script>
+    <script src="menu.js"></script>
+
+</body>
+</html>

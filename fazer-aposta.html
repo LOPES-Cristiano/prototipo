@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazer Aposta - Lotérica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#top" class="logo-link">
+                    <h1>Loté<span class="gold">rica</span></h1>
+                </a>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="apostas.html">Apostas</a></li>
+                <li><a href="seguros.html">Seguros</a></li>
+                <li><a href="credito.html">Crédito</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero hero-small">
+            <div class="hero-content">
+                <h2>Faça Sua <span class="gold">Aposta Online</span></h2>
+                <p class="hero-subtitle">Escolha seu jogo, marque seus números e boa sorte!</p>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="betting-container">
+                <!-- Seleção de Jogo -->
+                <div class="game-selection">
+                    <h2 class="section-title-small">Escolha Seu <span class="gold">Jogo</span></h2>
+                    
+                    <div class="game-buttons">
+                        <button class="game-btn active" onclick="selectGame('megasena')">
+                            <span class="game-btn-icon">🎯</span>
+                            <span class="game-btn-name">Mega-Sena</span>
+                            <span class="game-btn-price">R$ 5,00</span>
+                        </button>
+                        <button class="game-btn" onclick="selectGame('lotofacil')">
+                            <span class="game-btn-icon">🍀</span>
+                            <span class="game-btn-name">Lotofácil</span>
+                            <span class="game-btn-price">R$ 3,00</span>
+                        </button>
+                        <button class="game-btn" onclick="selectGame('quina')">
+                            <span class="game-btn-icon">⭐</span>
+                            <span class="game-btn-name">Quina</span>
+                            <span class="game-btn-price">R$ 2,50</span>
+                        </button>
+                        <button class="game-btn" onclick="selectGame('lotomania')">
+                            <span class="game-btn-icon">🎲</span>
+                            <span class="game-btn-name">Lotomania</span>
+                            <span class="game-btn-price">R$ 3,00</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Área de Apostas -->
+                <div class="betting-area">
+                    <div class="bet-header">
+                        <h3 id="currentGameTitle">Mega-Sena</h3>
+                        <div class="bet-info">
+                            <span id="gameRules">Escolha de 6 a 15 números</span>
+                            <span class="separator">•</span>
+                            <span id="gamePrice">A partir de R$ 5,00</span>
+                        </div>
+                    </div>
+
+                    <!-- Informações do Jogo Atual -->
+                    <div class="game-instructions">
+                        <p id="gameInstructions">Marque de 6 a 15 números entre os 60 disponíveis abaixo. Quanto mais números marcar, maior o valor da aposta e suas chances de ganhar!</p>
+                    </div>
+
+                    <!-- Contadores -->
+                    <div class="bet-counters">
+                        <div class="counter">
+                            <span class="counter-label">Números Marcados:</span>
+                            <span class="counter-value" id="selectedCount">0</span>
+                            <span class="counter-max">/ <span id="maxNumbers">15</span></span>
+                        </div>
+                        <div class="counter">
+                            <span class="counter-label">Valor da Aposta:</span>
+                            <span class="counter-value gold" id="betValue">R$ 0,00</span>
+                        </div>
+                    </div>
+
+                    <!-- Ações Rápidas -->
+                    <div class="quick-actions">
+                        <button class="action-btn" onclick="surpresinha()">
+                            <span>🎲</span> Surpresinha
+                        </button>
+                        <button class="action-btn" onclick="clearNumbers()">
+                            <span>🗑️</span> Limpar
+                        </button>
+                    </div>
+
+                    <!-- Grade de Números -->
+                    <div class="numbers-grid" id="numbersGrid">
+                        <!-- Números serão gerados via JavaScript -->
+                    </div>
+
+                    <!-- Botão Adicionar ao Carrinho -->
+                    <div class="add-to-cart-section">
+                        <button class="btn btn-primary btn-large" id="addToCartBtn" onclick="addToCart()" disabled>
+                            Adicionar ao Carrinho
+                        </button>
+                        <p class="helper-text" id="helperText">Selecione ao menos 6 números para continuar</p>
+                    </div>
+                </div>
+
+                <!-- Carrinho -->
+                <div class="cart-sidebar" id="cartSidebar">
+                    <div class="cart-header">
+                        <h3>🛒 Meu Carrinho</h3>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </div>
+
+                    <div class="cart-items" id="cartItems">
+                        <div class="cart-empty">
+                            <p>Seu carrinho está vazio</p>
+                            <p class="cart-empty-small">Adicione apostas para continuar</p>
+                        </div>
+                    </div>
+
+                    <div class="cart-footer">
+                        <div class="cart-total">
+                            <span>Total:</span>
+                            <span class="cart-total-value" id="cartTotal">R$ 0,00</span>
+                        </div>
+                        <button class="btn btn-primary btn-large" id="checkoutBtn" onclick="goToCheckout()" disabled>
+                            Finalizar Compra
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Loté<span class="gold">rica</span></h3>
+                <p>Sua lotérica de confiança desde 2020</p>
+            </div>
+            <div class="footer-section">
+                <h4>Serviços</h4>
+                <ul>
+                    <li><a href="apostas.html">Apostas</a></li>
+                    <li><a href="seguros.html">Seguros</a></li>
+                    <li><a href="credito.html">Crédito</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>📞 (69) 1234-5678</p>
+                <p>📧 contato@loterica.com.br</p>
+                <p>📍 Centro - São Miguel do Guaporé/RO</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Lotérica. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="aposta.js"></script>
+    <script src="menu.js"></script>
+
+</body>
+</html>

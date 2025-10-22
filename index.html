@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotérica - Sua Lotérica de Confiança</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#top" class="logo-link">
+                    <h1>Loté<span class="gold">rica</span></h1>
+                </a>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="apostas.html">Apostas</a></li>
+                <li><a href="seguros.html">Seguros</a></li>
+                <li><a href="credito.html">Crédito</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Bem-vindo à <span class="gold">Lotérica</span></h2>
+                <p class="hero-subtitle">Sua sorte começa aqui. Apostas, seguros e crédito em um só lugar.</p>
+                <div class="hero-buttons">
+                    <a href="fazer-aposta.html" class="btn btn-primary">Fazer Apostas</a>
+                    <a href="contato.html" class="btn btn-secondary">Fale Conosco</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <h2 class="section-title">O Que Fazemos por <span class="gold">Você</span></h2>
+            
+            <div class="intro-text">
+                <p>Na <strong>Lotérica</strong>, oferecemos os melhores serviços para você realizar seus sonhos. Seja fazer aquela aposta da sorte, proteger sua família ou conseguir um crédito com as melhores condições do mercado.</p>
+            </div>
+
+            <div class="accordion-container">
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-icon-title">
+                            <span class="accordion-icon">🎲</span>
+                            <h3>Apostas Lotéricas</h3>
+                        </div>
+                        <span class="accordion-arrow">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <p class="lead-text">Faça suas apostas em todos os jogos oficiais da Caixa Econômica Federal</p>
+                            
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span>Mega-Sena, Lotofácil, Quina</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span>Lotomania, Dupla Sena, Timemania</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span>Atendimento rápido e sem filas</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span>Bolões e surpresinha disponíveis</span>
+                                </div>
+                            </div>
+                            
+                            <a href="apostas.html" class="btn btn-primary btn-large">Ver Todos os Jogos</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-icon-title">
+                            <span class="accordion-icon">🛡️</span>
+                            <h3>Seguros e Proteção</h3>
+                        </div>
+                        <span class="accordion-arrow">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <p class="lead-text">Proteja o que é mais importante: sua família, seu carro, sua casa e seu futuro</p>
+                            
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span>Seguro de Vida - tranquilidade para sua família</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span>Seguro Auto - cobertura completa</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span>Seguro Residencial - proteja seu lar</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span>Cotação gratuita e rápida</span>
+                                </div>
+                            </div>
+                            
+                            <a href="seguros.html" class="btn btn-primary btn-large">Fazer Cotação</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-icon-title">
+                            <span class="accordion-icon">💳</span>
+                            <h3>Crédito Consignado</h3>
+                        </div>
+                        <span class="accordion-arrow">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <p class="lead-text">Dinheiro rápido e fácil com as menores taxas de juros do mercado</p>
+                            
+                            <div class="highlight-box">
+                                <div class="highlight-item">
+                                    <span class="big-number">1,49%</span>
+                                    <span class="small-text">Taxa a partir de</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="big-number">96x</span>
+                                    <span class="small-text">Para pagar</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="big-number">24h</span>
+                                    <span class="small-text">Dinheiro na conta</span>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span>Aposentados e pensionistas INSS</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span>Servidores públicos</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="check-icon">✓</span>
+                                    <span>Funcionários de empresas privadas</span>
+                                </div>
+                            </div>
+                            
+                            <a href="credito.html" class="btn btn-primary btn-large">Simular Empréstimo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lottery-results">
+            <h2 class="section-title">Resultados de <span class="gold">Hoje</span></h2>
+            
+            <div class="intro-text">
+                <p>Confira os números sorteados nos principais jogos. Boa sorte!</p>
+            </div>
+
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="lottery-header">
+                        <h4>Mega-Sena</h4>
+                        <span class="lottery-badge">Concurso 2650</span>
+                    </div>
+                    <div class="numbers">
+                        <span>05</span>
+                        <span>12</span>
+                        <span>23</span>
+                        <span>34</span>
+                        <span>41</span>
+                        <span>58</span>
+                    </div>
+                    <div class="prize-box">
+                        <span class="prize-label">Prêmio Estimado</span>
+                        <span class="prize">R$ 45.000.000,00</span>
+                    </div>
+                    <p class="next-draw">Próximo sorteio: Quarta-feira às 20h</p>
+                </div>
+                
+                <div class="result-card">
+                    <div class="lottery-header">
+                        <h4>Lotofácil</h4>
+                        <span class="lottery-badge">Concurso 2950</span>
+                    </div>
+                    <div class="numbers small">
+                        <span>01</span>
+                        <span>03</span>
+                        <span>05</span>
+                        <span>07</span>
+                        <span>09</span>
+                        <span>11</span>
+                        <span>13</span>
+                        <span>15</span>
+                        <span>17</span>
+                        <span>19</span>
+                        <span>21</span>
+                        <span>23</span>
+                        <span>24</span>
+                        <span>25</span>
+                        <span>26</span>
+                    </div>
+                    <div class="prize-box">
+                        <span class="prize-label">Prêmio Estimado</span>
+                        <span class="prize">R$ 1.500.000,00</span>
+                    </div>
+                    <p class="next-draw">Próximo sorteio: Amanhã às 20h</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Pronto para realizar seus sonhos?</h2>
+                <p>Visite nossa lotérica ou entre em contato conosco</p>
+                <a href="contato.html" class="btn btn-primary">Entre em Contato</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Loté<span class="gold">rica</span></h3>
+                <p>Sua lotérica de confiança desde 2020</p>
+            </div>
+            <div class="footer-section">
+                <h4>Serviços</h4>
+                <ul>
+                    <li><a href="apostas.html">Apostas</a></li>
+                    <li><a href="seguros.html">Seguros</a></li>
+                    <li><a href="credito.html">Crédito</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>📞 (69) 1234-5678</p>
+                <p>📧 contato@loterica.com.br</p>
+                <p>📍 Centro - São Miguel do Guaporé/RO</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Lotérica. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleAccordion(button) {
+            const accordionItem = button.closest('.accordion-item');
+            const allItems = document.querySelectorAll('.accordion-item');
+            
+            // Fecha todos os outros accordions
+            allItems.forEach(item => {
+                if (item !== accordionItem) {
+                    item.classList.remove('active');
+                }
+            });
+            
+            // Toggle do accordion clicado
+            accordionItem.classList.toggle('active');
+        }
+
+        // Abre o primeiro accordion por padrão
+        document.addEventListener('DOMContentLoaded', function() {
+            const firstAccordion = document.querySelector('.accordion-item');
+            if (firstAccordion) {
+                firstAccordion.classList.add('active');
+            }
+        });
+    </script>
+    <script src="menu.js"></script>
+
+</body>
+</html>
