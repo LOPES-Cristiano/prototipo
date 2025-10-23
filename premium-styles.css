@@ -93,7 +93,7 @@
 
 @media (max-width: 600px) {
     .steps-timeline-container {
-        flex-direction: column;
+        
         align-items: stretch;
         min-height: 340px;
         gap: 0;
