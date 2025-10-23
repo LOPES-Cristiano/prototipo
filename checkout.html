@@ -3,16 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finalizar Compra - Lotérica</title>
+    <title>Finalizar Compra - Liga dos Milionários</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="premium-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body id="top">
 
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="#top" class="logo-link">
-                    <h1>Loté<span class="gold">rica</span></h1>
+                <a href="index.html" class="logo-link">
+                    <div class="logo-shield">
+                        <svg class="shield-bg" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 5 L90 20 L90 60 Q90 90 50 115 Q10 90 10 60 L10 20 Z" fill="url(#shieldGradient)" stroke="var(--gold)" stroke-width="2"/>
+                            <defs>
+                                <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="crown-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-top">LIGA DOS</span>
+                        <span class="logo-bottom">MILIONÁRIOS</span>
+                    </div>
                 </a>
             </div>
             <div class="menu-toggle" id="menuToggle">
@@ -22,25 +41,33 @@
             </div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Início</a></li>
-                <li><a href="apostas.html">Apostas</a></li>
+                <li><a href="loterias.html">Loterias</a></li>
                 <li><a href="seguros.html">Seguros</a></li>
-                <li><a href="credito.html">Crédito</a></li>
+                <li><a href="credito.html">Carta de Crédito</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
-        <section class="hero hero-small">
-            <div class="hero-content">
-                <h2>Finalizar <span class="gold">Compra</span></h2>
-                <p class="hero-subtitle">Complete seus dados e escolha a forma de pagamento</p>
+        <section class="hero-premium">
+            <div class="hero-content-premium">
+                <div class="hero-badge">
+                    <i class="fas fa-shield-alt"></i> Checkout Seguro
+                </div>
+                <h1>Finalizar <span class="gold">Compra VIP</span></h1>
+                <p class="hero-slogan">
+                    <span class="star">★</span>
+                    Pagamento seguro
+                    <span class="star">★</span>
+                </p>
+                <p class="hero-subtitle">Complete seus dados e finalize suas apostas</p>
             </div>
         </section>
 
-        <section class="services">
+        <section class="services-premium" style="padding: 4rem 2rem;">
             <div class="checkout-container">
-                <!-- Formulário -->
+                
                 <div class="checkout-form-area">
                     <div class="checkout-section">
                         <h3 class="checkout-section-title">
@@ -176,10 +203,10 @@
                             </label>
                         </div>
 
-                        <!-- Campos do Cartão (ocultos inicialmente) -->
+                        
                         <div class="card-details" id="cardDetails" style="display: none;">
                             
-                            <!-- Cartão Visual Interativo -->
+                            
                             <div class="credit-card-display">
                                 <div class="flip-card" id="flipCard">
                                     <div class="flip-card-inner">
@@ -251,12 +278,12 @@
                     </div>
                 </div>
 
-                <!-- Resumo do Pedido -->
+                
                 <div class="order-summary">
                     <h3 class="summary-title">Resumo do Pedido</h3>
                     
                     <div class="summary-items" id="summaryItems">
-                        <!-- Itens do carrinho serão inseridos aqui -->
+                        
                     </div>
 
                     <div class="summary-totals">
@@ -283,42 +310,67 @@
                     </a>
 
                     <div class="security-badges">
-                        <span>🔒 Pagamento 100% Seguro</span>
-                        <span>✓ Dados Criptografados</span>
+                        <span>🔒 Pagamento Seguro</span>
+                        <span>✓ Dados Protegidos</span>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Loté<span class="gold">rica</span></h3>
-                <p>Sua lotérica de confiança</p>
+    <footer class="footer-premium">
+        <div class="footer-content-premium">
+            <div class="footer-section-main">
+                <div class="footer-logo">
+                    <div class="logo-shield-small">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div>
+                        <h3>Liga dos <span class="gold">Milionários</span></h3>
+                        <p class="footer-slogan">Unidos pela sorte, guiados pela estratégia</p>
+                    </div>
+                </div>
+                <p class="footer-desc">Finalize suas apostas com segurança e tranquilidade.</p>
             </div>
+            
             <div class="footer-section">
                 <h4>Serviços</h4>
                 <ul>
-                    <li><a href="apostas.html">Apostas</a></li>
-                    <li><a href="seguros.html">Seguros</a></li>
-                    <li><a href="credito.html">Crédito</a></li>
+                    <li><a href="loterias.html"><i class="fas fa-chevron-right"></i> Bolões Premium</a></li>
+                    <li><a href="seguros.html"><i class="fas fa-chevron-right"></i> Seguros Elite</a></li>
+                    <li><a href="credito.html"><i class="fas fa-chevron-right"></i> Carta de Crédito VIP</a></li>
                 </ul>
             </div>
+            
             <div class="footer-section">
                 <h4>Contato</h4>
-                <p>📞 (69) 1234-5678</p>
-                <p>📧 contato@loterica.com.br</p>
-                <p>📍 Centro - São Miguel do Guaporé/RO</p>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-phone-alt"></i> Em breve</li>
+                    <li><i class="fas fa-envelope"></i> Em breve</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Em breve</li>
+                    <li><i class="fas fa-clock"></i> Em breve</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Redes Sociais</h4>
+                <div class="social-links-premium">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Lotérica. Todos os direitos reservados.</p>
+        <div class="footer-bottom-premium">
+            <p>&copy; 2025 Liga dos Milionários. Todos os direitos reservados.</p>
+            <p class="footer-legal"><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
         </div>
     </footer>
 
     <script src="checkout.js"></script>
     <script src="menu.js"></script>
+    <script src="cart-global.js"></script>
 
 </body>
 </html>

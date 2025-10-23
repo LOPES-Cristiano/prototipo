@@ -3,16 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fazer Aposta - Lotérica</title>
+    <title>Fazer Aposta - Liga dos Milionários</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="premium-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body id="top">
 
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="#top" class="logo-link">
-                    <h1>Loté<span class="gold">rica</span></h1>
+                <a href="index.html" class="logo-link">
+                    <div class="logo-shield">
+                        <svg class="shield-bg" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 5 L90 20 L90 60 Q90 90 50 115 Q10 90 10 60 L10 20 Z" fill="url(#shieldGradient)" stroke="var(--gold)" stroke-width="2"/>
+                            <defs>
+                                <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="crown-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-top">LIGA DOS</span>
+                        <span class="logo-bottom">MILIONÁRIOS</span>
+                    </div>
                 </a>
             </div>
             <div class="menu-toggle" id="menuToggle">
@@ -22,53 +41,92 @@
             </div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Início</a></li>
-                <li><a href="apostas.html">Apostas</a></li>
+                <li><a href="loterias.html">Loterias</a></li>
                 <li><a href="seguros.html">Seguros</a></li>
-                <li><a href="credito.html">Crédito</a></li>
+                <li><a href="credito.html">Carta de Crédito</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
-        <section class="hero hero-small">
-            <div class="hero-content">
-                <h2>Faça Sua <span class="gold">Aposta Online</span></h2>
-                <p class="hero-subtitle">Escolha seu jogo, marque seus números e boa sorte!</p>
+        <section class="hero-premium">
+            <div class="hero-content-premium">
+                <div class="hero-badge">
+                    <i class="fas fa-trophy"></i> Bolões Premium
+                </div>
+                <h1>Faça Sua <span class="gold">Aposta VIP</span></h1>
+                <p class="hero-slogan">
+                    <span class="star">★</span>
+                    Escolha, marque, conquiste
+                    <span class="star">★</span>
+                </p>
+                <p class="hero-subtitle">Sistema exclusivo para apostas com as melhores chances de vitória</p>
             </div>
         </section>
 
-        <section class="services">
-            <div class="betting-container">
-                <!-- Seleção de Jogo -->
+        <section class="services-premium" style="padding: 4rem 2rem;">
+            <div class="betting-container" style="max-width: 1400px; margin: 0 auto;">
+                
                 <div class="game-selection">
-                    <h2 class="section-title-small">Escolha Seu <span class="gold">Jogo</span></h2>
+                    <h2 class="section-title-premium" style="text-align: center; margin-bottom: 2rem;">Escolha Seu <span class="gold">Jogo Premium</span></h2>
+                    <div class="gold-divider"></div>
                     
-                    <div class="game-buttons">
-                        <button class="game-btn active" onclick="selectGame('megasena')">
-                            <span class="game-btn-icon">🎯</span>
-                            <span class="game-btn-name">Mega-Sena</span>
-                            <span class="game-btn-price">R$ 5,00</span>
+                    <div class="game-buttons" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-top: 2rem;">
+                        <button class="game-btn active" onclick="selectGame('megasena')" style="background: linear-gradient(135deg, rgba(212,175,55,0.15) 0%, rgba(0,0,0,0.3) 100%); padding: 1.2rem; border-radius: 12px; border: 2px solid var(--gold); cursor: pointer; transition: all 0.3s ease;">
+                            <span class="game-btn-icon" style="display: block; font-size: 2rem; margin-bottom: 0.5rem;">🎯</span>
+                            <span class="game-btn-name" style="display: block; color: #fff; font-size: 1rem; font-weight: 700; margin-bottom: 0.3rem;">Mega-Sena</span>
+                            <span class="game-btn-price" style="display: block; color: var(--gold); font-size: 1.1rem; font-weight: 700;">R$ 6,00</span>
                         </button>
-                        <button class="game-btn" onclick="selectGame('lotofacil')">
-                            <span class="game-btn-icon">🍀</span>
-                            <span class="game-btn-name">Lotofácil</span>
-                            <span class="game-btn-price">R$ 3,00</span>
+                        <button class="game-btn" onclick="selectGame('lotofacil')" style="background: linear-gradient(135deg, rgba(212,175,55,0.05) 0%, rgba(0,0,0,0.3) 100%); padding: 1.2rem; border-radius: 12px; border: 2px solid rgba(212,175,55,0.3); cursor: pointer; transition: all 0.3s ease;">
+                            <span class="game-btn-icon" style="display: block; font-size: 2rem; margin-bottom: 0.5rem;">�</span>
+                            <span class="game-btn-name" style="display: block; color: #fff; font-size: 1rem; font-weight: 700; margin-bottom: 0.3rem;">Lotofácil</span>
+                            <span class="game-btn-price" style="display: block; color: var(--gold); font-size: 1.1rem; font-weight: 700;">R$ 3,50</span>
                         </button>
-                        <button class="game-btn" onclick="selectGame('quina')">
-                            <span class="game-btn-icon">⭐</span>
-                            <span class="game-btn-name">Quina</span>
-                            <span class="game-btn-price">R$ 2,50</span>
+                        <button class="game-btn" onclick="selectGame('quina')" style="background: linear-gradient(135deg, rgba(212,175,55,0.05) 0%, rgba(0,0,0,0.3) 100%); padding: 1.2rem; border-radius: 12px; border: 2px solid rgba(212,175,55,0.3); cursor: pointer; transition: all 0.3s ease;">
+                            <span class="game-btn-icon" style="display: block; font-size: 2rem; margin-bottom: 0.5rem;">⭐</span>
+                            <span class="game-btn-name" style="display: block; color: #fff; font-size: 1rem; font-weight: 700; margin-bottom: 0.3rem;">Quina</span>
+                            <span class="game-btn-price" style="display: block; color: var(--gold); font-size: 1.1rem; font-weight: 700;">R$ 3,00</span>
                         </button>
-                        <button class="game-btn" onclick="selectGame('lotomania')">
-                            <span class="game-btn-icon">🎲</span>
-                            <span class="game-btn-name">Lotomania</span>
-                            <span class="game-btn-price">R$ 3,00</span>
+                        <button class="game-btn" onclick="selectGame('diasorte')" style="background: linear-gradient(135deg, rgba(212,175,55,0.05) 0%, rgba(0,0,0,0.3) 100%); padding: 1.2rem; border-radius: 12px; border: 2px solid rgba(212,175,55,0.3); cursor: pointer; transition: all 0.3s ease;">
+                            <span class="game-btn-icon" style="display: block; font-size: 2rem; margin-bottom: 0.5rem;">🌟</span>
+                            <span class="game-btn-name" style="display: block; color: #fff; font-size: 1rem; font-weight: 700; margin-bottom: 0.3rem;">Dia de Sorte</span>
+                            <span class="game-btn-price" style="display: block; color: var(--gold); font-size: 1.1rem; font-weight: 700;">R$ 2,50</span>
+                        </button>
+                        <button class="game-btn" onclick="selectGame('duplasena')" style="background: linear-gradient(135deg, rgba(212,175,55,0.05) 0%, rgba(0,0,0,0.3) 100%); padding: 1.2rem; border-radius: 12px; border: 2px solid rgba(212,175,55,0.3); cursor: pointer; transition: all 0.3s ease;">
+                            <span class="game-btn-icon" style="display: block; font-size: 2rem; margin-bottom: 0.5rem;">🎰</span>
+                            <span class="game-btn-name" style="display: block; color: #fff; font-size: 1rem; font-weight: 700; margin-bottom: 0.3rem;">Dupla Sena</span>
+                            <span class="game-btn-price" style="display: block; color: var(--gold); font-size: 1.1rem; font-weight: 700;">R$ 3,00</span>
+                        </button>
+                        <button class="game-btn" onclick="selectGame('lotomania')" style="background: linear-gradient(135deg, rgba(212,175,55,0.05) 0%, rgba(0,0,0,0.3) 100%); padding: 1.2rem; border-radius: 12px; border: 2px solid rgba(212,175,55,0.3); cursor: pointer; transition: all 0.3s ease;">
+                            <span class="game-btn-icon" style="display: block; font-size: 2rem; margin-bottom: 0.5rem;">�</span>
+                            <span class="game-btn-name" style="display: block; color: #fff; font-size: 1rem; font-weight: 700; margin-bottom: 0.3rem;">Lotomania</span>
+                            <span class="game-btn-price" style="display: block; color: var(--gold); font-size: 1.1rem; font-weight: 700;">R$ 3,00</span>
+                        </button>
+                        <button class="game-btn" onclick="selectGame('supersete')" style="background: linear-gradient(135deg, rgba(212,175,55,0.05) 0%, rgba(0,0,0,0.3) 100%); padding: 1.2rem; border-radius: 12px; border: 2px solid rgba(212,175,55,0.3); cursor: pointer; transition: all 0.3s ease;">
+                            <span class="game-btn-icon" style="display: block; font-size: 2rem; margin-bottom: 0.5rem;">7️⃣</span>
+                            <span class="game-btn-name" style="display: block; color: #fff; font-size: 1rem; font-weight: 700; margin-bottom: 0.3rem;">Super Sete</span>
+                            <span class="game-btn-price" style="display: block; color: var(--gold); font-size: 1.1rem; font-weight: 700;">R$ 3,00</span>
+                        </button>
+                        <button class="game-btn" onclick="selectGame('timemania')" style="background: linear-gradient(135deg, rgba(212,175,55,0.05) 0%, rgba(0,0,0,0.3) 100%); padding: 1.2rem; border-radius: 12px; border: 2px solid rgba(212,175,55,0.3); cursor: pointer; transition: all 0.3s ease;">
+                            <span class="game-btn-icon" style="display: block; font-size: 2rem; margin-bottom: 0.5rem;">⚽</span>
+                            <span class="game-btn-name" style="display: block; color: #fff; font-size: 1rem; font-weight: 700; margin-bottom: 0.3rem;">Timemania</span>
+                            <span class="game-btn-price" style="display: block; color: var(--gold); font-size: 1.1rem; font-weight: 700;">R$ 3,50</span>
+                        </button>
+                        <button class="game-btn" onclick="selectGame('loteca')" style="background: linear-gradient(135deg, rgba(212,175,55,0.05) 0%, rgba(0,0,0,0.3) 100%); padding: 1.2rem; border-radius: 12px; border: 2px solid rgba(212,175,55,0.3); cursor: pointer; transition: all 0.3s ease;">
+                            <span class="game-btn-icon" style="display: block; font-size: 2rem; margin-bottom: 0.5rem;">🏆</span>
+                            <span class="game-btn-name" style="display: block; color: #fff; font-size: 1rem; font-weight: 700; margin-bottom: 0.3rem;">Loteca</span>
+                            <span class="game-btn-price" style="display: block; color: var(--gold); font-size: 1.1rem; font-weight: 700;">R$ 4,00</span>
+                        </button>
+                        <button class="game-btn" onclick="selectGame('maismilionaria')" style="background: linear-gradient(135deg, rgba(212,175,55,0.05) 0%, rgba(0,0,0,0.3) 100%); padding: 1.2rem; border-radius: 12px; border: 2px solid rgba(212,175,55,0.3); cursor: pointer; transition: all 0.3s ease;">
+                            <span class="game-btn-icon" style="display: block; font-size: 2rem; margin-bottom: 0.5rem;">💎</span>
+                            <span class="game-btn-name" style="display: block; color: #fff; font-size: 1rem; font-weight: 700; margin-bottom: 0.3rem;">+Milionária</span>
+                            <span class="game-btn-price" style="display: block; color: var(--gold); font-size: 1.1rem; font-weight: 700;">R$ 6,00</span>
                         </button>
                     </div>
                 </div>
 
-                <!-- Área de Apostas -->
+                
                 <div class="betting-area">
                     <div class="bet-header">
                         <h3 id="currentGameTitle">Mega-Sena</h3>
@@ -79,12 +137,12 @@
                         </div>
                     </div>
 
-                    <!-- Informações do Jogo Atual -->
+                    
                     <div class="game-instructions">
                         <p id="gameInstructions">Marque de 6 a 15 números entre os 60 disponíveis abaixo. Quanto mais números marcar, maior o valor da aposta e suas chances de ganhar!</p>
                     </div>
 
-                    <!-- Contadores -->
+                    
                     <div class="bet-counters">
                         <div class="counter">
                             <span class="counter-label">Números Marcados:</span>
@@ -97,7 +155,7 @@
                         </div>
                     </div>
 
-                    <!-- Ações Rápidas -->
+                    
                     <div class="quick-actions">
                         <button class="action-btn" onclick="surpresinha()">
                             <span>🎲</span> Surpresinha
@@ -107,12 +165,12 @@
                         </button>
                     </div>
 
-                    <!-- Grade de Números -->
+                    
                     <div class="numbers-grid" id="numbersGrid">
-                        <!-- Números serão gerados via JavaScript -->
+                        
                     </div>
 
-                    <!-- Botão Adicionar ao Carrinho -->
+                    
                     <div class="add-to-cart-section">
                         <button class="btn btn-primary btn-large" id="addToCartBtn" onclick="addToCart()" disabled>
                             Adicionar ao Carrinho
@@ -121,7 +179,7 @@
                     </div>
                 </div>
 
-                <!-- Carrinho -->
+                
                 <div class="cart-sidebar" id="cartSidebar">
                     <div class="cart-header">
                         <h3>🛒 Meu Carrinho</h3>
@@ -147,36 +205,79 @@
                 </div>
             </div>
         </section>
+        
+        <section class="cta-premium" style="margin-top: 4rem;">
+            <div class="cta-icon-premium">
+                <i class="fas fa-gift"></i>
+            </div>
+            <div class="cta-premium-content">
+                <h2>Quer Aumentar <span class="gold">Suas Chances?</span></h2>
+                <p>Participe dos nossos bolões exclusivos e concorra com grupos de vencedores</p>
+                <div class="cta-buttons-premium">
+                    <a href="loterias.html" class="btn btn-primary btn-xlarge">
+                        <i class="fas fa-users"></i> Ver Bolões
+                    </a>
+                    <a href="index.html" class="btn btn-secondary btn-xlarge">
+                        <i class="fas fa-home"></i> Voltar ao Início
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Loté<span class="gold">rica</span></h3>
-                <p>Sua lotérica de confiança</p>
+    <footer class="footer-premium">
+        <div class="footer-content-premium">
+            <div class="footer-section-main">
+                <div class="footer-logo">
+                    <div class="logo-shield-small">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div>
+                        <h3>Liga dos <span class="gold">Milionários</span></h3>
+                        <p class="footer-slogan">Unidos pela sorte, guiados pela estratégia</p>
+                    </div>
+                </div>
+                <p class="footer-desc">Faça suas apostas com segurança e participe da elite dos vencedores.</p>
             </div>
+            
             <div class="footer-section">
                 <h4>Serviços</h4>
                 <ul>
-                    <li><a href="apostas.html">Apostas</a></li>
-                    <li><a href="seguros.html">Seguros</a></li>
-                    <li><a href="credito.html">Crédito</a></li>
+                    <li><a href="loterias.html"><i class="fas fa-chevron-right"></i> Bolões Premium</a></li>
+                    <li><a href="seguros.html"><i class="fas fa-chevron-right"></i> Seguros Elite</a></li>
+                    <li><a href="credito.html"><i class="fas fa-chevron-right"></i> Carta de Crédito VIP</a></li>
                 </ul>
             </div>
+            
             <div class="footer-section">
                 <h4>Contato</h4>
-                <p>📞 (69) 1234-5678</p>
-                <p>📧 contato@loterica.com.br</p>
-                <p>📍 Centro - São Miguel do Guaporé/RO</p>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-phone-alt"></i> Em breve</li>
+                    <li><i class="fas fa-envelope"></i> Em breve</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Em breve</li>
+                    <li><i class="fas fa-clock"></i> Em breve</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Redes Sociais</h4>
+                <div class="social-links-premium">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Lotérica. Todos os direitos reservados.</p>
+        <div class="footer-bottom-premium">
+            <p>&copy; 2025 Liga dos Milionários. Todos os direitos reservados.</p>
+            <p class="footer-legal"><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
         </div>
     </footer>
 
     <script src="aposta.js"></script>
     <script src="menu.js"></script>
+    <script src="cart-global.js"></script>
 
 </body>
 </html>

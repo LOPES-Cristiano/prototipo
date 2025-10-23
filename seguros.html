@@ -3,16 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seguros - Lotérica</title>
+    <title>Seguros - Liga dos Milionários</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="premium-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body id="top">
 
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="#top" class="logo-link">
-                    <h1>Loté<span class="gold">rica</span></h1>
+                <a href="index.html" class="logo-link">
+                    <div class="logo-shield">
+                        <svg class="shield-bg" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 5 L90 20 L90 60 Q90 90 50 115 Q10 90 10 60 L10 20 Z" fill="url(#shieldGradient)" stroke="var(--gold)" stroke-width="2"/>
+                            <defs>
+                                <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="crown-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-top">LIGA DOS</span>
+                        <span class="logo-bottom">MILIONÁRIOS</span>
+                    </div>
                 </a>
             </div>
             <div class="menu-toggle" id="menuToggle">
@@ -22,316 +41,307 @@
             </div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Início</a></li>
-                <li><a href="apostas.html">Apostas</a></li>
-                <li><a href="seguros.html" class="active">Seguros</a></li>
-                <li><a href="credito.html">Crédito</a></li>
+                <li><a href="loterias.html">Loterias</a></li>
+                <li><a href="seguros.html">Seguros</a></li>
+                <li><a href="credito.html">Carta de Crédito</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h2>Seguros e <span class="gold">Proteção</span></h2>
-                <p class="hero-subtitle">Proteja o que é mais importante para você e sua família</p>
+        
+        <section class="hero-premium">
+            <div class="hero-overlay"></div>
+            <div class="hero-container">
+                <div class="hero-badge">
+                    <i class="fas fa-shield-check"></i>
+                    <span>Proteção Elite</span>
+                </div>
+                <h1 class="hero-title">Seguros <span class="gold">Completos</span></h1>
+                <p class="hero-slogan"><i class="fas fa-star"></i> Proteção que vai além do seguro <i class="fas fa-star"></i></p>
+                <p class="hero-subtitle">Coberturas completas com as melhores seguradoras do mercado. Proteja seu patrimônio e sua família.</p>
+                <div class="hero-buttons">
+                    <a href="#tipos" class="btn btn-primary btn-large">
+                        <i class="fas fa-shield-alt"></i> Ver Coberturas
+                    </a>
+                    <a href="contato.html" class="btn btn-secondary btn-large">
+                        <i class="fas fa-calculator"></i> Cotar Agora
+                    </a>
+                </div>
             </div>
         </section>
 
-        <section class="services">
-            <h2 class="section-title">Proteja o Que é Importante <span class="gold">Para Você</span></h2>
+        
+        <section class="services-premium" id="tipos">
+            <div class="gold-divider"></div>
+            <h2 class="section-title-premium">Proteção Completa <span class="gold">Para Você</span></h2>
+            <p class="section-subtitle">Seguros personalizados com coberturas completas e atendimento dedicado</p>
             
-            <div class="intro-text">
-                <p>Oferecemos seguros completos com as melhores seguradoras do mercado. Clique em cada tipo de seguro para ver todas as coberturas e fazer sua cotação gratuita!</p>
-            </div>
+            <div class="services-grid-premium">
 
-            <div class="accordion-container">
-                <div class="accordion-item">
-                    <button class="accordion-header" onclick="toggleAccordion(this)">
-                        <div class="accordion-icon-title">
-                            <span class="accordion-icon">🏥</span>
-                            <h3>Seguro de Vida - Proteja Sua Família</h3>
-                        </div>
-                        <span class="accordion-arrow">▼</span>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="accordion-inner">
-                            <p class="lead-text">Garanta tranquilidade e proteção financeira para você e sua família em momentos difíceis.</p>
-                            
-                            <div class="feature-list">
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span><strong>Morte Natural ou Acidental</strong> - Indenização para sua família</span>
-                                </div>
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span><strong>Invalidez Permanente</strong> - Cobertura total ou parcial</span>
-                                </div>
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span><strong>Doenças Graves</strong> - Suporte financeiro em diagnóstico</span>
-                                </div>
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span><strong>Assistência Funeral</strong> - Apoio completo em momentos difíceis</span>
-                                </div>
-                            </div>
-                            
-                            <div class="game-details">
-                                <h4>Por Que Contratar?</h4>
-                                <p>Um seguro de vida protege financeiramente quem você mais ama, garantindo que sua família tenha recursos para manter a qualidade de vida mesmo na sua ausência.</p>
-                                
-                                <h4>Como Funciona?</h4>
-                                <p>Você paga uma mensalidade (prêmio) e, em caso de sinistro coberto, sua família recebe a indenização contratada.</p>
-                            </div>
-                            
-                            <a href="contato.html" class="btn btn-primary btn-large">Fazer Cotação Gratuita</a>
-                        </div>
+                
+                <div class="service-card-premium">
+                    <div class="service-icon-premium">
+                        <i class="fas fa-heartbeat"></i>
                     </div>
+                    <h3>Seguro de Vida Elite</h3>
+                    <p class="service-desc">Proteção financeira completa para você e sua família</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Morte Natural ou Acidental</li>
+                        <li><i class="fas fa-check-circle"></i> Invalidez Permanente Total/Parcial</li>
+                        <li><i class="fas fa-check-circle"></i> Doenças Graves</li>
+                        <li><i class="fas fa-check-circle"></i> Assistência Funeral Completa</li>
+                        <li><i class="fas fa-check-circle"></i> Diárias por Internação</li>
+                    </ul>
+                    <a href="contato.html" class="btn-service-premium">
+                        <i class="fas fa-calculator"></i> Cotar Agora
+                    </a>
                 </div>
 
-                <div class="accordion-item">
-                    <button class="accordion-header" onclick="toggleAccordion(this)">
-                        <div class="accordion-icon-title">
-                            <span class="accordion-icon">🚗</span>
-                            <h3>Seguro Auto - Proteção Total para Seu Veículo</h3>
-                        </div>
-                        <span class="accordion-arrow">▼</span>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="accordion-inner">
-                            <p class="lead-text">Proteção completa para seu carro com cobertura nacional e assistência 24 horas.</p>
-                            
-                            <div class="feature-list">
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span><strong>Colisão, Roubo e Furto</strong> - Cobertura total</span>
-                                </div>
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span><strong>Assistência 24 Horas</strong> - Guincho, chaveiro, troca de pneu</span>
-                                </div>
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span><strong>Carro Reserva</strong> - Mobilidade garantida</span>
-                                </div>
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span><strong>Cobertura de Terceiros</strong> - Danos materiais e corporais</span>
-                                </div>
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span><strong>Vidros e Retrovisores</strong> - Troca sem custo adicional</span>
-                                </div>
-                            </div>
-                            
-                            <div class="game-details">
-                                <h4>Vantagens do Seguro Auto</h4>
-                                <p>Além da proteção contra roubo e acidentes, você tem assistência completa para pequenos problemas do dia a dia, como pane seca, bateria descarregada e muito mais.</p>
-                            </div>
-                            
-                            <a href="contato.html" class="btn btn-primary btn-large">Cotar Meu Seguro Auto</a>
-                        </div>
+                
+                <div class="service-card-premium">
+                    <div class="service-icon-premium">
+                        <i class="fas fa-car"></i>
                     </div>
+                    <h3>Seguro Auto Completo</h3>
+                    <p class="service-desc">Proteção total para seu veículo com cobertura nacional</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Colisão, Roubo e Furto</li>
+                        <li><i class="fas fa-check-circle"></i> Assistência 24h Completa</li>
+                        <li><i class="fas fa-check-circle"></i> Carro Reserva Incluso</li>
+                        <li><i class="fas fa-check-circle"></i> Cobertura de Terceiros</li>
+                        <li><i class="fas fa-check-circle"></i> Vidros e Retrovisores</li>
+                    </ul>
+                    <a href="contato.html" class="btn-service-premium">
+                        <i class="fas fa-calculator"></i> Cotar Agora
+                    </a>
                 </div>
 
-                <div class="accordion-item">
-                    <button class="accordion-header" onclick="toggleAccordion(this)">
-                        <div class="accordion-icon-title">
-                            <span class="accordion-icon">🏠</span>
-                            <h3>Seguro Residencial - Proteja Seu Lar</h3>
-                        </div>
-                        <span class="accordion-arrow">▼</span>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="accordion-inner">
-                            <p class="lead-text">Proteja seu lar contra imprevistos como incêndio, roubo, danos elétricos e muito mais.</p>
-                            
-                            <div class="feature-list">
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span><strong>Incêndio e Explosão</strong> - Cobertura total da estrutura</span>
-                                </div>
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span><strong>Roubo e Furto</strong> - De bens e conteúdo</span>
-                                </div>
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span><strong>Danos Elétricos</strong> - Aparelhos e eletrodomésticos</span>
-                                </div>
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span><strong>Assistência Residencial</strong> - Encanador, eletricista, chaveiro 24h</span>
-                                </div>
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span><strong>Responsabilidade Civil</strong> - Danos a terceiros</span>
-                                </div>
-                            </div>
-                            
-                            <a href="contato.html" class="btn btn-primary btn-large">Proteger Minha Casa</a>
-                        </div>
+                
+                <div class="service-card-premium">
+                    <div class="service-icon-premium">
+                        <i class="fas fa-home"></i>
                     </div>
+                    <h3>Seguro Residencial Elite</h3>
+                    <p class="service-desc">Seu lar protegido contra todos os imprevistos</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Incêndio e Explosão</li>
+                        <li><i class="fas fa-check-circle"></i> Roubo e Furto Qualificado</li>
+                        <li><i class="fas fa-check-circle"></i> Danos Elétricos</li>
+                        <li><i class="fas fa-check-circle"></i> Assistência 24h</li>
+                        <li><i class="fas fa-check-circle"></i> Responsabilidade Civil</li>
+                    </ul>
+                    <a href="contato.html" class="btn-service-premium">
+                        <i class="fas fa-calculator"></i> Cotar Agora
+                    </a>
                 </div>
 
-                <div class="accordion-item">
-                    <button class="accordion-header" onclick="toggleAccordion(this)">
-                        <div class="accordion-icon-title">
-                            <span class="accordion-icon">💼</span>
-                            <h3>Seguro Empresarial - Para Seu Negócio</h3>
-                        </div>
-                        <span class="accordion-arrow">▼</span>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="accordion-inner">
-                            <p class="lead-text">Proteção completa para seu negócio, desde o patrimônio até a responsabilidade civil.</p>
-                            
-                            <div class="feature-list">
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span><strong>Cobertura Patrimonial</strong> - Imóvel, estoque e equipamentos</span>
-                                </div>
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span><strong>Responsabilidade Civil</strong> - Danos a clientes e terceiros</span>
-                                </div>
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span><strong>Lucros Cessantes</strong> - Perda de faturamento</span>
-                                </div>
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span><strong>Equipamentos Eletrônicos</strong> - Computadores e sistemas</span>
-                                </div>
-                            </div>
-                            
-                            <a href="contato.html" class="btn btn-primary btn-large">Cotar Seguro Empresarial</a>
-                        </div>
+                
+                <div class="service-card-premium">
+                    <div class="service-icon-premium">
+                        <i class="fas fa-building"></i>
                     </div>
+                    <h3>Seguro Empresarial</h3>
+                    <p class="service-desc">Proteja seu negócio e garanta sua tranquilidade</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Cobertura Patrimonial Completa</li>
+                        <li><i class="fas fa-check-circle"></i> Responsabilidade Civil</li>
+                        <li><i class="fas fa-check-circle"></i> Lucros Cessantes</li>
+                        <li><i class="fas fa-check-circle"></i> Equipamentos Eletrônicos</li>
+                        <li><i class="fas fa-check-circle"></i> Quebra de Vidros</li>
+                    </ul>
+                    <a href="contato.html" class="btn-service-premium">
+                        <i class="fas fa-calculator"></i> Cotar Agora
+                    </a>
                 </div>
 
-                <div class="accordion-item">
-                    <button class="accordion-header" onclick="toggleAccordion(this)">
-                        <div class="accordion-icon-title">
-                            <span class="accordion-icon">✈️</span>
-                            <h3>Seguro Viagem - Viaje Tranquilo</h3>
-                        </div>
-                        <span class="accordion-arrow">▼</span>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="accordion-inner">
-                            <p class="lead-text">Viaje com segurança para qualquer lugar do mundo com assistência completa 24 horas em português.</p>
-                            
-                            <div class="feature-list">
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span><strong>Assistência Médica</strong> - No Brasil e no exterior</span>
-                                </div>
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span><strong>Extravio de Bagagem</strong> - Indenização e localização</span>
-                                </div>
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span><strong>Cancelamento de Viagem</strong> - Reembolso de despesas</span>
-                                </div>
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span><strong>Atendimento 24h</strong> - Em português</span>
-                                </div>
-                            </div>
-                            
-                            <a href="contato.html" class="btn btn-primary btn-large">Cotar Seguro Viagem</a>
-                        </div>
+                
+                <div class="service-card-premium">
+                    <div class="service-icon-premium">
+                        <i class="fas fa-plane"></i>
                     </div>
+                    <h3>Seguro Viagem Internacional</h3>
+                    <p class="service-desc">Viaje com tranquilidade para qualquer destino</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Assistência Médica Mundial</li>
+                        <li><i class="fas fa-check-circle"></i> Extravio de Bagagem</li>
+                        <li><i class="fas fa-check-circle"></i> Cancelamento de Viagem</li>
+                        <li><i class="fas fa-check-circle"></i> Atendimento 24h em Português</li>
+                        <li><i class="fas fa-check-circle"></i> Seguro COVID-19</li>
+                    </ul>
+                    <a href="contato.html" class="btn-service-premium">
+                        <i class="fas fa-calculator"></i> Cotar Agora
+                    </a>
+                </div>
+
+                
+                <div class="service-card-premium">
+                    <div class="service-icon-premium">
+                        <i class="fas fa-tooth"></i>
+                    </div>
+                    <h3>Seguro Odontológico</h3>
+                    <p class="service-desc">Cuide do seu sorriso com cobertura completa</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Consultas e Limpezas</li>
+                        <li><i class="fas fa-check-circle"></i> Tratamentos de Canal</li>
+                        <li><i class="fas fa-check-circle"></i> Próteses e Implantes</li>
+                        <li><i class="fas fa-check-circle"></i> Ortodontia (Aparelhos)</li>
+                        <li><i class="fas fa-check-circle"></i> Emergências 24h</li>
+                    </ul>
+                    <a href="contato.html" class="btn-service-premium">
+                        <i class="fas fa-calculator"></i> Cotar Agora
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section class="lottery-results">
-            <h2 class="section-title">Por Que Escolher a <span class="gold">Lotérica</span>?</h2>
-            <div class="advantages-grid">
-                <div class="advantage-card">
-                    <div class="advantage-icon">🏆</div>
+        
+        <section class="benefits-premium">
+            <div class="gold-divider"></div>
+            <h2 class="section-title-premium">Por Que Escolher a <span class="gold">Liga dos Milionários</span></h2>
+            <p class="section-subtitle">Vantagens que fazem a diferença</p>
+            
+            <div class="benefits-grid-premium">
+                <div class="benefit-card-premium">
+                    <div class="benefit-icon-circle">
+                        <i class="fas fa-shield-check"></i>
+                    </div>
                     <h3>Melhores Seguradoras</h3>
-                    <p>Trabalhamos apenas com seguradoras reconhecidas e confiáveis do mercado</p>
+                    <p>Parceria com as seguradoras mais confiáveis do mercado</p>
                 </div>
-                <div class="advantage-card">
-                    <div class="advantage-icon">💰</div>
-                    <h3>Melhores Preços</h3>
-                    <p>Comparamos diversas opções para encontrar a melhor cobertura pelo melhor preço</p>
+
+                <div class="benefit-card-premium">
+                    <div class="benefit-icon-circle">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Melhor Custo-Benefício</h3>
+                    <p>Comparamos várias opções para garantir a melhor cobertura pelo melhor preço</p>
                 </div>
-                <div class="advantage-card">
-                    <div class="advantage-icon">👥</div>
-                    <h3>Atendimento Personalizado</h3>
-                    <p>Nossa equipe especializada está pronta para atender suas necessidades</p>
+
+                <div class="benefit-card-premium">
+                    <div class="benefit-icon-circle">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Atendimento VIP</h3>
+                    <p>Consultoria personalizada com especialistas dedicados ao seu perfil</p>
                 </div>
-                <div class="advantage-card">
-                    <div class="advantage-icon">⚡</div>
-                    <h3>Cotação Rápida</h3>
-                    <p>Receba sua cotação em minutos e contrate na hora</p>
+
+                <div class="benefit-card-premium">
+                    <div class="benefit-icon-circle">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Cotação Instantânea</h3>
+                    <p>Receba sua cotação em minutos e contrate na hora com segurança</p>
                 </div>
             </div>
         </section>
 
-        <section class="cta-section">
-            <div class="cta-content">
-                <h2>Solicite uma Cotação</h2>
-                <p>Entre em contato e proteja o que é importante para você</p>
-                <a href="contato.html" class="btn btn-primary">Fazer Cotação</a>
+        
+        <section class="cta-premium">
+            <div class="cta-icon-premium">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="cta-premium-content">
+                <h2>Proteja o Que é Importante <span class="gold">Para Você</span></h2>
+                <p>Faça uma cotação gratuita e descubra o seguro ideal para suas necessidades</p>
+                <div class="cta-buttons-premium">
+                    <a href="contato.html" class="btn btn-primary btn-xlarge">
+                        <i class="fas fa-calculator"></i> Fazer Cotação Gratuita
+                    </a>
+                    <a href="index.html" class="btn btn-secondary btn-xlarge">
+                        <i class="fas fa-home"></i> Voltar ao Início
+                    </a>
+                </div>
+                <p class="cta-guarantee"><i class="fas fa-lock"></i> Seus dados estão seguros conosco</p>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Loté<span class="gold">rica</span></h3>
-                <p>Sua lotérica de confiança</p>
+    <footer class="footer-premium">
+        <div class="footer-content-premium">
+            <div class="footer-section-main">
+                <div class="footer-logo">
+                    <div class="logo-shield-small">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div>
+                        <h3>Liga dos <span class="gold">Milionários</span></h3>
+                        <p class="footer-slogan">Unidos pela sorte, guiados pela estratégia</p>
+                    </div>
+                </div>
+                <p class="footer-desc">Seguros premium com coberturas exclusivas e atendimento VIP. Proteja o que é importante para você.</p>
             </div>
+            
             <div class="footer-section">
                 <h4>Serviços</h4>
                 <ul>
-                    <li><a href="apostas.html">Apostas</a></li>
-                    <li><a href="seguros.html">Seguros</a></li>
-                    <li><a href="credito.html">Crédito</a></li>
+                    <li><a href="loterias.html"><i class="fas fa-chevron-right"></i> Bolões Premium</a></li>
+                    <li><a href="seguros.html"><i class="fas fa-chevron-right"></i> Seguros Elite</a></li>
+                    <li><a href="credito.html"><i class="fas fa-chevron-right"></i> Carta de Crédito VIP</a></li>
                 </ul>
             </div>
+            
             <div class="footer-section">
                 <h4>Contato</h4>
-                <p>📞 (69) 1234-5678</p>
-                <p>📧 contato@loterica.com.br</p>
-                <p>📍 Centro - São Miguel do Guaporé/RO</p>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-phone-alt"></i> Em breve</li>
+                    <li><i class="fas fa-envelope"></i> Em breve</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Em breve</li>
+                    <li><i class="fas fa-clock"></i> Em breve</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Redes Sociais</h4>
+                <div class="social-links-premium">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Lotérica. Todos os direitos reservados.</p>
+        <div class="footer-bottom-premium">
+            <p>&copy; 2025 Liga dos Milionários. Todos os direitos reservados.</p>
+            <p class="footer-legal"><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
         </div>
     </footer>
 
+    <script src="menu.js"></script>
+    <script src="cart-global.js"></script>
     <script>
-        function toggleAccordion(button) {
-            const accordionItem = button.closest('.accordion-item');
-            const allItems = document.querySelectorAll('.accordion-item');
-            
-            allItems.forEach(item => {
-                if (item !== accordionItem) {
-                    item.classList.remove('active');
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
-            
-            accordionItem.classList.toggle('active');
-        }
+        });
 
-        document.addEventListener('DOMContentLoaded', function() {
-            const firstAccordion = document.querySelector('.accordion-item');
-            if (firstAccordion) {
-                firstAccordion.classList.add('active');
-            }
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.benefit-card-premium, .service-card-premium').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
         });
     </script>
-    <script src="menu.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,2207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loterias - Liga dos Milionários</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="premium-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body id="top">
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <div class="logo-shield">
+                        <svg class="shield-bg" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 5 L90 20 L90 60 Q90 90 50 115 Q10 90 10 60 L10 20 Z" fill="url(#shieldGradient)" stroke="var(--gold)" stroke-width="2"/>
+                            <defs>
+                                <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="crown-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-top">LIGA DOS</span>
+                        <span class="logo-bottom">MILIONÁRIOS</span>
+                    </div>
+                </a>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="loterias.html" class="active">Loterias</a></li>
+                <li><a href="seguros.html">Seguros</a></li>
+                <li><a href="credito.html">Carta de Crédito</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero hero-loterias">
+            <div class="hero-content">
+                <h2>Bolões <span class="gold">Especiais</span></h2>
+                <p class="hero-subtitle">Multiplique suas chances com nossos bolões montados por especialistas</p>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="stat-number">até 28x</span>
+                        <span class="stat-label">Mais Chances</span>
+                    </div>
+                    <div class="hero-stat">
+                        <i class="fas fa-users"></i>
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Online</span>
+                    </div>
+                    <div class="hero-stat">
+                        <i class="fas fa-shield-alt"></i>
+                        <span class="stat-number">Seguro</span>
+                        <span class="stat-label">e Oficial</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="bet-type-selector">
+            
+            <div class="bet-type-option recommended" onclick="mostrarBoloes()">
+                <span class="bet-type-badge">RECOMENDADO</span>
+                <div class="bet-type-icon">
+                    <i class="fas fa-users-crown"></i>
+                </div>
+                <h3>Bolões Especiais</h3>
+                <p>Participe de bolões estratégicos montados por especialistas e aumente suas chances de ganhar!</p>
+                <ul class="bet-type-features">
+                    <li><i class="fas fa-chart-line"></i> Até 28x mais chances</li>
+                    <li><i class="fas fa-coins"></i> Investimento dividido</li>
+                    <li><i class="fas fa-lightbulb"></i> Estratégias comprovadas</li>
+                    <li><i class="fas fa-trophy"></i> Prêmios compartilhados</li>
+                </ul>
+                <button class="bet-type-button">
+                    <i class="fas fa-arrow-right"></i> Ver Bolões Disponíveis
+                </button>
+            </div>
+
+            
+            <div class="bet-type-option" onclick="mostrarSimples()">
+                <div class="bet-type-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3>Apostas Simples</h3>
+                <p>Jogue individualmente nas 10 modalidades oficiais da Caixa Econômica Federal</p>
+                <ul class="bet-type-features">
+                    <li><i class="fas fa-dice"></i> Escolha seus números</li>
+                    <li><i class="fas fa-trophy"></i> Prêmio 100% seu</li>
+                    <li><i class="fas fa-calculator"></i> Valores flexíveis</li>
+                    <li><i class="fas fa-gamepad"></i> Total controle</li>
+                </ul>
+                <button class="bet-type-button">
+                    <i class="fas fa-arrow-right"></i> Ver Modalidades
+                </button>
+            </div>
+        </section>
+
+        
+        <section class="boloes-showcase" id="boloes-section">
+            <h2 class="section-title">Bolões <span class="gold">Montados</span> por Especialistas</h2>
+            
+            <div class="intro-text">
+                <p>Nossos especialistas criaram bolões estratégicos para <strong>maximizar suas chances</strong> de ganhar. Cada bolão é cuidadosamente calculado para oferecer o melhor custo-benefício!</p>
+            </div>
+
+            
+            <div class="boloes-vitrine">
+                
+                
+                <div class="bolao-showcase-card premium" data-lottery="mega-sena">
+                    <div class="showcase-badge premium-badge">
+                        <i class="fas fa-crown"></i> DESTAQUE
+                    </div>
+                    <div class="showcase-header mega-sena-bg">
+                        <div class="showcase-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>Bolão Mega-Sena Estratégico</h3>
+                        <p class="showcase-tagline">Cobertura estratégica de 10 números</p>
+                    </div>
+                    
+                    <div class="showcase-body">
+                        <div class="showcase-highlight">
+                            <div class="highlight-main">
+                                <span class="price-from">a partir de</span>
+                                <span class="price-value">R$ 50,00</span>
+                                <span class="price-per">por cota</span>
+                            </div>
+                            <div class="highlight-chances">
+                                <i class="fas fa-chart-line"></i>
+                                <span><strong>28x</strong> mais chances que aposta simples</span>
+                            </div>
+                        </div>
+
+                        <div class="showcase-details">
+                            <div class="detail-item">
+                                <i class="fas fa-dice"></i>
+                                <div>
+                                    <strong>10 números</strong>
+                                    <span>Cobertura inteligente</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <strong>10 cotas</strong>
+                                    <span>Disponíveis</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-coins"></i>
+                                <div>
+                                    <strong>R$ 500,00</strong>
+                                    <span>Valor total do bolão</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-check"></i>
+                                <div>
+                                    <strong>2x semana</strong>
+                                    <span>Quarta e Sábado</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="showcase-benefits">
+                            <h4><i class="fas fa-sparkles"></i> Por que este bolão?</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Estatisticamente otimizado</li>
+                                <li><i class="fas fa-check-circle"></i> Números bem distribuídos</li>
+                                <li><i class="fas fa-check-circle"></i> Cobertura de dezenas quentes e frias</li>
+                                <li><i class="fas fa-check-circle"></i> Melhor custo x benefício</li>
+                            </ul>
+                        </div>
+
+                        <div class="cotas-status">
+                            <div class="cotas-bar">
+                                <div class="cotas-fill" style="width: 60%"></div>
+                            </div>
+                            <span class="cotas-text"><strong>6 de 10</strong> cotas vendidas</span>
+                        </div>
+                    </div>
+
+                    <div class="showcase-footer">
+                        <button class="btn btn-primary btn-showcase" onclick="adicionarBolaoAoCarrinho('Bolão Mega-Sena Estratégico', 50.00, '10 números')">
+                            <i class="fas fa-shopping-cart"></i> Reservar Cota
+                        </button>
+                        <button class="btn btn-secondary btn-showcase-details" onclick="verDetalhes('mega-sena-premium')">
+                            <i class="fas fa-info-circle"></i> Ver Números
+                        </button>
+                    </div>
+                </div>
+
+                
+                <div class="bolao-showcase-card" data-lottery="lotofacil">
+                    <div class="showcase-badge popular-badge">
+                        <i class="fas fa-fire"></i> POPULAR
+                    </div>
+                    <div class="showcase-header lotofacil-bg">
+                        <div class="showcase-icon">
+                            <i class="fas fa-clover"></i>
+                        </div>
+                        <h3>Bolão Lotofácil Estratégico</h3>
+                        <p class="showcase-tagline">18 números selecionados</p>
+                    </div>
+                    
+                    <div class="showcase-body">
+                        <div class="showcase-highlight">
+                            <div class="highlight-main">
+                                <span class="price-from">a partir de</span>
+                                <span class="price-value">R$ 30,60</span>
+                                <span class="price-per">por cota</span>
+                            </div>
+                            <div class="highlight-chances">
+                                <i class="fas fa-chart-line"></i>
+                                <span><strong>Alta probabilidade</strong> de acertos</span>
+                            </div>
+                        </div>
+
+                        <div class="showcase-details">
+                            <div class="detail-item">
+                                <i class="fas fa-dice"></i>
+                                <div>
+                                    <strong>18 números</strong>
+                                    <span>Seleção estratégica</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <strong>10 cotas</strong>
+                                    <span>Disponíveis</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-coins"></i>
+                                <div>
+                                    <strong>R$ 306,00</strong>
+                                    <span>Valor total</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-check"></i>
+                                <div>
+                                    <strong>6x semana</strong>
+                                    <span>Seg a Sáb</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="showcase-benefits">
+                            <h4><i class="fas fa-sparkles"></i> Diferenciais</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Análise de padrões históricos</li>
+                                <li><i class="fas fa-check-circle"></i> 6 sorteios por semana</li>
+                                <li><i class="fas fa-check-circle"></i> Otimizado para prêmios de 13 a 15 pontos</li>
+                                <li><i class="fas fa-check-circle"></i> Excelente frequência de ganhos</li>
+                            </ul>
+                        </div>
+
+                        <div class="cotas-status">
+                            <div class="cotas-bar">
+                                <div class="cotas-fill" style="width: 80%"></div>
+                            </div>
+                            <span class="cotas-text"><strong>8 de 10</strong> cotas vendidas</span>
+                        </div>
+                    </div>
+
+                    <div class="showcase-footer">
+                        <button class="btn btn-primary btn-showcase" onclick="adicionarBolaoAoCarrinho('Bolão Lotofácil Estratégico', 30.00, '18 números')">
+                            <i class="fas fa-dice"></i> Escolher números
+                        </button>
+                        <button class="btn btn-secondary btn-showcase-details" onclick="verDetalhes('lotofacil-estrategico')">
+                            <i class="fas fa-info-circle"></i> Ver Números
+                        </button>
+                    </div>
+                </div>
+
+                
+                <div class="bolao-showcase-card" data-lottery="quina">
+                    <div class="showcase-badge daily-badge">
+                        <i class="fas fa-calendar-star"></i> DIÁRIO
+                    </div>
+                    <div class="showcase-header quina-bg">
+                        <div class="showcase-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Bolão Quina Garantido</h3>
+                        <p class="showcase-tagline">Todos os dias você concorre</p>
+                    </div>
+                    
+                    <div class="showcase-body">
+                        <div class="showcase-highlight">
+                            <div class="highlight-main">
+                                <span class="price-from">a partir de</span>
+                                <span class="price-value">R$ 25,20</span>
+                                <span class="price-per">por cota</span>
+                            </div>
+                            <div class="highlight-chances">
+                                <i class="fas fa-calendar-day"></i>
+                                <span><strong>7 chances</strong> por semana</span>
+                            </div>
+                        </div>
+
+                        <div class="showcase-details">
+                            <div class="detail-item">
+                                <i class="fas fa-dice"></i>
+                                <div>
+                                    <strong>10 números</strong>
+                                    <span>Bem distribuídos</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <strong>5 cotas</strong>
+                                    <span>Grupo menor</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-coins"></i>
+                                <div>
+                                    <strong>R$ 126,00</strong>
+                                    <span>Valor total</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-check"></i>
+                                <div>
+                                    <strong>Todos os dias</strong>
+                                    <span>7 sorteios/semana</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="showcase-benefits">
+                            <h4><i class="fas fa-sparkles"></i> Vantagens</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Sorteios diários = mais oportunidades</li>
+                                <li><i class="fas fa-check-circle"></i> Grupo reduzido = prêmio maior por pessoa</li>
+                                <li><i class="fas fa-check-circle"></i> Investimento acessível</li>
+                                <li><i class="fas fa-check-circle"></i> Altíssima frequência</li>
+                            </ul>
+                        </div>
+
+                        <div class="cotas-status">
+                            <div class="cotas-bar">
+                                <div class="cotas-fill" style="width: 40%"></div>
+                            </div>
+                            <span class="cotas-text"><strong>2 de 5</strong> cotas vendidas</span>
+                        </div>
+                    </div>
+
+                    <div class="showcase-footer">
+                        <button class="btn btn-primary btn-showcase" onclick="adicionarBolaoAoCarrinho('Bolão Quina Garantido', 40.00, '8 números')">
+                            <i class="fas fa-dice"></i> Escolher números
+                        </button>
+                        <button class="btn btn-secondary btn-showcase-details" onclick="verDetalhes('quina-garantido')">
+                            <i class="fas fa-info-circle"></i> Ver Números
+                        </button>
+                    </div>
+                </div>
+
+                
+                <div class="bolao-showcase-card exclusive" data-lottery="maismilionaria">
+                    <div class="showcase-badge exclusive-badge">
+                        <i class="fas fa-gem"></i> ESPECIAL
+                    </div>
+                    <div class="showcase-header maismilionaria-bg">
+                        <div class="showcase-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Bolão +Milionária Completo</h3>
+                        <p class="showcase-tagline">Prêmio mínimo de R$ 10 milhões</p>
+                    </div>
+                    
+                    <div class="showcase-body">
+                        <div class="showcase-highlight">
+                            <div class="highlight-main">
+                                <span class="price-from">a partir de</span>
+                                <span class="price-value">R$ 90,00</span>
+                                <span class="price-per">por cota</span>
+                            </div>
+                            <div class="highlight-chances">
+                                <i class="fas fa-trophy"></i>
+                                <span><strong>Prêmio garantido</strong> de milhões</span>
+                            </div>
+                        </div>
+
+                        <div class="showcase-details">
+                            <div class="detail-item">
+                                <i class="fas fa-dice"></i>
+                                <div>
+                                    <strong>8 números + trevos</strong>
+                                    <span>Cobertura completa</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <strong>10 cotas</strong>
+                                    <span>Limitadas</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-coins"></i>
+                                <div>
+                                    <strong>R$ 900,00</strong>
+                                    <span>Valor total</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-check"></i>
+                                <div>
+                                    <strong>2x semana</strong>
+                                    <span>Qua e Sáb</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="showcase-benefits">
+                            <h4><i class="fas fa-sparkles"></i> Diferenciais</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Prêmio mínimo de R$ 10 milhões</li>
+                                <li><i class="fas fa-check-circle"></i> 10 faixas de premiação</li>
+                                <li><i class="fas fa-check-circle"></i> Números + trevos estratégicos</li>
+                                <li><i class="fas fa-check-circle"></i> Para quem busca o grande prêmio</li>
+                            </ul>
+                        </div>
+
+                        <div class="cotas-status">
+                            <div class="cotas-bar">
+                                <div class="cotas-fill" style="width: 30%"></div>
+                            </div>
+                            <span class="cotas-text"><strong>3 de 10</strong> cotas vendidas</span>
+                        </div>
+                    </div>
+
+                    <div class="showcase-footer">
+                        <button class="btn btn-primary btn-showcase" onclick="adicionarBolaoAoCarrinho('Bolão +Milionária Completo', 60.00, '8 números + trevos')">
+                            <i class="fas fa-shopping-cart"></i> Reservar Cota
+                        </button>
+                        <button class="btn btn-secondary btn-showcase-details" onclick="verDetalhes('maismilionaria-exclusivo')">
+                            <i class="fas fa-info-circle"></i> Ver Números
+                        </button>
+                    </div>
+                </div>
+
+                
+                <div class="bolao-showcase-card" data-lottery="diasorte">
+                    <div class="showcase-badge popular-badge">
+                        <i class="fas fa-sun"></i> SORTE DO MÊS
+                    </div>
+                    <div class="showcase-header diasorte-bg">
+                        <div class="showcase-icon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <h3>Bolão Dia de Sorte Completo</h3>
+                        <p class="showcase-tagline">10 números + seu mês da sorte</p>
+                    </div>
+                    
+                    <div class="showcase-body">
+                        <div class="showcase-highlight">
+                            <div class="highlight-main">
+                                <span class="price-from">a partir de</span>
+                                <span class="price-value">R$ 28,50</span>
+                                <span class="price-per">por cota</span>
+                            </div>
+                            <div class="highlight-chances">
+                                <i class="fas fa-chart-line"></i>
+                                <span><strong>Múltiplas chances</strong> de premiação</span>
+                            </div>
+                        </div>
+
+                        <div class="showcase-details">
+                            <div class="detail-item">
+                                <i class="fas fa-dice"></i>
+                                <div>
+                                    <strong>10 números</strong>
+                                    <span>+ Mês da sorte</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <strong>8 cotas</strong>
+                                    <span>Disponíveis</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-coins"></i>
+                                <div>
+                                    <strong>R$ 228,00</strong>
+                                    <span>Valor total</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-check"></i>
+                                <div>
+                                    <strong>3x semana</strong>
+                                    <span>Ter, Qui, Sáb</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="showcase-benefits">
+                            <h4><i class="fas fa-sparkles"></i> Diferencial</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Inclui mês da sorte estratégico</li>
+                                <li><i class="fas fa-check-circle"></i> Ganha acertando 4, 5, 6 ou 7 números</li>
+                                <li><i class="fas fa-check-circle"></i> Ganha também acertando o mês!</li>
+                                <li><i class="fas fa-check-circle"></i> Sorteios frequentes</li>
+                            </ul>
+                        </div>
+
+                        <div class="cotas-status">
+                            <div class="cotas-bar">
+                                <div class="cotas-fill" style="width: 50%"></div>
+                            </div>
+                            <span class="cotas-text"><strong>4 de 8</strong> cotas vendidas</span>
+                        </div>
+                    </div>
+
+                    <div class="showcase-footer">
+                        <button class="btn btn-primary btn-showcase" onclick="adicionarBolaoAoCarrinho('Bolão Dia de Sorte Completo', 28.50, '10 números + mês')">
+                            <i class="fas fa-shopping-cart"></i> Reservar Cota
+                        </button>
+                        <button class="btn btn-secondary btn-showcase-details" onclick="verDetalhes('diasorte-completo')">
+                            <i class="fas fa-info-circle"></i> Ver Números
+                        </button>
+                    </div>
+                </div>
+
+                
+                <div class="bolao-showcase-card" data-lottery="duplasena">
+                    <div class="showcase-badge popular-badge">
+                        <i class="fas fa-gem"></i> 2 CHANCES
+                    </div>
+                    <div class="showcase-header duplasena-bg">
+                        <div class="showcase-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>Bolão Dupla Sena Duplo</h3>
+                        <p class="showcase-tagline">9 números, dois sorteios</p>
+                    </div>
+                    
+                    <div class="showcase-body">
+                        <div class="showcase-highlight">
+                            <div class="highlight-main">
+                                <span class="price-from">a partir de</span>
+                                <span class="price-value">R$ 33,60</span>
+                                <span class="price-per">por cota</span>
+                            </div>
+                            <div class="highlight-chances">
+                                <i class="fas fa-sync"></i>
+                                <span><strong>2 sorteios</strong> com uma aposta</span>
+                            </div>
+                        </div>
+
+                        <div class="showcase-details">
+                            <div class="detail-item">
+                                <i class="fas fa-dice"></i>
+                                <div>
+                                    <strong>9 números</strong>
+                                    <span>Dobro de chances</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <strong>10 cotas</strong>
+                                    <span>Disponíveis</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-coins"></i>
+                                <div>
+                                    <strong>R$ 336,00</strong>
+                                    <span>Valor total</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-check"></i>
+                                <div>
+                                    <strong>3x semana</strong>
+                                    <span>Ter, Qui, Sáb</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="showcase-benefits">
+                            <h4><i class="fas fa-sparkles"></i> Vantagem Dupla</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Dois sorteios no mesmo concurso</li>
+                                <li><i class="fas fa-check-circle"></i> Ganha em qualquer um dos sorteios</li>
+                                <li><i class="fas fa-check-circle"></i> Acerte 3, 4, 5 ou 6 números</li>
+                                <li><i class="fas fa-check-circle"></i> Probabilidade otimizada</li>
+                            </ul>
+                        </div>
+
+                        <div class="cotas-status">
+                            <div class="cotas-bar">
+                                <div class="cotas-fill" style="width: 40%"></div>
+                            </div>
+                            <span class="cotas-text"><strong>4 de 10</strong> cotas vendidas</span>
+                        </div>
+                    </div>
+
+                    <div class="showcase-footer">
+                        <button class="btn btn-primary btn-showcase" onclick="adicionarBolaoAoCarrinho('Bolão Dupla Sena Duplo', 33.60, '9 números, 2 sorteios')">
+                            <i class="fas fa-shopping-cart"></i> Reservar Cota
+                        </button>
+                        <button class="btn btn-secondary btn-showcase-details" onclick="verDetalhes('duplasena-duplo')">
+                            <i class="fas fa-info-circle"></i> Ver Números
+                        </button>
+                    </div>
+                </div>
+
+                
+                <div class="bolao-showcase-card" data-lottery="lotomania">
+                    <div class="showcase-badge popular-badge">
+                        <i class="fas fa-dice-d20"></i> MÁXIMO
+                    </div>
+                    <div class="showcase-header lotomania-bg">
+                        <div class="showcase-icon">
+                            <i class="fas fa-dice-d20"></i>
+                        </div>
+                        <h3>Bolão Lotomania Total</h3>
+                        <p class="showcase-tagline">50 números fixos</p>
+                    </div>
+                    
+                    <div class="showcase-body">
+                        <div class="showcase-highlight">
+                            <div class="highlight-main">
+                                <span class="price-from">a partir de</span>
+                                <span class="price-value">R$ 15,00</span>
+                                <span class="price-per">por cota</span>
+                            </div>
+                            <div class="highlight-chances">
+                                <i class="fas fa-magic"></i>
+                                <span><strong>Ganha até com 0!</strong> acertos</span>
+                            </div>
+                        </div>
+
+                        <div class="showcase-details">
+                            <div class="detail-item">
+                                <i class="fas fa-dice"></i>
+                                <div>
+                                    <strong>50 números</strong>
+                                    <span>Máxima cobertura</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <strong>10 cotas</strong>
+                                    <span>Disponíveis</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-coins"></i>
+                                <div>
+                                    <strong>R$ 150,00</strong>
+                                    <span>Valor total</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-check"></i>
+                                <div>
+                                    <strong>2x semana</strong>
+                                    <span>Ter e Sex</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="showcase-benefits">
+                            <h4><i class="fas fa-sparkles"></i> Único!</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> 50 números estrategicamente selecionados</li>
+                                <li><i class="fas fa-check-circle"></i> Ganha com 20, 19, 18, 17, 16, 15 ou 0!</li>
+                                <li><i class="fas fa-check-circle"></i> Múltiplas faixas de premiação</li>
+                                <li><i class="fas fa-check-circle"></i> Melhor custo-benefício</li>
+                            </ul>
+                        </div>
+
+                        <div class="cotas-status">
+                            <div class="cotas-bar">
+                                <div class="cotas-fill" style="width: 70%"></div>
+                            </div>
+                            <span class="cotas-text"><strong>7 de 10</strong> cotas vendidas</span>
+                        </div>
+                    </div>
+
+                    <div class="showcase-footer">
+                        <button class="btn btn-primary btn-showcase" onclick="adicionarBolaoAoCarrinho('Bolão Lotomania Total', 15.00, '50 números')">
+                            <i class="fas fa-shopping-cart"></i> Reservar Cota
+                        </button>
+                        <button class="btn btn-secondary btn-showcase-details" onclick="verDetalhes('lotomania-total')">
+                            <i class="fas fa-info-circle"></i> Ver Números
+                        </button>
+                    </div>
+                </div>
+
+                
+                <div class="bolao-showcase-card" data-lottery="supersete">
+                    <div class="showcase-badge popular-badge">
+                        <i class="fas fa-hashtag"></i> COLUNAS
+                    </div>
+                    <div class="showcase-header supersete-bg">
+                        <div class="showcase-icon">
+                            <i class="fas fa-hashtag"></i>
+                        </div>
+                        <h3>Bolão Super Sete Completo</h3>
+                        <p class="showcase-tagline">Múltiplas combinações de colunas</p>
+                    </div>
+                    
+                    <div class="showcase-body">
+                        <div class="showcase-highlight">
+                            <div class="highlight-main">
+                                <span class="price-from">a partir de</span>
+                                <span class="price-value">R$ 24,00</span>
+                                <span class="price-per">por cota</span>
+                            </div>
+                            <div class="highlight-chances">
+                                <i class="fas fa-columns"></i>
+                                <span><strong>Sistema por colunas</strong> otimizado</span>
+                            </div>
+                        </div>
+
+                        <div class="showcase-details">
+                            <div class="detail-item">
+                                <i class="fas fa-dice"></i>
+                                <div>
+                                    <strong>7 colunas</strong>
+                                    <span>Múltiplas opções</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <strong>8 cotas</strong>
+                                    <span>Disponíveis</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-coins"></i>
+                                <div>
+                                    <strong>R$ 192,00</strong>
+                                    <span>Valor total</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-check"></i>
+                                <div>
+                                    <strong>3x semana</strong>
+                                    <span>Seg, Qua, Sex</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="showcase-benefits">
+                            <h4><i class="fas fa-sparkles"></i> Estratégia</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Sistema de colunas otimizado</li>
+                                <li><i class="fas fa-check-circle"></i> Ganha acertando 3, 4, 5, 6 ou 7 colunas</li>
+                                <li><i class="fas fa-check-circle"></i> Cobertura inteligente de números</li>
+                                <li><i class="fas fa-check-circle"></i> Sorteios frequentes</li>
+                            </ul>
+                        </div>
+
+                        <div class="cotas-status">
+                            <div class="cotas-bar">
+                                <div class="cotas-fill" style="width: 35%"></div>
+                            </div>
+                            <span class="cotas-text"><strong>3 de 8</strong> cotas vendidas</span>
+                        </div>
+                    </div>
+
+                    <div class="showcase-footer">
+                        <button class="btn btn-primary btn-showcase" onclick="adicionarBolaoAoCarrinho('Bolão Super Sete Completo', 24.00, '7 colunas')">
+                            <i class="fas fa-shopping-cart"></i> Reservar Cota
+                        </button>
+                        <button class="btn btn-secondary btn-showcase-details" onclick="verDetalhes('supersete-completo')">
+                            <i class="fas fa-info-circle"></i> Ver Números
+                        </button>
+                    </div>
+                </div>
+
+                
+                <div class="bolao-showcase-card" data-lottery="timemania">
+                    <div class="showcase-badge popular-badge">
+                        <i class="fas fa-futbol"></i> SEU TIME
+                    </div>
+                    <div class="showcase-header timemania-bg">
+                        <div class="showcase-icon">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                        <h3>Bolão Timemania do Coração</h3>
+                        <p class="showcase-tagline">10 números + Time do Coração</p>
+                    </div>
+                    
+                    <div class="showcase-body">
+                        <div class="showcase-highlight">
+                            <div class="highlight-main">
+                                <span class="price-from">a partir de</span>
+                                <span class="price-value">R$ 17,50</span>
+                                <span class="price-per">por cota</span>
+                            </div>
+                            <div class="highlight-chances">
+                                <i class="fas fa-shield-alt"></i>
+                                <span><strong>Seu time</strong> pode te fazer ganhar!</span>
+                            </div>
+                        </div>
+
+                        <div class="showcase-details">
+                            <div class="detail-item">
+                                <i class="fas fa-dice"></i>
+                                <div>
+                                    <strong>10 números</strong>
+                                    <span>+ Time do ❤️</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <strong>8 cotas</strong>
+                                    <span>Disponíveis</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-coins"></i>
+                                <div>
+                                    <strong>R$ 140,00</strong>
+                                    <span>Valor total</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-check"></i>
+                                <div>
+                                    <strong>3x semana</strong>
+                                    <span>Ter, Qui, Sáb</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="showcase-benefits">
+                            <h4><i class="fas fa-sparkles"></i> Para Torcedores</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Torça e ganhe pelo seu time!</li>
+                                <li><i class="fas fa-check-circle"></i> Ganha com 3, 4, 5, 6, 7 números</li>
+                                <li><i class="fas fa-check-circle"></i> Ganha também acertando o Time!</li>
+                                <li><i class="fas fa-check-circle"></i> Ajuda o futebol brasileiro</li>
+                            </ul>
+                        </div>
+
+                        <div class="cotas-status">
+                            <div class="cotas-bar">
+                                <div class="cotas-fill" style="width: 60%"></div>
+                            </div>
+                            <span class="cotas-text"><strong>5 de 8</strong> cotas vendidas</span>
+                        </div>
+                    </div>
+
+                    <div class="showcase-footer">
+                        <button class="btn btn-primary btn-showcase" onclick="adicionarBolaoAoCarrinho('Bolão Timemania do Coração', 17.50, '10 números + time')">
+                            <i class="fas fa-shopping-cart"></i> Reservar Cota
+                        </button>
+                        <button class="btn btn-secondary btn-showcase-details" onclick="verDetalhes('timemania-coracao')">
+                            <i class="fas fa-info-circle"></i> Ver Números
+                        </button>
+                    </div>
+                </div>
+
+                
+                <div class="bolao-showcase-card" data-lottery="loteca">
+                    <div class="showcase-badge popular-badge">
+                        <i class="fas fa-file-alt"></i> PALPITES
+                    </div>
+                    <div class="showcase-header loteca-bg">
+                        <div class="showcase-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>Bolão Loteca Certeiro</h3>
+                        <p class="showcase-tagline">Palpites profissionais</p>
+                    </div>
+                    
+                    <div class="showcase-body">
+                        <div class="showcase-highlight">
+                            <div class="highlight-main">
+                                <span class="price-from">a partir de</span>
+                                <span class="price-value">R$ 32,00</span>
+                                <span class="price-per">por cota</span>
+                            </div>
+                            <div class="highlight-chances">
+                                <i class="fas fa-poll"></i>
+                                <span><strong>Análise profissional</strong> dos jogos</span>
+                            </div>
+                        </div>
+
+                        <div class="showcase-details">
+                            <div class="detail-item">
+                                <i class="fas fa-football-ball"></i>
+                                <div>
+                                    <strong>14 jogos</strong>
+                                    <span>Múltiplos palpites</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <strong>10 cotas</strong>
+                                    <span>Disponíveis</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-coins"></i>
+                                <div>
+                                    <strong>R$ 320,00</strong>
+                                    <span>Valor total</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-check"></i>
+                                <div>
+                                    <strong>Semanal</strong>
+                                    <span>Todo Sábado</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="showcase-benefits">
+                            <h4><i class="fas fa-sparkles"></i> Palpites Expert</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Análise técnica de cada jogo</li>
+                                <li><i class="fas fa-check-circle"></i> Múltiplas combinações de resultados</li>
+                                <li><i class="fas fa-check-circle"></i> Baseado em estatísticas reais</li>
+                                <li><i class="fas fa-check-circle"></i> Para quem entende de futebol</li>
+                            </ul>
+                        </div>
+
+                        <div class="cotas-status">
+                            <div class="cotas-bar">
+                                <div class="cotas-fill" style="width: 25%"></div>
+                            </div>
+                            <span class="cotas-text"><strong>2 de 10</strong> cotas vendidas</span>
+                        </div>
+                    </div>
+
+                    <div class="showcase-footer">
+                        <button class="btn btn-primary btn-showcase" onclick="adicionarBolaoAoCarrinho('Bolão Loteca Certeiro', 32.00, '14 jogos')">
+                            <i class="fas fa-shopping-cart"></i> Reservar Cota
+                        </button>
+                        <button class="btn btn-secondary btn-showcase-details" onclick="verDetalhes('loteca-certeiro')">
+                            <i class="fas fa-info-circle"></i> Ver Números
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            
+            <div class="custom-bolao-cta">
+                <div class="cta-content-inline">
+                    <div class="cta-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <div class="cta-text">
+                        <h3>Quer um bolão personalizado?</h3>
+                        <p>Nossos especialistas criam um bolão personalizado baseado nas suas preferências e estratégia</p>
+                    </div>
+                    <button class="btn btn-gold" onclick="solicitarBolaoPersonalizado()">
+                        <i class="fas fa-wand-magic-sparkles"></i> Solicitar Bolão Personalizado
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="apostas-simples-section" id="simples-section" style="display: none;">
+            <h2 class="section-title">Apostas <span class="gold">Simples</span></h2>
+            
+            <div class="intro-text">
+                <p>Jogue individualmente nas <strong>10 modalidades oficiais</strong> da Caixa Econômica Federal</p>
+            </div>
+
+            
+            <div class="lotteries-grid">
+                
+                
+                <div class="lottery-card" data-category="popular big-prize">
+                    <div class="lottery-card-header mega-sena">
+                        <div class="lottery-badge">MAIS POPULAR</div>
+                        <i class="fas fa-trophy lottery-card-icon"></i>
+                        <h3>Mega-Sena</h3>
+                        <p class="lottery-tagline">O maior prêmio do Brasil</p>
+                    </div>
+                    <div class="lottery-card-body">
+                        <div class="lottery-info-grid">
+                            <div class="info-item">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <span class="info-label">Aposta Mínima</span>
+                                <span class="info-value">R$ 6,00</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span class="info-label">Sorteios</span>
+                                <span class="info-value">Quarta e Sábado</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-dice"></i>
+                                <span class="info-label">Números</span>
+                                <span class="info-value">6 a 15 de 60</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-star"></i>
+                                <span class="info-label">Prêmio Médio</span>
+                                <span class="info-value">R$ 30+ milhões</span>
+                            </div>
+                        </div>
+                        <div class="lottery-description">
+                            <p><strong>Como Jogar:</strong> Escolha de 6 a 15 números dentre os 60 disponíveis. Ganha quem acertar 4, 5 ou 6 números.</p>
+                            <p><strong>Bolão:</strong> Disponível a partir de R$ 15,00 com mínimo de 2 cotas</p>
+                        </div>
+                        <div class="lottery-prizes">
+                            <h4><i class="fas fa-award"></i> Faixas de Premiação</h4>
+                            <ul class="prizes-list">
+                                <li><span class="prize-badge sena">Sena</span> 6 números</li>
+                                <li><span class="prize-badge quina">Quina</span> 5 números</li>
+                                <li><span class="prize-badge quadra">Quadra</span> 4 números</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="lottery-card-footer">
+                        <a href="fazer-aposta.html" class="btn btn-primary btn-lottery">
+                            <i class="fas fa-dice"></i> Escolher números
+                        </a>
+                        <button class="btn btn-primary btn-lottery" onclick="adicionarApostaSimplesAoCarrinho('Mega-Sena', 6.00)">
+                            <i class="fas fa-shopping-cart"></i> Aposta Rápida (Surpresinha)
+                        </button>
+                    </div>
+                </div>
+
+                
+                <div class="lottery-card" data-category="popular daily">
+                    <div class="lottery-card-header lotofacil">
+                        <div class="lottery-badge">FÁCIL DE GANHAR</div>
+                        <i class="fas fa-clover lottery-card-icon"></i>
+                        <h3>Lotofácil</h3>
+                        <p class="lottery-tagline">A loteria mais fácil de ganhar</p>
+                    </div>
+                    <div class="lottery-card-body">
+                        <div class="lottery-info-grid">
+                            <div class="info-item">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <span class="info-label">Aposta Mínima</span>
+                                <span class="info-value">R$ 3,50</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span class="info-label">Sorteios</span>
+                                <span class="info-value">Seg a Sáb</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-dice"></i>
+                                <span class="info-label">Números</span>
+                                <span class="info-value">15 a 20 de 25</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-star"></i>
+                                <span class="info-label">Frequência</span>
+                                <span class="info-value">6x por semana</span>
+                            </div>
+                        </div>
+                        <div class="lottery-description">
+                            <p><strong>Como Jogar:</strong> Marque entre 15 e 20 números dentre os 25 disponíveis. Você pode acertar de 11 a 15 números e ganhar!</p>
+                            <p><strong>Bolão:</strong> Disponível a partir de R$ 14,00 com mínimo de 2 cotas</p>
+                        </div>
+                        <div class="lottery-prizes">
+                            <h4><i class="fas fa-award"></i> Faixas de Premiação</h4>
+                            <ul class="prizes-list">
+                                <li><span class="prize-badge">15</span> acertos</li>
+                                <li><span class="prize-badge">14</span> acertos</li>
+                                <li><span class="prize-badge">13</span> acertos</li>
+                                <li><span class="prize-badge">12</span> acertos</li>
+                                <li><span class="prize-badge">11</span> acertos</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="lottery-card-footer">
+                        <a href="fazer-aposta.html" class="btn btn-primary btn-lottery">
+                            <i class="fas fa-dice"></i> Escolher números
+                        </a>
+                        <button class="btn btn-primary btn-lottery" onclick="adicionarApostaSimplesAoCarrinho('Lotofácil', 3.50)">
+                            <i class="fas fa-shopping-cart"></i> Aposta Rápida (Surpresinha)
+                        </button>
+                    </div>
+                </div>
+
+                
+                <div class="lottery-card" data-category="popular daily">
+                    <div class="lottery-card-header quina">
+                        <div class="lottery-badge">TODOS OS DIAS</div>
+                        <i class="fas fa-star lottery-card-icon"></i>
+                        <h3>Quina</h3>
+                        <p class="lottery-tagline">Sorteios todos os dias</p>
+                    </div>
+                    <div class="lottery-card-body">
+                        <div class="lottery-info-grid">
+                            <div class="info-item">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <span class="info-label">Aposta Mínima</span>
+                                <span class="info-value">R$ 3,00</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span class="info-label">Sorteios</span>
+                                <span class="info-value">Todos os dias</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-dice"></i>
+                                <span class="info-label">Números</span>
+                                <span class="info-value">5 a 15 de 80</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-star"></i>
+                                <span class="info-label">Frequência</span>
+                                <span class="info-value">7x por semana</span>
+                            </div>
+                        </div>
+                        <div class="lottery-description">
+                            <p><strong>Como Jogar:</strong> Marque de 5 a 15 números entre os 80 disponíveis. Ganha quem acertar 2, 3, 4 ou 5 números.</p>
+                            <p><strong>Bolão:</strong> Disponível a partir de R$ 12,00 com mínimo de 2 cotas</p>
+                        </div>
+                        <div class="lottery-prizes">
+                            <h4><i class="fas fa-award"></i> Faixas de Premiação</h4>
+                            <ul class="prizes-list">
+                                <li><span class="prize-badge">Quina</span> 5 números</li>
+                                <li><span class="prize-badge">Quadra</span> 4 números</li>
+                                <li><span class="prize-badge">Terno</span> 3 números</li>
+                                <li><span class="prize-badge">Duque</span> 2 números</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="lottery-card-footer">
+                        <a href="fazer-aposta.html" class="btn btn-primary btn-lottery">
+                            <i class="fas fa-dice"></i> Escolher números
+                        </a>
+                        <button class="btn btn-primary btn-lottery" onclick="adicionarApostaSimplesAoCarrinho('Quina', 3.00)">
+                            <i class="fas fa-shopping-cart"></i> Aposta Rápida (Surpresinha)
+                        </button>
+                    </div>
+                </div>
+
+                
+                <div class="lottery-card" data-category="popular">
+                    <div class="lottery-card-header diasorte">
+                        <i class="fas fa-sun lottery-card-icon"></i>
+                        <h3>Dia de Sorte</h3>
+                        <p class="lottery-tagline">Escolha seu mês da sorte</p>
+                    </div>
+                    <div class="lottery-card-body">
+                        <div class="lottery-info-grid">
+                            <div class="info-item">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <span class="info-label">Aposta Mínima</span>
+                                <span class="info-value">R$ 2,50</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span class="info-label">Sorteios</span>
+                                <span class="info-value">Terça, Quinta e Sábado</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-dice"></i>
+                                <span class="info-label">Números</span>
+                                <span class="info-value">7 a 15 de 31</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar-days"></i>
+                                <span class="info-label">Mês da Sorte</span>
+                                <span class="info-value">+ 1 mês</span>
+                            </div>
+                        </div>
+                        <div class="lottery-description">
+                            <p><strong>Como Jogar:</strong> Escolha de 7 a 15 números dos 31 disponíveis + 1 mês da sorte. Ganha quem acertar 4, 5, 6 ou 7 números, ou o mês da sorte!</p>
+                            <p><strong>Bolão:</strong> Disponível a partir de R$ 10,00 com mínimo de 2 cotas</p>
+                        </div>
+                    </div>
+                    <div class="lottery-card-footer">
+                        <a href="fazer-aposta.html" class="btn btn-primary btn-lottery">
+                            <i class="fas fa-dice"></i> Escolher números
+                        </a>
+                        <button class="btn btn-primary btn-lottery" onclick="adicionarApostaSimplesAoCarrinho('Dia de Sorte', 2.50)">
+                            <i class="fas fa-shopping-cart"></i> Aposta Rápida (Surpresinha)
+                        </button>
+                    </div>
+                </div>
+
+                
+                <div class="lottery-card" data-category="big-prize">
+                    <div class="lottery-card-header duplasena">
+                        <div class="lottery-badge">2 CHANCES</div>
+                        <i class="fas fa-gem lottery-card-icon"></i>
+                        <h3>Dupla Sena</h3>
+                        <p class="lottery-tagline">Dois sorteios com uma aposta</p>
+                    </div>
+                    <div class="lottery-card-body">
+                        <div class="lottery-info-grid">
+                            <div class="info-item">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <span class="info-label">Aposta Mínima</span>
+                                <span class="info-value">R$ 3,00</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span class="info-label">Sorteios</span>
+                                <span class="info-value">Ter, Qui e Sáb</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-dice"></i>
+                                <span class="info-label">Números</span>
+                                <span class="info-value">6 a 15 de 50</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-sync"></i>
+                                <span class="info-label">Especial</span>
+                                <span class="info-value">2 sorteios</span>
+                            </div>
+                        </div>
+                        <div class="lottery-description">
+                            <p><strong>Como Jogar:</strong> Escolha de 6 a 15 números. São realizados 2 sorteios por concurso. Você ganha acertando 3, 4, 5 ou 6 números em qualquer um dos sorteios!</p>
+                            <p><strong>Bolão:</strong> Disponível a partir de R$ 12,00 com mínimo de 2 cotas</p>
+                        </div>
+                    </div>
+                    <div class="lottery-card-footer">
+                        <a href="fazer-aposta.html" class="btn btn-primary btn-lottery">
+                            <i class="fas fa-dice"></i> Escolher números
+                        </a>
+                        <button class="btn btn-primary btn-lottery" onclick="adicionarApostaSimplesAoCarrinho('Dupla Sena', 3.00)">
+                            <i class="fas fa-shopping-cart"></i> Aposta Rápida (Surpresinha)
+                        </button>
+                    </div>
+                </div>
+
+                
+                <div class="lottery-card" data-category="all">
+                    <div class="lottery-card-header lotomania">
+                        <i class="fas fa-dice-d20 lottery-card-icon"></i>
+                        <h3>Lotomania</h3>
+                        <p class="lottery-tagline">50 números em um jogo</p>
+                    </div>
+                    <div class="lottery-card-body">
+                        <div class="lottery-info-grid">
+                            <div class="info-item">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <span class="info-label">Aposta Mínima</span>
+                                <span class="info-value">R$ 3,00</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span class="info-label">Sorteios</span>
+                                <span class="info-value">Ter e Sex</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-dice"></i>
+                                <span class="info-label">Números</span>
+                                <span class="info-value">50 de 100</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-magic"></i>
+                                <span class="info-label">Especial</span>
+                                <span class="info-value">Ganha com 0!</span>
+                            </div>
+                        </div>
+                        <div class="lottery-description">
+                            <p><strong>Como Jogar:</strong> Você escolhe 50 números dos 100 disponíveis. Ganha quem acertar 20, 19, 18, 17, 16, 15 ou nenhum número!</p>
+                            <p><strong>Bolão:</strong> Disponível a partir de R$ 12,00 com mínimo de 2 cotas</p>
+                        </div>
+                    </div>
+                    <div class="lottery-card-footer">
+                        <a href="fazer-aposta.html" class="btn btn-primary btn-lottery">
+                            <i class="fas fa-dice"></i> Escolher números
+                        </a>
+                        <button class="btn btn-primary btn-lottery" onclick="adicionarApostaSimplesAoCarrinho('Lotomania', 3.00)">
+                            <i class="fas fa-shopping-cart"></i> Aposta Rápida (Surpresinha)
+                        </button>
+                    </div>
+                </div>
+
+                
+                <div class="lottery-card" data-category="all">
+                    <div class="lottery-card-header supersete">
+                        <i class="fas fa-hashtag lottery-card-icon"></i>
+                        <h3>Super Sete</h3>
+                        <p class="lottery-tagline">7 colunas de sorte</p>
+                    </div>
+                    <div class="lottery-card-body">
+                        <div class="lottery-info-grid">
+                            <div class="info-item">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <span class="info-label">Aposta Mínima</span>
+                                <span class="info-value">R$ 3,00</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span class="info-label">Sorteios</span>
+                                <span class="info-value">Seg, Qua e Sex</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-dice"></i>
+                                <span class="info-label">Números</span>
+                                <span class="info-value">7 colunas</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-columns"></i>
+                                <span class="info-label">Sistema</span>
+                                <span class="info-value">Por coluna</span>
+                            </div>
+                        </div>
+                        <div class="lottery-description">
+                            <p><strong>Como Jogar:</strong> Em cada uma das 7 colunas há números de 0 a 9. Marque um número por coluna. Ganha quem acertar de 3 a 7 colunas!</p>
+                            <p><strong>Bolão:</strong> Disponível a partir de R$ 15,00 com mínimo de 2 cotas</p>
+                        </div>
+                    </div>
+                    <div class="lottery-card-footer">
+                        <a href="fazer-aposta.html" class="btn btn-primary btn-lottery">
+                            <i class="fas fa-dice"></i> Escolher números
+                        </a>
+                        <button class="btn btn-primary btn-lottery" onclick="adicionarApostaSimplesAoCarrinho('Super Sete', 3.00)">
+                            <i class="fas fa-shopping-cart"></i> Aposta Rápida (Surpresinha)
+                        </button>
+                    </div>
+                </div>
+
+                
+                <div class="lottery-card" data-category="all">
+                    <div class="lottery-card-header timemania">
+                        <i class="fas fa-futbol lottery-card-icon"></i>
+                        <h3>Timemania</h3>
+                        <p class="lottery-tagline">A loteria do seu time</p>
+                    </div>
+                    <div class="lottery-card-body">
+                        <div class="lottery-info-grid">
+                            <div class="info-item">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <span class="info-label">Aposta Mínima</span>
+                                <span class="info-value">R$ 3,50</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span class="info-label">Sorteios</span>
+                                <span class="info-value">Terça, Qui e Sáb</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-dice"></i>
+                                <span class="info-label">Números</span>
+                                <span class="info-value">10 de 80</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span class="info-label">Time</span>
+                                <span class="info-value">+ Time do ❤️</span>
+                            </div>
+                        </div>
+                        <div class="lottery-description">
+                            <p><strong>Como Jogar:</strong> Escolha 10 números entre os 80 disponíveis + seu Time do Coração. Ganha quem acertar 3, 4, 5, 6, 7 números ou o Time do Coração!</p>
+                            <p><strong>Bolão:</strong> Disponível a partir de R$ 14,00 com mínimo de 2 cotas</p>
+                        </div>
+                    </div>
+                    <div class="lottery-card-footer">
+                        <a href="fazer-aposta.html" class="btn btn-primary btn-lottery">
+                            <i class="fas fa-dice"></i> Escolher números
+                        </a>
+                        <button class="btn btn-primary btn-lottery" onclick="adicionarApostaSimplesAoCarrinho('Timemania', 3.50)">
+                            <i class="fas fa-shopping-cart"></i> Aposta Rápida (Surpresinha)
+                        </button>
+                    </div>
+                </div>
+
+                
+                <div class="lottery-card" data-category="all">
+                    <div class="lottery-card-header loteca">
+                        <i class="fas fa-file-alt lottery-card-icon"></i>
+                        <h3>Loteca</h3>
+                        <p class="lottery-tagline">Palpites de futebol</p>
+                    </div>
+                    <div class="lottery-card-body">
+                        <div class="lottery-info-grid">
+                            <div class="info-item">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <span class="info-label">Aposta Mínima</span>
+                                <span class="info-value">R$ 4,00</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span class="info-label">Sorteios</span>
+                                <span class="info-value">Semanal (Sáb)</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-football-ball"></i>
+                                <span class="info-label">Palpites</span>
+                                <span class="info-value">14 jogos</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-poll"></i>
+                                <span class="info-label">Opções</span>
+                                <span class="info-value">Col 1, X ou 2</span>
+                            </div>
+                        </div>
+                        <div class="lottery-description">
+                            <p><strong>Como Jogar:</strong> Você faz palpites de Coluna 1 (vitória time 1), X (empate) ou Coluna 2 (vitória time 2) em 14 jogos de futebol.</p>
+                            <p><strong>Bolão:</strong> Disponível a partir de R$ 20,00 com mínimo de 2 cotas</p>
+                        </div>
+                    </div>
+                    <div class="lottery-card-footer">
+                        <a href="fazer-aposta.html" class="btn btn-primary btn-lottery">
+                            <i class="fas fa-dice"></i> Escolher números
+                        </a>
+                        <button class="btn btn-primary btn-lottery" onclick="adicionarApostaSimplesAoCarrinho('Loteca', 4.00)">
+                            <i class="fas fa-shopping-cart"></i> Aposta Rápida (Surpresinha)
+                        </button>
+                    </div>
+                </div>
+
+                
+                <div class="lottery-card" data-category="big-prize">
+                    <div class="lottery-card-header maismilionaria">
+                        <div class="lottery-badge">SUPER PRÊMIO</div>
+                        <i class="fas fa-rocket lottery-card-icon"></i>
+                        <h3>+Milionária</h3>
+                        <p class="lottery-tagline">Prêmios milionários garantidos</p>
+                    </div>
+                    <div class="lottery-card-body">
+                        <div class="lottery-info-grid">
+                            <div class="info-item">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <span class="info-label">Aposta Mínima</span>
+                                <span class="info-value">R$ 6,00</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span class="info-label">Sorteios</span>
+                                <span class="info-value">Qua e Sáb</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-dice"></i>
+                                <span class="info-label">Números</span>
+                                <span class="info-value">6 de 50 + 2 trevos</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-coins"></i>
+                                <span class="info-label">Mínimo</span>
+                                <span class="info-value">R$ 10 milhões</span>
+                            </div>
+                        </div>
+                        <div class="lottery-description">
+                            <p><strong>Como Jogar:</strong> Escolha 6 números de 1 a 50 + 2 trevos de 1 a 6. São 10 faixas de premiação. Prêmio mínimo de R$ 10 milhões!</p>
+                            <p><strong>Bolão:</strong> Disponível a partir de R$ 18,00 com mínimo de 2 cotas</p>
+                        </div>
+                    </div>
+                    <div class="lottery-card-footer">
+                        <a href="fazer-aposta.html" class="btn btn-primary btn-lottery">
+                            <i class="fas fa-dice"></i> Escolher números
+                        </a>
+                        <button class="btn btn-primary btn-lottery" onclick="adicionarApostaSimplesAoCarrinho('+Milionária', 6.00)">
+                            <i class="fas fa-shopping-cart"></i> Aposta Rápida (Surpresinha)
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        
+        <section class="bolao-section">
+            <h2 class="section-title">Bolões <span class="gold">Personalizados</span></h2>
+            
+            <div class="intro-text">
+                <p>Crie seu próprio bolão ou participe de bolões prontos. <strong>Aumente suas chances</strong> de ganhar dividindo o custo com outras pessoas!</p>
+            </div>
+
+            <div class="bolao-benefits">
+                <div class="benefit-card">
+                    <i class="fas fa-chart-line benefit-icon"></i>
+                    <h3>Mais Chances</h3>
+                    <p>Jogue com mais números e multiplique suas chances de acertar</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-wallet benefit-icon"></i>
+                    <h3>Menor Custo</h3>
+                    <p>Divida o valor da aposta com quantas pessoas quiser</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-users benefit-icon"></i>
+                    <h3>Jogue em Grupo</h3>
+                    <p>Compartilhe a emoção com amigos e família</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-shield-halved benefit-icon"></i>
+                    <h3>Seguro e Oficial</h3>
+                    <p>Todos os bolões seguem as regras oficiais da Caixa</p>
+                </div>
+            </div>
+
+            <div class="bolao-info-box">
+                <h3 class="info-box-title"><i class="fas fa-info-circle"></i> Como Funciona o Bolão Online</h3>
+                
+                <div class="steps-timeline-container">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-step step-1">
+                        <div class="timeline-circle">1</div>
+                        <div class="timeline-content">
+                            <h4>Escolha</h4>
+                            <p>Selecione seu bolão</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step step-2">
+                        <div class="timeline-circle">2</div>
+                        <div class="timeline-content">
+                            <h4>Reserve</h4>
+                            <p>Garanta sua cota</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step step-3">
+                        <div class="timeline-circle">3</div>
+                        <div class="timeline-content">
+                            <h4>Pague</h4>
+                            <p>Pix, cartão ou boleto</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step step-4">
+                        <div class="timeline-circle">4</div>
+                        <div class="timeline-content">
+                            <h4>Confirme</h4>
+                            <p>Receba comprovante</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step step-5">
+                        <div class="timeline-circle">5</div>
+                        <div class="timeline-content">
+                            <h4>Acompanhe</h4>
+                            <p>Resultados em tempo real</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="online-benefits-modern">
+                    <h4><i class="fas fa-shield-check"></i> Vantagens do Bolão Online</h4>
+                    <div class="benefits-grid-modern">
+                        <div class="benefit-modern">
+                            <i class="fas fa-home"></i>
+                            <span>Sem sair de casa</span>
+                        </div>
+                        <div class="benefit-modern">
+                            <i class="fas fa-clock"></i>
+                            <span>24 horas por dia</span>
+                        </div>
+                        <div class="benefit-modern">
+                            <i class="fas fa-bell"></i>
+                            <span>Notificações automáticas</span>
+                        </div>
+                        <div class="benefit-modern">
+                            <i class="fas fa-lock"></i>
+                            <span>Sistema seguro</span>
+                        </div>
+                        <div class="benefit-modern">
+                            <i class="fas fa-file-invoice"></i>
+                            <span>Comprovante garantido</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        
+        <div id="bolaoModal" class="modal-bolao">
+            <div class="modal-bolao-content">
+                <button class="modal-close" onclick="fecharModal()">&times;</button>
+                
+                <div class="modal-header" id="modalHeader">
+                    <div class="modal-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h2 id="modalTitle">Bolão Mega-Sena Premium</h2>
+                    <p id="modalSubtitle">Detalhes completos do bolão</p>
+                </div>
+
+                <div class="modal-body">
+                    <div class="modal-section">
+                        <h3><i class="fas fa-dice"></i> Números do Bolão</h3>
+                        <div class="numeros-grid" id="numerosGrid">
+                            
+                        </div>
+                    </div>
+
+                    <div class="modal-info-grid">
+                        <div class="modal-info-item">
+                            <i class="fas fa-calculator"></i>
+                            <div>
+                                <strong>Combinações</strong>
+                                <span id="modalCombinacoes">210 combinações</span>
+                            </div>
+                        </div>
+                        <div class="modal-info-item">
+                            <i class="fas fa-percent"></i>
+                            <div>
+                                <strong>Probabilidade</strong>
+                                <span id="modalProbabilidade">28x maior</span>
+                            </div>
+                        </div>
+                        <div class="modal-info-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <strong>Cotas Totais</strong>
+                                <span id="modalCotas">10 cotas</span>
+                            </div>
+                        </div>
+                        <div class="modal-info-item">
+                            <i class="fas fa-coins"></i>
+                            <div>
+                                <strong>Valor Total</strong>
+                                <span id="modalValorTotal">R$ 500,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-section">
+                        <h3><i class="fas fa-chart-bar"></i> Análise Estratégica</h3>
+                        <div id="modalAnalise" class="analise-content">
+                            <p>Este bolão foi cuidadosamente elaborado seguindo análises estatísticas dos últimos concursos.</p>
+                            <ul>
+                                <li><i class="fas fa-check"></i> <strong>Distribuição equilibrada:</strong> Números bem distribuídos entre pares e ímpares</li>
+                                <li><i class="fas fa-check"></i> <strong>Cobertura inteligente:</strong> Abrange dezenas quentes e frias</li>
+                                <li><i class="fas fa-check"></i> <strong>Padrão otimizado:</strong> Maximiza chances nas faixas secundárias</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="modal-pricing">
+                        <div class="pricing-highlight">
+                            <span class="pricing-label">Valor por cota</span>
+                            <span class="pricing-value" id="modalPrecoCota">R$ 50,00</span>
+                        </div>
+                        <div class="cotas-disponíveis">
+                            <i class="fas fa-users"></i>
+                            <span id="modalCotasDisponiveis"><strong>4 cotas</strong> ainda disponíveis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-primary" onclick="fecharModal()">
+                        <i class="fas fa-times"></i> Fechar
+                    </button>
+                    <button class="btn btn-primary" onclick="reservarCotaModal()">
+                        <i class="fas fa-shopping-cart"></i> Reservar Minha Cota
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="confirmModal" class="confirm-modal">
+            <div class="confirm-modal-content">
+                <div class="confirm-icon">
+                    <i class="fas fa-dice"></i>
+                </div>
+                <h3 id="confirmTitle">🎲 SURPRESINHA</h3>
+                <p id="confirmMessage">O sistema irá gerar números aleatórios para sua aposta.</p>
+                <div class="confirm-buttons">
+                    <button class="btn-confirm-cancel" onclick="fecharConfirmModal(false)">
+                        <i class="fas fa-times"></i> Cancelar
+                    </button>
+                    <button class="btn-confirm-ok" onclick="fecharConfirmModal(true)">
+                        <i class="fas fa-check"></i> Confirmar
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Pronto para Ganhar?</h2>
+                <p>Escolha seu bolão estratégico ou aposte individualmente. Totalmente online!</p>
+                <a href="#boloes-section" class="btn btn-primary" onclick="mostrarBoloes(); return false;">
+                    <i class="fas fa-rocket"></i> Ver Bolões Disponíveis
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Liga dos <span class="gold">Milionários</span></h3>
+                <p>Sua casa de apostas de confiança</p>
+            </div>
+            <div class="footer-section">
+                <h4>Serviços</h4>
+                <ul>
+                    <li><a href="loterias.html">Loterias</a></li>
+                    <li><a href="seguros.html">Seguros</a></li>
+                    <li><a href="credito.html">Carta de Crédito</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>📞 Em breve</p>
+                <p>📧 contato@ligadosmilionarios.com.br</p>
+                <p>📍 Em breve</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Liga dos Milionários. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const lotteryCards = document.querySelectorAll('.lottery-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const filter = this.getAttribute('data-filter');
+                    
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+
+                    lotteryCards.forEach(card => {
+                        if (filter === 'all') {
+                            card.style.display = 'flex';
+                            card.style.animation = 'fadeIn 0.5s ease-in';
+                        } else {
+                            const categories = card.getAttribute('data-category');
+                            if (categories.includes(filter)) {
+                                card.style.display = 'flex';
+                                card.style.animation = 'fadeIn 0.5s ease-in';
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+        });
+
+        function openBettingModal(lottery) {
+            alert(`Em breve você poderá fazer apostas de ${lottery} diretamente pelo site!`);
+        }
+
+        function openBolaoModal(lottery) {
+            alert(`Em breve você poderá criar bolões de ${lottery} diretamente pelo site!`);
+        }
+
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.lottery-card, .benefit-card, .step-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
+
+    
+    <script>
+        function mostrarBoloes() {
+            document.getElementById('boloes-section').style.display = 'block';
+            document.getElementById('simples-section').style.display = 'none';
+            
+            document.getElementById('boloes-section').scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+
+        function mostrarSimples() {
+            document.getElementById('boloes-section').style.display = 'none';
+            document.getElementById('simples-section').style.display = 'block';
+            
+            document.getElementById('simples-section').scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+
+        function reservarCota(bolaoId) {
+            localStorage.setItem('bolaoSelecionado', bolaoId);
+            
+            window.location.href = 'checkout.html?tipo=bolao&id=' + bolaoId;
+        }
+
+        const boloesData = {
+            'mega-sena-premium': {
+                nome: 'Bolão Mega-Sena Estratégico',
+                numeros: [7, 12, 23, 28, 35, 42, 49, 56, 58, 60],
+                combinacoes: 210,
+                probabilidade: '28x maior',
+                cotas: 10,
+                cotasVendidas: 6,
+                valorTotal: 'R$ 500,00',
+                precoCota: 'R$ 50,00',
+                headerClass: 'mega-sena-bg',
+                analise: 'Este bolão foi cuidadosamente elaborado seguindo análises estatísticas dos últimos 100 concursos da Mega-Sena, priorizando números com maior frequência de saída e distribuição equilibrada.'
+            },
+            'lotofacil-estrategico': {
+                nome: 'Bolão Lotofácil Estratégico',
+                numeros: [1, 3, 5, 7, 9, 11, 13, 15, 17, 18, 19, 20, 21, 23, 24, 25],
+                combinacoes: 8008,
+                probabilidade: 'Alta',
+                cotas: 10,
+                cotasVendidas: 8,
+                valorTotal: 'R$ 306,00',
+                precoCota: 'R$ 30,60',
+                headerClass: 'lotofacil-bg',
+                analise: 'Estratégia focada em números ímpares e pares balanceados, com cobertura otimizada para prêmios de 13, 14 e 15 pontos.'
+            },
+            'quina-garantido': {
+                nome: 'Bolão Quina Garantido',
+                numeros: [5, 12, 23, 28, 34, 41, 52, 63, 71, 78],
+                combinacoes: 252,
+                probabilidade: 'Muito boa',
+                cotas: 5,
+                cotasVendidas: 2,
+                valorTotal: 'R$ 126,00',
+                precoCota: 'R$ 25,20',
+                headerClass: 'quina-bg',
+                analise: 'Grupo reduzido para maximizar o prêmio individual. Números distribuídos estrategicamente em todas as dezenas.'
+            },
+            'maismilionaria-exclusivo': {
+                nome: 'Bolão +Milionária Completo',
+                numeros: [3, 9, 15, 21, 27, 33, 39, 45],
+                trevos: [2, 4],
+                combinacoes: 28,
+                probabilidade: 'Muito boa',
+                cotas: 10,
+                cotasVendidas: 3,
+                valorTotal: 'R$ 900,00',
+                precoCota: 'R$ 90,00',
+                headerClass: 'maismilionaria-bg',
+                analise: 'Prêmio mínimo garantido de R$ 10 milhões. Seleção estratégica com trevos calculados para cobrir 10 faixas de premiação.'
+            },
+            'diasorte-completo': {
+                nome: 'Bolão Dia de Sorte Completo',
+                numeros: [2, 5, 8, 11, 14, 17, 20, 23, 26, 29],
+                mes: 'Dezembro',
+                combinacoes: 120,
+                probabilidade: 'Muito boa',
+                cotas: 8,
+                cotasVendidas: 4,
+                valorTotal: 'R$ 228,00',
+                precoCota: 'R$ 28,50',
+                headerClass: 'diasorte-bg',
+                analise: 'Seleção estratégica de 10 números com o mês de Dezembro (mês estatisticamente mais sorteado). Cobertura para múltiplas faixas de premiação incluindo o mês da sorte.'
+            },
+            'duplasena-duplo': {
+                nome: 'Bolão Dupla Sena Duplo',
+                numeros: [4, 8, 15, 22, 28, 33, 39, 44, 48],
+                combinacoes: 84,
+                probabilidade: 'Dobrada',
+                cotas: 10,
+                cotasVendidas: 4,
+                valorTotal: 'R$ 336,00',
+                precoCota: 'R$ 33,60',
+                headerClass: 'duplasena-bg',
+                analise: 'Bolão estratégico com 9 números para aproveitar os 2 sorteios do mesmo concurso. Dobro de chances de ganhar com cobertura equilibrada de todas as dezenas.'
+            },
+            'lotomania-total': {
+                nome: 'Bolão Lotomania Total',
+                numeros: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50],
+                combinacoes: 1,
+                probabilidade: 'Múltiplas faixas',
+                cotas: 10,
+                cotasVendidas: 7,
+                valorTotal: 'R$ 150,00',
+                precoCota: 'R$ 15,00',
+                headerClass: 'lotomania-bg',
+                analise: 'Bolão completo com 50 números fixos estrategicamente selecionados. Única loteria onde você pode ganhar acertando 0 números! Cobertura ideal para todas as 7 faixas de premiação.'
+            },
+            'supersete-completo': {
+                nome: 'Bolão Super Sete Completo',
+                numeros: [3, 5, 1, 7, 2, 8, 4],
+                combinacoes: 1,
+                probabilidade: 'Sistema otimizado',
+                cotas: 8,
+                cotasVendidas: 3,
+                valorTotal: 'R$ 192,00',
+                precoCota: 'R$ 24,00',
+                headerClass: 'supersete-bg',
+                analise: 'Sistema de colunas otimizado com múltiplas apostas para cobrir as melhores combinações. Números selecionados por análise estatística de cada coluna individualmente.'
+            },
+            'timemania-coracao': {
+                nome: 'Bolão Timemania do Coração',
+                numeros: [7, 12, 19, 23, 31, 42, 55, 63, 71, 77],
+                time: 'Flamengo',
+                combinacoes: 252,
+                probabilidade: 'Muito boa',
+                cotas: 8,
+                cotasVendidas: 5,
+                valorTotal: 'R$ 140,00',
+                precoCota: 'R$ 17,50',
+                headerClass: 'timemania-bg',
+                analise: 'Bolão com 10 números estratégicos + Time do Coração (Flamengo - time mais sorteado historicamente). Dupla chance de ganhar: pelos números ou pelo time!'
+            },
+            'loteca-certeiro': {
+                nome: 'Bolão Loteca Certeiro',
+                numeros: ['Col 1', 'Col 2', 'X', 'Col 1', 'X', 'Col 2', 'Col 1', 'Col 1', 'X', 'Col 2', 'Col 1', 'X', 'Col 2', 'Col 1'],
+                combinacoes: 16384,
+                probabilidade: 'Análise profissional',
+                cotas: 10,
+                cotasVendidas: 2,
+                valorTotal: 'R$ 320,00',
+                precoCota: 'R$ 32,00',
+                headerClass: 'loteca-bg',
+                analise: 'Palpites baseados em análise técnica profissional dos 14 jogos. Múltiplas combinações de resultados (Col 1, X, Col 2) para maximizar as chances nas rodadas do futebol brasileiro.'
+            }
+        };
+
+        function verDetalhes(bolaoId) {
+            const modal = document.getElementById('bolaoModal');
+            const bolao = boloesData[bolaoId];
+            
+            if (!bolao) {
+                alert('Bolão não encontrado!');
+                return;
+            }
+
+            const modalHeader = document.getElementById('modalHeader');
+            modalHeader.className = 'modal-header ' + bolao.headerClass;
+            document.getElementById('modalTitle').textContent = bolao.nome;
+            
+            const numerosGrid = document.getElementById('numerosGrid');
+            numerosGrid.innerHTML = '';
+            bolao.numeros.forEach(num => {
+                const numeroEl = document.createElement('div');
+                numeroEl.className = 'numero-bolao';
+                if (typeof num === 'number') {
+                    numeroEl.textContent = num.toString().padStart(2, '0');
+                } else {
+                    numeroEl.textContent = num;
+                }
+                numerosGrid.appendChild(numeroEl);
+            });
+
+            if (bolao.trevos) {
+                const trevosLabel = document.createElement('div');
+                trevosLabel.className = 'trevos-label';
+                trevosLabel.innerHTML = '<i class="fas fa-clover"></i> Trevos da Sorte:';
+                numerosGrid.appendChild(trevosLabel);
+                
+                bolao.trevos.forEach(trevo => {
+                    const trevoEl = document.createElement('div');
+                    trevoEl.className = 'numero-bolao trevo';
+                    trevoEl.textContent = trevo;
+                    numerosGrid.appendChild(trevoEl);
+                });
+            }
+
+            if (bolao.mes) {
+                const mesLabel = document.createElement('div');
+                mesLabel.className = 'trevos-label';
+                mesLabel.innerHTML = '<i class="fas fa-calendar"></i> Mês da Sorte:';
+                numerosGrid.appendChild(mesLabel);
+                
+                const mesEl = document.createElement('div');
+                mesEl.className = 'numero-bolao trevo';
+                mesEl.textContent = bolao.mes;
+                numerosGrid.appendChild(mesEl);
+            }
+
+            if (bolao.time) {
+                const timeLabel = document.createElement('div');
+                timeLabel.className = 'trevos-label';
+                timeLabel.innerHTML = '<i class="fas fa-shield-alt"></i> Time do Coração:';
+                numerosGrid.appendChild(timeLabel);
+                
+                const timeEl = document.createElement('div');
+                timeEl.className = 'numero-bolao trevo';
+                timeEl.textContent = bolao.time;
+                numerosGrid.appendChild(timeEl);
+            }
+            
+            document.getElementById('modalCombinacoes').textContent = bolao.combinacoes + ' combinações';
+            document.getElementById('modalProbabilidade').textContent = bolao.probabilidade;
+            document.getElementById('modalCotas').textContent = bolao.cotas + ' cotas';
+            document.getElementById('modalValorTotal').textContent = bolao.valorTotal;
+            document.getElementById('modalPrecoCota').textContent = bolao.precoCota;
+            
+            const cotasDisponiveis = bolao.cotas - bolao.cotasVendidas;
+            document.getElementById('modalCotasDisponiveis').innerHTML = 
+                `<strong>${cotasDisponiveis} ${cotasDisponiveis === 1 ? 'cota' : 'cotas'}</strong> ainda ${cotasDisponiveis === 1 ? 'disponível' : 'disponíveis'}`;
+            
+            document.getElementById('modalAnalise').innerHTML = `
+                <p>${bolao.analise}</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> <strong>Distribuição equilibrada:</strong> Números bem distribuídos entre pares e ímpares</li>
+                    <li><i class="fas fa-check"></i> <strong>Cobertura inteligente:</strong> Abrange dezenas quentes e frias</li>
+                    <li><i class="fas fa-check"></i> <strong>Padrão otimizado:</strong> Maximiza chances nas faixas secundárias</li>
+                </ul>
+            `;
+            
+            modal.setAttribute('data-bolao-id', bolaoId);
+            
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function fecharModal() {
+            const modal = document.getElementById('bolaoModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        function reservarCotaModal() {
+            const modal = document.getElementById('bolaoModal');
+            const bolaoId = modal.getAttribute('data-bolao-id');
+            fecharModal();
+            reservarCota(bolaoId);
+        }
+
+        window.onclick = function(event) {
+            const modalBolao = document.getElementById('bolaoModal');
+            const modalConfirm = document.getElementById('confirmModal');
+            
+            if (event.target === modalBolao) {
+                fecharModal();
+            }
+            if (event.target === modalConfirm) {
+                fecharConfirmModal(false);
+            }
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const modalConfirm = document.getElementById('confirmModal');
+                if (modalConfirm.style.display === 'flex') {
+                    fecharConfirmModal(false);
+                } else {
+                    fecharModal();
+                }
+            }
+        });
+
+        function solicitarBolaoPersonalizado() {
+            window.location.href = 'contato.html?assunto=bolao-personalizado';
+        }
+
+        function adicionarBolaoAoCarrinho(nome, preco, descricao) {
+            if (typeof globalCart !== 'undefined') {
+                globalCart.addItem({
+                    game: nome,
+                    numbers: [descricao],
+                    price: preco
+                });
+            } else {
+                alert('Bolão adicionado! Redirecionando para checkout...');
+                window.location.href = 'checkout.html';
+            }
+        }
+
+        let confirmCallback = null;
+
+        function mostrarConfirmModal(titulo, mensagem, callback) {
+            document.getElementById('confirmTitle').textContent = titulo;
+            document.getElementById('confirmMessage').textContent = mensagem;
+            confirmCallback = callback;
+            document.getElementById('confirmModal').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function fecharConfirmModal(confirmar) {
+            document.getElementById('confirmModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+            
+            if (confirmCallback) {
+                confirmCallback(confirmar);
+                confirmCallback = null;
+            }
+        }
+
+        function adicionarApostaSimplesAoCarrinho(jogo, preco) {
+            mostrarConfirmModal(
+                '🎲 SURPRESINHA',
+                `O sistema irá gerar números aleatórios para sua aposta de ${jogo}. Deseja adicionar esta aposta ao carrinho?`,
+                function(confirmar) {
+                    if (!confirmar) {
+                        return;
+                    }
+                    
+                    processarApostaSurpresinha(jogo, preco);
+                }
+            );
+        }
+
+        function processarApostaSurpresinha(jogo, preco) {
+            let numeros = [];
+            let totalNumeros = 60;
+            let qtdNumeros = 6;
+            
+            switch(jogo) {
+                case 'Mega-Sena':
+                    totalNumeros = 60; qtdNumeros = 6; break;
+                case 'Lotofácil':
+                    totalNumeros = 25; qtdNumeros = 15; break;
+                case 'Quina':
+                    totalNumeros = 80; qtdNumeros = 5; break;
+                case 'Dia de Sorte':
+                    totalNumeros = 31; qtdNumeros = 7; break;
+                case 'Dupla Sena':
+                    totalNumeros = 50; qtdNumeros = 6; break;
+                case 'Lotomania':
+                    totalNumeros = 100; qtdNumeros = 50; break;
+                case 'Super Sete':
+                    totalNumeros = 10; qtdNumeros = 7; break;
+                case 'Timemania':
+                    totalNumeros = 80; qtdNumeros = 10; break;
+                case 'Loteca':
+                    totalNumeros = 14; qtdNumeros = 14; break;
+                case '+Milionária':
+                    totalNumeros = 50; qtdNumeros = 6; break;
+            }
+            
+            while(numeros.length < qtdNumeros) {
+                let num = Math.floor(Math.random() * totalNumeros) + 1;
+                if (!numeros.includes(num)) {
+                    numeros.push(num);
+                }
+            }
+            numeros.sort((a, b) => a - b);
+            
+            if (typeof globalCart !== 'undefined') {
+                globalCart.addItem({
+                    game: jogo + ' - Surpresinha',
+                    numbers: numeros,
+                    price: preco
+                });
+            } else {
+                alert('Aposta adicionada! Redirecionando para checkout...');
+                window.location.href = 'checkout.html';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const showcaseCards = document.querySelectorAll('.bolao-showcase-card');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateY(0)';
+                        }, index * 150);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            showcaseCards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(50px)';
+                card.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+                observer.observe(card);
+            });
+        });
+    </script>
+
+    <script src="loterias.js"></script>
+    <script src="menu.js"></script>
+    <script src="cart-global.js"></script>
+
+</body>
+</html>

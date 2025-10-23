@@ -1,4 +1,4 @@
-// Configurações dos jogos
+
 const games = {
     megasena: {
         name: 'Mega-Sena',
@@ -6,20 +6,20 @@ const games = {
         totalNumbers: 60,
         minNumbers: 6,
         maxNumbers: 15,
-        basePrice: 5.00,
+        basePrice: 6.00,
         prices: {
-            6: 5.00,
-            7: 35.00,
-            8: 140.00,
-            9: 420.00,
-            10: 1050.00,
-            11: 2310.00,
-            12: 4620.00,
-            13: 8580.00,
-            14: 15015.00,
-            15: 25025.00
+            6: 6.00,
+            7: 42.00,
+            8: 168.00,
+            9: 504.00,
+            10: 1260.00,
+            11: 2772.00,
+            12: 5544.00,
+            13: 10296.00,
+            14: 18018.00,
+            15: 30030.00
         },
-        instructions: 'Marque de 6 a 15 números entre os 60 disponíveis abaixo. Quanto mais números marcar, maior o valor da aposta e suas chances de ganhar!'
+        instructions: 'Marque de 6 a 15 números entre os 60 disponíveis. Sorteios às quartas e sábados!'
     },
     lotofacil: {
         name: 'Lotofácil',
@@ -27,16 +27,16 @@ const games = {
         totalNumbers: 25,
         minNumbers: 15,
         maxNumbers: 20,
-        basePrice: 3.00,
+        basePrice: 3.50,
         prices: {
-            15: 3.00,
-            16: 48.00,
-            17: 408.00,
-            18: 2448.00,
-            19: 11628.00,
-            20: 46512.00
+            15: 3.50,
+            16: 56.00,
+            17: 476.00,
+            18: 2856.00,
+            19: 13566.00,
+            20: 54264.00
         },
-        instructions: 'Marque de 15 a 20 números entre os 25 disponíveis. A Lotofácil é a mais fácil de ganhar!'
+        instructions: 'Marque de 15 a 20 números entre os 25 disponíveis. A mais fácil de ganhar!'
     },
     quina: {
         name: 'Quina',
@@ -44,21 +44,62 @@ const games = {
         totalNumbers: 80,
         minNumbers: 5,
         maxNumbers: 15,
-        basePrice: 2.50,
+        basePrice: 3.00,
         prices: {
-            5: 2.50,
-            6: 15.00,
-            7: 52.50,
-            8: 150.00,
-            9: 375.00,
-            10: 825.00,
-            11: 1650.00,
-            12: 3150.00,
-            13: 5775.00,
-            14: 10010.00,
-            15: 16665.00
+            5: 3.00,
+            6: 18.00,
+            7: 63.00,
+            8: 180.00,
+            9: 450.00,
+            10: 990.00,
+            11: 1980.00,
+            12: 3780.00,
+            13: 6930.00,
+            14: 12012.00,
+            15: 19998.00
         },
         instructions: 'Marque de 5 a 15 números entre os 80 disponíveis. Sorteios todos os dias!'
+    },
+    diasorte: {
+        name: 'Dia de Sorte',
+        icon: '🌟',
+        totalNumbers: 31,
+        minNumbers: 7,
+        maxNumbers: 15,
+        basePrice: 2.50,
+        prices: {
+            7: 2.50,
+            8: 20.00,
+            9: 90.00,
+            10: 315.00,
+            11: 945.00,
+            12: 2520.00,
+            13: 6300.00,
+            14: 14700.00,
+            15: 32032.50
+        },
+        instructions: 'Marque de 7 a 15 números e escolha o mês da sorte. Sorteios às terças, quintas e sábados!'
+    },
+    duplasena: {
+        name: 'Dupla Sena',
+        icon: '🎰',
+        totalNumbers: 50,
+        minNumbers: 6,
+        maxNumbers: 15,
+        basePrice: 3.00,
+        prices: {
+            6: 3.00,
+            7: 21.00,
+            8: 84.00,
+            9: 252.00,
+            10: 630.00,
+            11: 1386.00,
+            12: 2772.00,
+            13: 5148.00,
+            14: 9009.00,
+            15: 15015.00
+        },
+        instructions: 'Marque de 6 a 15 números. Dois sorteios por concurso, dobra suas chances!'
     },
     lotomania: {
         name: 'Lotomania',
@@ -70,51 +111,107 @@ const games = {
         prices: {
             50: 3.00
         },
-        instructions: 'Marque exatamente 50 números entre os 100 disponíveis. Você ganha acertando 0, 15, 16, 17, 18, 19 ou 20 números!'
+        instructions: 'Marque exatamente 50 números entre os 100 disponíveis!'
+    },
+    supersete: {
+        name: 'Super Sete',
+        icon: '7️⃣',
+        totalNumbers: 10,
+        minNumbers: 7,
+        maxNumbers: 21,
+        basePrice: 3.00,
+        prices: {
+            7: 3.00,
+            14: 6.00,
+            21: 9.00
+        },
+        instructions: 'Escolha 1 número por coluna (7 colunas). Sorteios às segundas, quartas e sextas!'
+    },
+    timemania: {
+        name: 'Timemania',
+        icon: '⚽',
+        totalNumbers: 80,
+        minNumbers: 10,
+        maxNumbers: 10,
+        basePrice: 3.50,
+        prices: {
+            10: 3.50
+        },
+        instructions: 'Marque 10 números e escolha seu time do coração!'
+    },
+    loteca: {
+        name: 'Loteca',
+        icon: '🏆',
+        totalNumbers: 14,
+        minNumbers: 14,
+        maxNumbers: 14,
+        basePrice: 4.00,
+        prices: {
+            14: 4.00
+        },
+        instructions: 'Palpite os resultados dos 14 jogos: Coluna 1 (vitória mandante), Coluna do Meio (empate) ou Coluna 2 (vitória visitante)!'
+    },
+    maismilionaria: {
+        name: '+Milionária',
+        icon: '💎',
+        totalNumbers: 50,
+        minNumbers: 6,
+        maxNumbers: 12,
+        basePrice: 6.00,
+        prices: {
+            6: 6.00,
+            7: 42.00,
+            8: 168.00,
+            9: 504.00,
+            10: 1260.00,
+            11: 2772.00,
+            12: 5544.00
+        },
+        instructions: 'Marque de 6 a 12 números + 2 a 6 trevos da sorte. Prêmio mínimo de R$ 10 milhões!'
     }
 };
 
-// Estado da aplicação
+
 let currentGame = 'megasena';
 let selectedNumbers = [];
 let cart = [];
 let cartIdCounter = 1;
 
-// Inicialização
+
 document.addEventListener('DOMContentLoaded', function() {
     selectGame('megasena');
     updateCart();
 });
 
-// Selecionar jogo
+
 function selectGame(gameName) {
     currentGame = gameName;
     const game = games[gameName];
     
-    // Atualizar botões de jogo
+    
     document.querySelectorAll('.game-btn').forEach(btn => {
         btn.classList.remove('active');
     });
     event.target.closest('.game-btn').classList.add('active');
     
-    // Limpar números selecionados
+    
     selectedNumbers = [];
     
-    // Atualizar interface
+    
     document.getElementById('currentGameTitle').textContent = game.name;
     document.getElementById('gameRules').textContent = `Escolha de ${game.minNumbers} a ${game.maxNumbers} números`;
     document.getElementById('gamePrice').textContent = `A partir de R$ ${game.basePrice.toFixed(2)}`;
     document.getElementById('gameInstructions').textContent = game.instructions;
     document.getElementById('maxNumbers').textContent = game.maxNumbers;
     
-    // Gerar grade de números
+    
     generateNumbersGrid(game.totalNumbers);
     
-    // Atualizar contadores
+    
     updateCounters();
 }
 
-// Gerar grade de números
+
 function generateNumbersGrid(total) {
     const grid = document.getElementById('numbersGrid');
     grid.innerHTML = '';
@@ -128,33 +225,33 @@ function generateNumbersGrid(total) {
     }
 }
 
-// Toggle número
+
 function toggleNumber(number) {
     const game = games[currentGame];
     const index = selectedNumbers.indexOf(number);
     
     if (index > -1) {
-        // Desmarcar
+        
         selectedNumbers.splice(index, 1);
     } else {
-        // Verificar se já atingiu o máximo
+        
         if (selectedNumbers.length >= game.maxNumbers) {
             alert(`Você pode marcar no máximo ${game.maxNumbers} números neste jogo.`);
             return;
         }
-        // Marcar
+        
         selectedNumbers.push(number);
     }
     
-    // Ordenar números
+    
     selectedNumbers.sort((a, b) => a - b);
     
-    // Atualizar visual
+    
     updateNumbersVisual();
     updateCounters();
 }
 
-// Atualizar visual dos números
+
 function updateNumbersVisual() {
     document.querySelectorAll('.number-btn').forEach((btn, index) => {
         const number = index + 1;
@@ -166,14 +263,14 @@ function updateNumbersVisual() {
     });
 }
 
-// Atualizar contadores
+
 function updateCounters() {
     const game = games[currentGame];
     const count = selectedNumbers.length;
     
     document.getElementById('selectedCount').textContent = count;
     
-    // Calcular valor
+    
     let value = 0;
     if (count >= game.minNumbers && count <= game.maxNumbers) {
         value = game.prices[count] || 0;
@@ -181,7 +278,7 @@ function updateCounters() {
     
     document.getElementById('betValue').textContent = `R$ ${value.toFixed(2)}`;
     
-    // Atualizar botão e texto de ajuda
+    
     const addBtn = document.getElementById('addToCartBtn');
     const helperText = document.getElementById('helperText');
     
@@ -200,7 +297,7 @@ function updateCounters() {
     }
 }
 
-// Surpresinha - selecionar números aleatórios
+
 function surpresinha() {
     const game = games[currentGame];
     selectedNumbers = [];
@@ -217,14 +314,14 @@ function surpresinha() {
     updateCounters();
 }
 
-// Limpar números
+
 function clearNumbers() {
     selectedNumbers = [];
     updateNumbersVisual();
     updateCounters();
 }
 
-// Adicionar ao carrinho
+
 function addToCart() {
     const game = games[currentGame];
     const count = selectedNumbers.length;
@@ -236,7 +333,7 @@ function addToCart() {
     
     const bet = {
         id: cartIdCounter++,
-        game: currentGame,
+        game: game.name,
         gameName: game.name,
         icon: game.icon,
         numbers: [...selectedNumbers],
@@ -246,17 +343,23 @@ function addToCart() {
     
     cart.push(bet);
     
-    // Limpar seleção
+    
+    if (typeof globalCart !== 'undefined') {
+        globalCart.addItem({
+            game: game.name,
+            numbers: [...selectedNumbers],
+            price: game.prices[count]
+        });
+    }
+    
+    
     clearNumbers();
     
-    // Atualizar carrinho
-    updateCart();
     
-    // Feedback visual
-    showNotification('Aposta adicionada ao carrinho!');
+    updateCart();
 }
 
-// Atualizar carrinho
+
 function updateCart() {
     const cartItems = document.getElementById('cartItems');
     const cartCount = document.getElementById('cartCount');
@@ -276,7 +379,7 @@ function updateCart() {
         return;
     }
     
-    // Renderizar itens
+    
     cartItems.innerHTML = cart.map(bet => `
         <div class="cart-item">
             <div class="cart-item-header">
@@ -291,28 +394,28 @@ function updateCart() {
         </div>
     `).join('');
     
-    // Atualizar totais
+    
     const total = cart.reduce((sum, bet) => sum + bet.price, 0);
     cartCount.textContent = cart.length;
     cartTotal.textContent = `R$ ${total.toFixed(2)}`;
     checkoutBtn.disabled = false;
 }
 
-// Remover do carrinho
+
 function removeFromCart(betId) {
     cart = cart.filter(bet => bet.id !== betId);
     updateCart();
     showNotification('Aposta removida do carrinho');
 }
 
-// Ir para checkout
+
 function goToCheckout() {
     if (cart.length === 0) {
         alert('Adicione apostas ao carrinho primeiro!');
         return;
     }
     
-    // Salvar carrinho no localStorage (formato compatível com checkout)
+    
     const checkoutCart = cart.map(bet => ({
         game: bet.gameName,
         numbers: bet.numbers,
@@ -320,11 +423,11 @@ function goToCheckout() {
     }));
     localStorage.setItem('loteriCart', JSON.stringify(checkoutCart));
     
-    // Redirecionar para página de checkout
+    
     window.location.href = 'checkout.html';
 }
 
-// Notificação
+
 function showNotification(message) {
     const notification = document.createElement('div');
     notification.className = 'notification';

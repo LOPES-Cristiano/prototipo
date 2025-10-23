@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lotérica - Sua Lotérica de Confiança</title>
+    <title>Liga dos Milionários - Unidos pela Sorte, Guiados pela Estratégia</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="premium-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body id="top">
 
@@ -13,7 +15,24 @@
         <nav class="navbar">
             <div class="logo">
                 <a href="#top" class="logo-link">
-                    <h1>Loté<span class="gold">rica</span></h1>
+                    <div class="logo-shield">
+                        <svg class="shield-bg" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 5 L90 20 L90 60 Q90 90 50 115 Q10 90 10 60 L10 20 Z" fill="url(#shieldGradient)" stroke="var(--gold)" stroke-width="2"/>
+                            <defs>
+                                <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="crown-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-top">LIGA DOS</span>
+                        <span class="logo-bottom">MILIONÁRIOS</span>
+                    </div>
                 </a>
             </div>
             <div class="menu-toggle" id="menuToggle">
@@ -23,274 +42,316 @@
             </div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html" class="active">Início</a></li>
-                <li><a href="apostas.html">Apostas</a></li>
+                <li><a href="loterias.html">Loterias</a></li>
                 <li><a href="seguros.html">Seguros</a></li>
-                <li><a href="credito.html">Crédito</a></li>
+                <li><a href="credito.html">Carta de Crédito</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
-        <section class="hero">
+        <section class="hero hero-premium">
+            <div class="hero-overlay"></div>
             <div class="hero-content">
-                <h2>Bem-vindo à <span class="gold">Lotérica</span></h2>
-                <p class="hero-subtitle">Sua sorte começa aqui. Apostas, seguros e crédito em um só lugar.</p>
+                <div class="hero-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>LOTERIAS E SERVIÇOS</span>
+                </div>
+                <h1 class="hero-title">Bem-vindo à <span class="gold">Liga dos Milionários</span></h1>
+                <p class="hero-slogan"><i class="fas fa-star"></i> Unidos pela sorte, guiados pela estratégia <i class="fas fa-star"></i></p>
+                <p class="hero-subtitle">Apostas inteligentes em loterias com bolões estratégicos e serviços completos.</p>
                 <div class="hero-buttons">
-                    <a href="fazer-aposta.html" class="btn btn-primary">Fazer Apostas</a>
-                    <a href="contato.html" class="btn btn-secondary">Fale Conosco</a>
+                    <a href="loterias.html" class="btn btn-primary btn-large">
+                        <i class="fas fa-crown"></i> Entrar para a Liga
+                    </a>
+                    <a href="#beneficios" class="btn btn-secondary btn-large">
+                        <i class="fas fa-info-circle"></i> Conhecer Benefícios
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section class="services">
-            <h2 class="section-title">O Que Fazemos por <span class="gold">Você</span></h2>
+        
+        <section class="benefits-premium" id="beneficios">
+            <div class="gold-divider"></div>
+            <h2 class="section-title-premium">Por que fazer parte da <span class="gold">Liga?</span></h2>
+            <p class="section-subtitle">Mais do que uma lotérica. Uma comunidade de vencedores.</p>
             
-            <div class="intro-text">
-                <p>Na <strong>Lotérica</strong>, oferecemos os melhores serviços para você realizar seus sonhos. Seja fazer aquela aposta da sorte, proteger sua família ou conseguir um crédito com as melhores condições do mercado.</p>
-            </div>
-
-            <div class="accordion-container">
-                <div class="accordion-item">
-                    <button class="accordion-header" onclick="toggleAccordion(this)">
-                        <div class="accordion-icon-title">
-                            <span class="accordion-icon">🎲</span>
-                            <h3>Apostas Lotéricas</h3>
-                        </div>
-                        <span class="accordion-arrow">▼</span>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="accordion-inner">
-                            <p class="lead-text">Faça suas apostas em todos os jogos oficiais da Caixa Econômica Federal</p>
-                            
-                            <div class="feature-list">
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span>Mega-Sena, Lotofácil, Quina</span>
-                                </div>
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span>Lotomania, Dupla Sena, Timemania</span>
-                                </div>
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span>Atendimento rápido e sem filas</span>
-                                </div>
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span>Bolões e surpresinha disponíveis</span>
-                                </div>
-                            </div>
-                            
-                            <a href="apostas.html" class="btn btn-primary btn-large">Ver Todos os Jogos</a>
-                        </div>
+            <div class="benefits-grid-premium">
+                <div class="benefit-card-premium">
+                    <div class="benefit-icon-circle">
+                        <i class="fas fa-crown"></i>
                     </div>
+                    <h3>Bolões Estratégicos</h3>
+                    <p>Acesso a bolões montados por especialistas com análises estatísticas e estratégias comprovadas.</p>
+                    <ul class="benefit-list">
+                        <li><i class="fas fa-check"></i> Análise estatística avançada</li>
+                        <li><i class="fas fa-check"></i> Números estratégicos</li>
+                        <li><i class="fas fa-check"></i> Prioridade em lançamentos</li>
+                    </ul>
                 </div>
 
-                <div class="accordion-item">
-                    <button class="accordion-header" onclick="toggleAccordion(this)">
-                        <div class="accordion-icon-title">
-                            <span class="accordion-icon">🛡️</span>
-                            <h3>Seguros e Proteção</h3>
-                        </div>
-                        <span class="accordion-arrow">▼</span>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="accordion-inner">
-                            <p class="lead-text">Proteja o que é mais importante: sua família, seu carro, sua casa e seu futuro</p>
-                            
-                            <div class="feature-list">
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span>Seguro de Vida - tranquilidade para sua família</span>
-                                </div>
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span>Seguro Auto - cobertura completa</span>
-                                </div>
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span>Seguro Residencial - proteja seu lar</span>
-                                </div>
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span>Cotação gratuita e rápida</span>
-                                </div>
-                            </div>
-                            
-                            <a href="seguros.html" class="btn btn-primary btn-large">Fazer Cotação</a>
-                        </div>
+                <div class="benefit-card-premium">
+                    <div class="benefit-icon-circle">
+                        <i class="fas fa-brain"></i>
                     </div>
+                    <h3>Inteligência Coletiva</h3>
+                    <p>Estratégias baseadas em método, análise de padrões e decisões inteligentes em grupo.</p>
+                    <ul class="benefit-list">
+                        <li><i class="fas fa-check"></i> Decisões baseadas em dados</li>
+                        <li><i class="fas fa-check"></i> Compartilhamento de conhecimento</li>
+                        <li><i class="fas fa-check"></i> Comunidade ativa</li>
+                    </ul>
                 </div>
 
-                <div class="accordion-item">
-                    <button class="accordion-header" onclick="toggleAccordion(this)">
-                        <div class="accordion-icon-title">
-                            <span class="accordion-icon">💳</span>
-                            <h3>Crédito Consignado</h3>
-                        </div>
-                        <span class="accordion-arrow">▼</span>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="accordion-inner">
-                            <p class="lead-text">Dinheiro rápido e fácil com as menores taxas de juros do mercado</p>
-                            
-                            <div class="highlight-box">
-                                <div class="highlight-item">
-                                    <span class="big-number">1,49%</span>
-                                    <span class="small-text">Taxa a partir de</span>
-                                </div>
-                                <div class="highlight-item">
-                                    <span class="big-number">96x</span>
-                                    <span class="small-text">Para pagar</span>
-                                </div>
-                                <div class="highlight-item">
-                                    <span class="big-number">24h</span>
-                                    <span class="small-text">Dinheiro na conta</span>
-                                </div>
-                            </div>
-                            
-                            <div class="feature-list">
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span>Aposentados e pensionistas INSS</span>
-                                </div>
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span>Servidores públicos</span>
-                                </div>
-                                <div class="feature-item">
-                                    <span class="check-icon">✓</span>
-                                    <span>Funcionários de empresas privadas</span>
-                                </div>
-                            </div>
-                            
-                            <a href="credito.html" class="btn btn-primary btn-large">Simular Empréstimo</a>
-                        </div>
+                <div class="benefit-card-premium">
+                    <div class="benefit-icon-circle">
+                        <i class="fas fa-shield-halved"></i>
                     </div>
+                    <h3>Proteção Completa</h3>
+                    <p>Seguros personalizados para proteger você, sua família e seu patrimônio conquistado.</p>
+                    <ul class="benefit-list">
+                        <li><i class="fas fa-check"></i> Diversas opções de seguros</li>
+                        <li><i class="fas fa-check"></i> Cotação facilitada</li>
+                        <li><i class="fas fa-check"></i> Suporte completo</li>
+                    </ul>
+                </div>
+
+                <div class="benefit-card-premium">
+                    <div class="benefit-icon-circle">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Carta de Crédito</h3>
+                    <p>Acesso facilitado a crédito com taxas competitivas e condições flexíveis.</p>
+                    <ul class="benefit-list">
+                        <li><i class="fas fa-check"></i> Taxas a partir de 1,49%</li>
+                        <li><i class="fas fa-check"></i> Até 96x para pagar</li>
+                        <li><i class="fas fa-check"></i> Aprovação em 24h</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <section class="lottery-results">
-            <h2 class="section-title">Resultados de <span class="gold">Hoje</span></h2>
-            
-            <div class="intro-text">
-                <p>Confira os números sorteados nos principais jogos. Boa sorte!</p>
-            </div>
+        
+        <section class="services-premium">
+            <div class="gold-divider"></div>
+            <h2 class="section-title-premium">Nossos <span class="gold">Serviços</span></h2>
+            <p class="section-subtitle">Loterias, seguros e crédito em um só lugar.</p>
 
-            <div class="results-grid">
-                <div class="result-card">
-                    <div class="lottery-header">
-                        <h4>Mega-Sena</h4>
-                        <span class="lottery-badge">Concurso 2650</span>
-                    </div>
-                    <div class="numbers">
-                        <span>05</span>
-                        <span>12</span>
-                        <span>23</span>
-                        <span>34</span>
-                        <span>41</span>
-                        <span>58</span>
-                    </div>
-                    <div class="prize-box">
-                        <span class="prize-label">Prêmio Estimado</span>
-                        <span class="prize">R$ 45.000.000,00</span>
-                    </div>
-                    <p class="next-draw">Próximo sorteio: Quarta-feira às 20h</p>
-                </div>
+            <div class="services-grid-premium">
                 
-                <div class="result-card">
-                    <div class="lottery-header">
-                        <h4>Lotofácil</h4>
-                        <span class="lottery-badge">Concurso 2950</span>
+                <div class="service-card-premium">
+                    <div class="service-header-premium">
+                        <div class="service-icon-premium">
+                            <i class="fas fa-users-crown"></i>
+                        </div>
+                        <span class="service-badge">DESTAQUE</span>
                     </div>
-                    <div class="numbers small">
-                        <span>01</span>
-                        <span>03</span>
-                        <span>05</span>
-                        <span>07</span>
-                        <span>09</span>
-                        <span>11</span>
-                        <span>13</span>
-                        <span>15</span>
-                        <span>17</span>
-                        <span>19</span>
-                        <span>21</span>
-                        <span>23</span>
-                        <span>24</span>
-                        <span>25</span>
-                        <span>26</span>
+                    <h3>Bolões Estratégicos</h3>
+                    <p class="service-desc">Apostas inteligentes montadas por especialistas com até 28x mais chances de ganhar.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> 10 modalidades de loteria</li>
+                        <li><i class="fas fa-check-circle"></i> Análise estatística avançada</li>
+                        <li><i class="fas fa-check-circle"></i> Bolões montados por especialistas</li>
+                        <li><i class="fas fa-check-circle"></i> Totalmente online e seguro</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="footer-slogan">a partir de</span>
+                        <span class="price-value">R$ 25,20</span>
+                        <span class="footer-slogan">por cota</span>
                     </div>
-                    <div class="prize-box">
-                        <span class="prize-label">Prêmio Estimado</span>
-                        <span class="prize">R$ 1.500.000,00</span>
+                    <a href="loterias.html" class="btn-service-premium">
+                        <span>Ver Bolões Disponíveis</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                
+                <div class="service-card-premium">
+                    <div class="service-header-premium">
+                        <div class="service-icon-premium">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
                     </div>
-                    <p class="next-draw">Próximo sorteio: Amanhã às 20h</p>
+                    <h3>Seguros Completos</h3>
+                    <p class="service-desc">Proteção completa para você, sua família e seu patrimônio.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Seguro de Vida</li>
+                        <li><i class="fas fa-check-circle"></i> Proteção Veicular</li>
+                        <li><i class="fas fa-check-circle"></i> Seguro Residencial</li>
+                        <li><i class="fas fa-check-circle"></i> Cotação rápida</li>
+                    </ul>
+                    <div class="service-highlight">
+                        <i class="fas fa-star"></i>
+                        <span>Cobertura 24/7 com atendimento completo</span>
+                    </div>
+                    <a href="seguros.html" class="btn-service-premium">
+                        <span>Fazer Cotação</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                
+                <div class="service-card-premium">
+                    <div class="service-header-premium">
+                        <div class="service-icon-premium">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <span class="service-badge">CRÉDITO</span>
+                    </div>
+                    <h3>Carta de Crédito</h3>
+                    <p class="service-desc">Crédito facilitado com taxas competitivas e aprovação rápida.</p>
+                    <div class="service-highlights-grid">
+                        <div class="highlight-mini">
+                            <span class="highlight-number">1,49%</span>
+                            <span class="highlight-label">taxa/mês</span>
+                        </div>
+                        <div class="highlight-mini">
+                            <span class="highlight-number">96x</span>
+                            <span class="highlight-label">parcelas</span>
+                        </div>
+                        <div class="highlight-mini">
+                            <span class="highlight-number">24h</span>
+                            <span class="highlight-label">aprovação</span>
+                        </div>
+                    </div>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> INSS e Servidores</li>
+                        <li><i class="fas fa-check-circle"></i> Empresas Privadas</li>
+                        <li><i class="fas fa-check-circle"></i> Sem burocracia</li>
+                    </ul>
+                    <a href="credito.html" class="btn-service-premium">
+                        <span>Simular Agora</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section class="cta-section">
-            <div class="cta-content">
-                <h2>Pronto para realizar seus sonhos?</h2>
-                <p>Visite nossa lotérica ou entre em contato conosco</p>
-                <a href="contato.html" class="btn btn-primary">Entre em Contato</a>
+        
+        <section class="cta-premium">
+            <div class="cta-premium-content">
+                <div class="cta-icon-premium">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <h2>Pronto para se Tornar um <span class="gold">Milionário?</span></h2>
+                <p>Apostas inteligentes, seguros completos e crédito facilitado.</p>
+                <div class="cta-benefits-inline">
+                    <div class="cta-benefit">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Bolões Estratégicos</span>
+                    </div>
+                    <div class="cta-benefit">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Seguros Completos</span>
+                    </div>
+                    <div class="cta-benefit">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Crédito Facilitado</span>
+                    </div>
+                </div>
+                <div class="cta-buttons-premium">
+                    <a href="loterias.html" class="btn btn-primary btn-xlarge">
+                        <i class="fas fa-trophy"></i> Entrar para a Liga Agora
+                    </a>
+                    <a href="contato.html" class="btn btn-secondary btn-xlarge">
+                        <i class="fas fa-headset"></i> Falar com um Consultor
+                    </a>
+                </div>
+                <p class="cta-guarantee">
+                    <i class="fas fa-shield-check"></i> Sistema Seguro | Sem Taxas Ocultas
+                </p>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Loté<span class="gold">rica</span></h3>
-                <p>Sua lotérica de confiança</p>
+    <footer class="footer-premium">
+        <div class="footer-content-premium">
+            <div class="footer-section-main">
+                <div class="footer-logo">
+                    <div class="logo-shield-small">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div>
+                        <h3>Liga dos <span class="gold">Milionários</span></h3>
+                        <p class="footer-slogan">Unidos pela sorte, guiados pela estratégia</p>
+                    </div>
+                </div>
+                <p class="footer-desc">Apostas inteligentes em loterias, seguros completos e crédito facilitado.</p>
             </div>
+            
             <div class="footer-section">
                 <h4>Serviços</h4>
                 <ul>
-                    <li><a href="apostas.html">Apostas</a></li>
-                    <li><a href="seguros.html">Seguros</a></li>
-                    <li><a href="credito.html">Crédito</a></li>
+                    <li><a href="loterias.html"><i class="fas fa-chevron-right"></i> Bolões Estratégicos</a></li>
+                    <li><a href="seguros.html"><i class="fas fa-chevron-right"></i> Seguros</a></li>
+                    <li><a href="credito.html"><i class="fas fa-chevron-right"></i> Carta de Crédito</a></li>
                 </ul>
             </div>
+            
             <div class="footer-section">
                 <h4>Contato</h4>
-                <p>📞 (69) 1234-5678</p>
-                <p>📧 contato@loterica.com.br</p>
-                <p>📍 Centro - São Miguel do Guaporé/RO</p>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-phone-alt"></i> Em breve</li>
+                    <li><i class="fas fa-envelope"></i> Em breve</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Em breve</li>
+                    <li><i class="fas fa-clock"></i> Em breve</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Redes Sociais</h4>
+                <div class="social-links-premium">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Lotérica. Todos os direitos reservados.</p>
+        <div class="footer-bottom-premium">
+            <p>&copy; 2025 Liga dos Milionários. Todos os direitos reservados.</p>
+            <p class="footer-legal"><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
         </div>
     </footer>
 
+    <script src="menu.js"></script>
     <script>
-        function toggleAccordion(button) {
-            const accordionItem = button.closest('.accordion-item');
-            const allItems = document.querySelectorAll('.accordion-item');
-            
-            // Fecha todos os outros accordions
-            allItems.forEach(item => {
-                if (item !== accordionItem) {
-                    item.classList.remove('active');
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
-            
-            // Toggle do accordion clicado
-            accordionItem.classList.toggle('active');
-        }
+        });
 
-        // Abre o primeiro accordion por padrão
-        document.addEventListener('DOMContentLoaded', function() {
-            const firstAccordion = document.querySelector('.accordion-item');
-            if (firstAccordion) {
-                firstAccordion.classList.add('active');
-            }
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.benefit-card-premium, .service-card-premium, .testimonial-card').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'all 0.6s ease';
+                observer.observe(el);
+            });
         });
     </script>
-    <script src="menu.js"></script>
+    <script src="cart-global.js"></script>
 
 </body>
 </html>

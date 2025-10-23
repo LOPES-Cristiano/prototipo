@@ -1,7 +1,7 @@
-// Carregar carrinho do localStorage
+
 let cart = [];
 
-// Máscaras de input
+
 document.getElementById('cpf')?.addEventListener('input', function(e) {
     let value = e.target.value.replace(/\D/g, '');
     if (value.length <= 11) {
@@ -27,10 +27,10 @@ document.getElementById('cardNumber')?.addEventListener('input', function(e) {
         value = value.replace(/(\d{4})(?=\d)/g, '$1 ');
         e.target.value = value;
         
-        // Detectar bandeira do cartão
+        
         detectCardBrand(value.replace(/\s/g, ''));
         
-        // Atualizar cartão visual
+        
         updateCardDisplay('number', value || '●●●● ●●●● ●●●● ●●●●');
     }
 });
@@ -39,13 +39,13 @@ document.getElementById('cardName')?.addEventListener('input', function(e) {
     updateCardDisplay('name', e.target.value.toUpperCase() || 'SEU NOME');
 });
 
-// Detectar bandeira do cartão
+
 function detectCardBrand(cardNumber) {
     const cardNumberInput = document.getElementById('cardNumber');
     let brand = '';
     let brandIcon = '';
     
-    // Remover classes anteriores
+    
     cardNumberInput.classList.remove('visa', 'mastercard', 'amex');
     
     if (!cardNumber || cardNumber.length < 4) {
@@ -53,7 +53,7 @@ function detectCardBrand(cardNumber) {
         return;
     }
     
-    // Padrões das bandeiras (apenas Visa, Mastercard e Amex)
+    
     if (/^4/.test(cardNumber)) {
         brand = 'VISA';
         brandIcon = '💳';
@@ -71,12 +71,12 @@ function detectCardBrand(cardNumber) {
     updateCardBrandDisplay(brand, brandIcon);
 }
 
-// Atualizar exibição da bandeira
+
 function updateCardBrandDisplay(brand, icon = '') {
     let brandDisplay = document.getElementById('cardBrandDisplay');
     
     if (!brandDisplay) {
-        // Criar elemento se não existe
+        
         brandDisplay = document.createElement('div');
         brandDisplay.id = 'cardBrandDisplay';
         brandDisplay.className = 'card-brand-display';
@@ -87,7 +87,7 @@ function updateCardBrandDisplay(brand, icon = '') {
     }
     
     if (brand) {
-        // Mapear bandeira para imagem (apenas Visa, Mastercard e Amex)
+        
         const brandImages = {
             'VISA': 'visa.png',
             'MASTERCARD': 'mastercard.png',
@@ -120,7 +120,7 @@ document.getElementById('cardCvv')?.addEventListener('input', function(e) {
     updateCardDisplay('cvv', e.target.value || '***');
 });
 
-// Flip card quando focar no CVV
+
 document.getElementById('cardCvv')?.addEventListener('focus', function() {
     document.getElementById('flipCard')?.classList.add('flipped');
 });
@@ -129,7 +129,7 @@ document.getElementById('cardCvv')?.addEventListener('blur', function() {
     document.getElementById('flipCard')?.classList.remove('flipped');
 });
 
-// Atualizar display do cartão visual
+
 function updateCardDisplay(field, value) {
     const displays = {
         number: document.getElementById('cardNumberDisplay'),
@@ -143,7 +143,7 @@ function updateCardDisplay(field, value) {
     }
 }
 
-// Controlar exibição dos campos de cartão
+
 document.querySelectorAll('input[name="payment"]').forEach(radio => {
     radio.addEventListener('change', function() {
         const cardDetails = document.getElementById('cardDetails');
@@ -152,7 +152,7 @@ document.querySelectorAll('input[name="payment"]').forEach(radio => {
         if (this.value === 'credito') {
             cardDetails.style.display = 'block';
             installmentsGroup.style.display = 'block';
-            // Tornar campos obrigatórios
+            
             document.getElementById('cardNumber').required = true;
             document.getElementById('cardName').required = true;
             document.getElementById('cardExpiry').required = true;
@@ -160,7 +160,7 @@ document.querySelectorAll('input[name="payment"]').forEach(radio => {
         } else if (this.value === 'debito') {
             cardDetails.style.display = 'block';
             installmentsGroup.style.display = 'none';
-            // Tornar campos obrigatórios
+            
             document.getElementById('cardNumber').required = true;
             document.getElementById('cardName').required = true;
             document.getElementById('cardExpiry').required = true;
@@ -168,7 +168,7 @@ document.querySelectorAll('input[name="payment"]').forEach(radio => {
         } else {
             cardDetails.style.display = 'none';
             installmentsGroup.style.display = 'none';
-            // Remover obrigatoriedade
+            
             document.getElementById('cardNumber').required = false;
             document.getElementById('cardName').required = false;
             document.getElementById('cardExpiry').required = false;
@@ -177,20 +177,20 @@ document.querySelectorAll('input[name="payment"]').forEach(radio => {
     });
 });
 
-// Carregar e exibir itens do carrinho
+
 function loadCart() {
     const savedCart = localStorage.getItem('loteriCart');
     if (savedCart) {
         cart = JSON.parse(savedCart);
     } else {
         cart = [];
-        // Mostrar aviso mas permitir continuar
+        
         showNotification('Seu carrinho está vazio. Adicione apostas primeiro!', 'warning');
     }
     displayCartSummary();
 }
 
-// Exibir resumo do carrinho
+
 function displayCartSummary() {
     const summaryItems = document.getElementById('summaryItems');
     const subtotalEl = document.getElementById('subtotal');
@@ -229,7 +229,7 @@ function displayCartSummary() {
     totalEl.textContent = `R$ ${subtotal.toFixed(2).replace('.', ',')}`;
 }
 
-// Validar formulário
+
 function validateForm() {
     const form = document.getElementById('checkoutForm');
     const termsAccept = document.getElementById('termsAccept');
@@ -244,14 +244,14 @@ function validateForm() {
         return false;
     }
     
-    // Validar CPF (validação simples)
+    
     const cpf = document.getElementById('cpf').value.replace(/\D/g, '');
     if (cpf.length !== 11) {
         showNotification('CPF inválido!', 'error');
         return false;
     }
     
-    // Validar campos de cartão se necessário
+    
     const paymentMethod = document.querySelector('input[name="payment"]:checked').value;
     if (paymentMethod === 'credito' || paymentMethod === 'debito') {
         const cardNumber = document.getElementById('cardNumber').value.replace(/\D/g, '');
@@ -277,13 +277,13 @@ function validateForm() {
     return true;
 }
 
-// Finalizar compra
+
 function finalizePurchase() {
     if (!validateForm()) {
         return;
     }
     
-    // Coletar dados do formulário
+    
     const formData = {
         nome: document.getElementById('nome').value,
         cpf: document.getElementById('cpf').value,
@@ -298,17 +298,17 @@ function finalizePurchase() {
         date: new Date().toISOString()
     };
     
-    // Simular processamento
+    
     const btn = document.querySelector('.btn-primary');
     const originalText = btn.textContent;
     btn.textContent = 'Processando...';
     btn.disabled = true;
     
     setTimeout(() => {
-        // Gerar número de pedido
+        
         const orderNumber = 'LP' + Date.now().toString().slice(-8);
         
-        // Salvar pedido no localStorage
+        
         const orders = JSON.parse(localStorage.getItem('loteriOrders') || '[]');
         orders.push({
             orderNumber: orderNumber,
@@ -316,16 +316,16 @@ function finalizePurchase() {
         });
         localStorage.setItem('loteriOrders', JSON.stringify(orders));
         
-        // Limpar carrinho
+        
         localStorage.removeItem('loteriCart');
         
-        // Redirecionar para página de sucesso
+        
         localStorage.setItem('lastOrder', orderNumber);
         window.location.href = 'sucesso.html';
     }, 2000);
 }
 
-// Notificações
+
 function showNotification(message, type = 'success') {
     const notification = document.createElement('div');
     notification.className = `notification ${type}`;
@@ -340,7 +340,7 @@ function showNotification(message, type = 'success') {
     }, 3000);
 }
 
-// Atualizar bandeira do cartão visual
+
 function updateCardVisualBrand() {
     const cardFront = document.querySelector('.flip-card-front');
     const cardNumber = document.getElementById('cardNumber')?.value.replace(/\D/g, '') || '';
@@ -348,7 +348,7 @@ function updateCardVisualBrand() {
     
     if (!cardFront) return;
     
-    // Remover todas as classes de bandeira
+    
     cardFront.classList.remove('visa', 'mastercard', 'amex');
     
     let brandName = 'CARTÃO';
@@ -375,13 +375,13 @@ function updateCardVisualBrand() {
         }
     }
     
-    // Atualizar nome da bandeira
+    
     const brandNameEl = document.getElementById('cardBrandName');
     if (brandNameEl) {
         brandNameEl.textContent = brandName;
     }
     
-    // Atualizar logo da bandeira
+    
     if (brandLogo) {
         if (logoSrc) {
             brandLogo.src = logoSrc;
@@ -394,11 +394,11 @@ function updateCardVisualBrand() {
     }
 }
 
-// Inicializar ao carregar a página
+
 document.addEventListener('DOMContentLoaded', function() {
     loadCart();
     
-    // Adicionar listener para atualizar brand do cartão visual
+    
     const cardNumberInput = document.getElementById('cardNumber');
     if (cardNumberInput) {
         cardNumberInput.addEventListener('input', updateCardVisualBrand);

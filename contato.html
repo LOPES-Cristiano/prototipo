@@ -3,16 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - loterica</title>
+    <title>Contato - Liga dos Milionários</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="premium-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body id="top">
 
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="#top" class="logo-link">
-                    <h1>Loté<span class="gold">rica</span></h1>
+                <a href="index.html" class="logo-link">
+                    <div class="logo-shield">
+                        <svg class="shield-bg" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 5 L90 20 L90 60 Q90 90 50 115 Q10 90 10 60 L10 20 Z" fill="url(#shieldGradient)" stroke="var(--gold)" stroke-width="2"/>
+                            <defs>
+                                <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="crown-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-top">LIGA DOS</span>
+                        <span class="logo-bottom">MILIONÁRIOS</span>
+                    </div>
                 </a>
             </div>
             <div class="menu-toggle" id="menuToggle">
@@ -22,177 +41,382 @@
             </div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Início</a></li>
-                <li><a href="apostas.html">Apostas</a></li>
+                <li><a href="loterias.html">Loterias</a></li>
                 <li><a href="seguros.html">Seguros</a></li>
-                <li><a href="credito.html">Crédito</a></li>
-                <li><a href="contato.html" class="active">Contato</a></li>
+                <li><a href="credito.html">Carta de Crédito</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h2>Entre em <span class="gold">Contato</span></h2>
-                <p class="hero-subtitle">Estamos prontos para atender você</p>
+        
+        <section class="hero-premium" style="min-height: 50vh;">
+            <div class="hero-overlay"></div>
+            <div class="hero-container">
+                <div class="hero-badge">
+                    <i class="fas fa-headset"></i>
+                    <span>Atendimento</span>
+                </div>
+                <h1 class="hero-title">Fale <span class="gold">Conosco</span></h1>
+                <p class="hero-slogan"><i class="fas fa-star"></i> Estamos aqui para ajudar você <i class="fas fa-star"></i></p>
+                <p class="hero-subtitle">Preencha o formulário abaixo ou entre em contato pelos nossos canais de atendimento.</p>
             </div>
         </section>
 
-        <section class="services">
-            <h2 class="section-title">Fale <span class="gold">Conosco</span></h2>
-            
-            <div class="intro-text">
-                <p>Estamos prontos para atender você! Entre em contato pelos nossos canais ou preencha o formulário abaixo.</p>
-            </div>
-
-            <div class="contact-grid-simple">
-                <div class="contact-card-large">
-                    <div class="contact-icon-large">📍</div>
-                    <h3>Visite Nossa Lotérica</h3>
-                    <p class="contact-detail">Centro - São Miguel do Guaporé</p>
-                    <p class="contact-detail">Rondônia - RO</p>
-                    <p class="contact-note">Estacionamento disponível</p>
+        
+                <!-- Contact Information -->
+        <section class="contact-info-section">
+            <div class="container-custom">
+                <div class="section-header-center">
+                    <h2>Informações de <span class="gold">Contato</span></h2>
+                    <p>Encontre a melhor forma de falar conosco</p>
                 </div>
                 
-                <div class="contact-card-large">
-                    <div class="contact-icon-large">📞</div>
-                    <h3>Telefones</h3>
-                    <p class="contact-detail"><strong>(69) 1234-5678</strong></p>
-                    <p class="contact-detail"><strong>(69) 98765-4321</strong> (WhatsApp)</p>
-                    <p class="contact-note">Atendimento rápido e personalizado</p>
-                </div>
-                
-                <div class="contact-card-large">
-                    <div class="contact-icon-large">📧</div>
-                    <h3>E-mails</h3>
-                    <p class="contact-detail">contato@loterica.com.br</p>
-                    <p class="contact-detail">atendimento@loterica.com.br</p>
-                    <p class="contact-note">Resposta em até 24 horas</p>
-                </div>
-                
-                <div class="contact-card-large">
-                    <div class="contact-icon-large">🕐</div>
-                    <h3>Horário de Funcionamento</h3>
-                    <p class="contact-detail"><strong>Segunda a Sexta:</strong> 8h às 18h</p>
-                    <p class="contact-detail"><strong>Sábado:</strong> 8h às 13h</p>
-                    <p class="contact-note">Domingo e Feriados: Fechado</p>
-                </div>
-            </div>
-
-            <div class="form-section">
-                <h2 class="section-title">Envie uma <span class="gold">Mensagem</span></h2>
-                <div class="intro-text">
-                    <p>Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
-                </div>
-
-                <div class="contact-form-container-centered">
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <label for="nome">Nome Completo *</label>
-                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                <div class="contact-info-grid">
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
                         </div>
-                        
+                        <div class="contact-info-content">
+                            <h3>Endereço</h3>
+                            <p>Rua dos Milionários, 777</p>
+                            <p>Centro - São Miguel do Guaporé/RO</p>
+                            <p>CEP: 01234-567</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-info-content">
+                            <h3>Telefones</h3>
+                            <p><strong>Fixo:</strong> (xx) XXXX-XXXX</p>
+                            <p><strong>Celular:</strong> (xx) XXXXX-XXXX</p>
+                            <p><strong>WhatsApp:</strong> (xx) XXXXX-XXXX</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info-content">
+                            <h3>E-mails</h3>
+                            <p><strong>Geral:</strong> contato@ligamilionarios.com</p>
+                            <p><strong>Suporte:</strong> suporte@ligamilionarios.com</p>
+                            <p><strong>Comercial:</strong> vendas@ligamilionarios.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-info-content">
+                            <h3>Horário de Atendimento</h3>
+                            <p><strong>Segunda a Sexta:</strong> 8h às 20h</p>
+                            <p><strong>Sábados:</strong> 9h às 18h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+                <!-- Main Contact Form -->
+        <section class="contact-form-section">
+            <div class="container-custom">
+                <div class="contact-form-wrapper">
+                    <div class="contact-form-header">
+                        <h2>Envie sua <span class="gold">Mensagem</span></h2>
+                        <p>Preencha os campos abaixo e entraremos em contato em breve</p>
+                    </div>
+
+                    <form id="contact-form" class="contact-form">
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="email">E-mail *</label>
-                                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                                <label for="nome">
+                                    <i class="fas fa-user"></i> Nome Completo
+                                </label>
+                                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
                             </div>
-                            
+
                             <div class="form-group">
-                                <label for="telefone">Telefone *</label>
-                                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                                <label for="email">
+                                    <i class="fas fa-envelope"></i> E-mail
+                                </label>
+                                <input type="email" id="email" name="email" required placeholder="seu@email.com">
                             </div>
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="assunto">O que você procura? *</label>
-                            <select id="assunto" name="assunto" required>
-                                <option value="">Selecione um assunto...</option>
-                                <option value="apostas">Apostas Lotéricas</option>
-                                <option value="seguros">Seguros</option>
-                                <option value="credito">Crédito Consignado</option>
-                                <option value="outros">Outros Assuntos</option>
-                            </select>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="telefone">
+                                    <i class="fas fa-phone"></i> Telefone
+                                </label>
+                                <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="assunto">
+                                    <i class="fas fa-tag"></i> Assunto
+                                </label>
+                                <select id="assunto" name="assunto" required>
+                                    <option value="">Selecione um assunto</option>
+                                    <option value="boloes">Bolões</option>
+                                    <option value="seguros">Seguros</option>
+                                    <option value="credito">Carta de Crédito</option>
+                                    <option value="suporte">Suporte Técnico</option>
+                                    <option value="duvidas">Dúvidas Gerais</option>
+                                    <option value="parceria">Parcerias</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
                         </div>
-                        
+
                         <div class="form-group">
-                            <label for="mensagem">Sua Mensagem *</label>
-                            <textarea id="mensagem" name="mensagem" rows="6" placeholder="Digite sua mensagem aqui..." required></textarea>
+                            <label for="mensagem">
+                                <i class="fas fa-comment-dots"></i> Mensagem
+                            </label>
+                            <textarea id="mensagem" name="mensagem" rows="6" required placeholder="Digite sua mensagem aqui..."></textarea>
                         </div>
-                        
-                        <button type="submit" class="btn btn-primary btn-large">Enviar Mensagem</button>
+
+                        <button type="submit" class="btn-contact-submit">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Enviar Mensagem</span>
+                        </button>
                     </form>
                 </div>
             </div>
         </section>
 
-        <section class="lottery-results">
-            <h2 class="section-title">Localização</h2>
-            <div class="map-container">
-                <div class="map-placeholder">
-                    <p>🗺️ Mapa do Google Maps aqui</p>
-                    <p class="map-note">Fácil acesso por transporte público e estacionamento disponível</p>
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container-custom">
+                <div class="section-header-center">
+                    <h2>Perguntas <span class="gold">Frequentes</span></h2>
+                    <p>Tire suas dúvidas sobre nossos serviços</p>
+                </div>
+
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span><i class="fas fa-users"></i> Como funcionam os bolões?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Os bolões são grupos de apostas onde você divide o custo com outros participantes, aumentando suas chances de ganhar. Você pode participar de bolões já montados ou criar seu próprio grupo. Todos os participantes dividem o prêmio proporcionalmente ao número de cotas adquiridas.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span><i class="fas fa-shield-alt"></i> O que são os seguros de apostas?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nossos seguros protegem seu investimento em apostas. Se você não ganhar, recebe parte do valor de volta. Oferecemos diferentes modalidades de seguro, desde proteção parcial até cobertura total, dependendo do plano escolhido.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span><i class="fas fa-credit-card"></i> Como funciona a Carta de Crédito?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>A Carta de Crédito é um crédito pré-aprovado para você usar em apostas. Funciona como um limite de crédito que pode ser utilizado em loterias e bolões. Você paga apenas o que usar, com condições de pagamento facilitadas e taxas competitivas.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span><i class="fas fa-lock"></i> Meus dados estão seguros?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim! Utilizamos criptografia de última geração e seguimos todas as normas da LGPD. Seus dados pessoais e financeiros são protegidos com as melhores tecnologias de segurança disponíveis no mercado.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span><i class="fas fa-money-bill-wave"></i> Quais são as formas de pagamento?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Aceitamos cartões de crédito e débito (Visa, Mastercard, Elo), PIX, boleto bancário e nossa própria Carta de Crédito. Todas as transações são processadas de forma segura e você recebe confirmação instantânea.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span><i class="fas fa-trophy"></i> Como recebo meus prêmios?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Prêmios de até R$ 1.903,98 são creditados automaticamente na sua conta. Para valores maiores, você pode escolher entre receber por transferência bancária ou retirar em uma agência da Caixa. Todo o processo é acompanhado pela nossa equipe.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span><i class="fas fa-mobile-alt"></i> Posso apostar pelo celular?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim! Nossa plataforma é totalmente responsiva e funciona perfeitamente em smartphones e tablets. Você pode fazer apostas, participar de bolões, contratar seguros e gerenciar sua conta de qualquer lugar.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span><i class="fas fa-headset"></i> Como falo com o suporte?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Você pode entrar em contato através do formulário acima, WhatsApp, e-mail ou telefone. Nossa equipe está disponível de segunda a sexta das 8h às 20h, sábados das 9h às 18h e domingos das 10h às 16h.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="services">
-            <h2 class="section-title">Perguntas <span class="gold">Frequentes</span></h2>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <h3>Qual o horário de funcionamento?</h3>
-                    <p>Funcionamos de segunda a sexta das 8h às 18h e aos sábados das 8h às 13h.</p>
+        <!-- WhatsApp CTA -->
+        <section class="whatsapp-cta-section">
+            <div class="container-custom">
+                <div class="whatsapp-cta-card">
+                    <div class="whatsapp-cta-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="whatsapp-cta-content">
+                        <h3>Prefere falar pelo WhatsApp?</h3>
+                        <p>Atendimento rápido e direto com nossa equipe</p>
+                    </div>
+                    <a href="https://wa.me/5511987654321" class="btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Iniciar Conversa</span>
+                    </a>
                 </div>
-                <div class="faq-item">
-                    <h3>Quais jogos da loteria estão disponíveis?</h3>
-                    <p>Todos os jogos da Caixa Econômica Federal: Mega-Sena, Lotofácil, Quina, Lotomania, Dupla Sena, Timemania e outros.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Como funciona o crédito consignado?</h3>
-                    <p>O crédito consignado tem desconto automático em folha de pagamento, oferecendo as menores taxas do mercado.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Quais documentos preciso para fazer um seguro?</h3>
-                    <p>Geralmente RG, CPF e comprovante de residência. Documentos específicos variam conforme o tipo de seguro.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="cta-section">
-            <div class="cta-content">
-                <h2>Visite Nossa Lotérica</h2>
-                <p>Atendimento personalizado e de qualidade</p>
-                <a href="tel:6912345678" class="btn btn-primary">Ligar Agora</a>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Loté<span class="gold">rica</span></h3>
-                <p>Sua lotérica de confiança</p>
+    <footer class="footer-premium">
+        <div class="footer-content-premium">
+            <div class="footer-section-main">
+                <div class="footer-logo">
+                    <div class="logo-shield-small">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div>
+                        <h3>Liga dos <span class="gold">Milionários</span></h3>
+                        <p class="footer-slogan">Unidos pela sorte, guiados pela estratégia</p>
+                    </div>
+                </div>
+                <p class="footer-desc">Entre em contato conosco e faça parte do grupo de vencedores.</p>
             </div>
+            
             <div class="footer-section">
                 <h4>Serviços</h4>
                 <ul>
-                    <li><a href="apostas.html">Apostas</a></li>
-                    <li><a href="seguros.html">Seguros</a></li>
-                    <li><a href="credito.html">Crédito</a></li>
+                    <li><a href="loterias.html"><i class="fas fa-chevron-right"></i> Bolões</a></li>
+                    <li><a href="seguros.html"><i class="fas fa-chevron-right"></i> Seguros</a></li>
+                    <li><a href="credito.html"><i class="fas fa-chevron-right"></i> Carta de Crédito</a></li>
                 </ul>
             </div>
+            
             <div class="footer-section">
                 <h4>Contato</h4>
-                <p>📞 (69) 1234-5678</p>
-                <p>📧 contato@loterica.com.br</p>
-                <p>📍 Centro - São Miguel do Guaporé/RO</p>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-phone-alt"></i> (xx) XXXXX-XXXX</li>
+                    <li><i class="fas fa-envelope"></i> contato@ligamilionarios.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> São Miguel do Guaporé/RO</li>
+                    <li><i class="fas fa-clock"></i> Seg-Sex: 8h-20h</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Redes Sociais</h4>
+                <div class="social-links-premium">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Lotérica. Todos os direitos reservados.</p>
+        <div class="footer-bottom-premium">
+            <p>&copy; 2025 Liga dos Milionários. Todos os direitos reservados.</p>
+            <p class="footer-legal"><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
         </div>
     </footer>
+
     <script src="menu.js"></script>
+    <script src="cart-global.js"></script>
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Open clicked item if it wasn't active
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+
+        // Contact Form Submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = {
+                nome: document.getElementById('nome').value,
+                email: document.getElementById('email').value,
+                telefone: document.getElementById('telefone').value,
+                assunto: document.getElementById('assunto').value,
+                mensagem: document.getElementById('mensagem').value
+            };
+            
+            // Show success message
+            alert('✅ Mensagem enviada com sucesso!\n\nObrigado pelo contato, ' + formData.nome + '!\nRetornaremos em breve para o e-mail: ' + formData.email);
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Animation on scroll for cards
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.contact-info-card, .faq-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
 
 </body>
 </html>
